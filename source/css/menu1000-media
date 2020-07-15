@@ -1,0 +1,53 @@
+ .menu {
+    height: 70px;
+
+    .m-logo {
+      width: 150px;
+
+      .logo-shadow {
+        width: 60px;
+
+        img {
+          width: 70px;
+          margin: 27px 0 0 4px;
+        }
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 16px 0 0 0;
+      }
+    }
+
+    .m-contacts-1 {
+      width: 130px;
+      height: 75px;
+
+      .flex-contact {
+        &:before {
+          height: calc(100% - 16px);
+          top: 2px;
+        }
+        & > div {
+          width: 32px;
+          height: 32px;
+          .c-icon {
+            width: 28px;
+            height: 28px;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .m-menu {
+      .menu-ul {
+        padding: 0 8px;
+        & > li {
+          line-height: 50px;
+          padding: 0 5px;
+        }
+      }
+    }
+  }

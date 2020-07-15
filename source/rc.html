@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение, Москва</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/fonts-stylesheet.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="shortcut icon" href="images/icons/Group 2.png" type="image/x-icon">
+
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/imask@6.0.5/dist/imask.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4ba6a009-b4f5-48b3-9647-991a6b883920&lang=en_US" type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="m-logo">
+                <div class="burger">
+                    <input id="burger" type="checkbox" />
+                    <label for="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <a href="/">
+                    <div class="logo-shadow">
+                        <img src="images/logo.png" alt="Время решений"/>
+                    </div>
+                    <span id="hiddenMobile">Время решений</span>
+                </a>
+            </div>
+            <div class="m-menu" id="m-menu"></div>
+            <div class="m-contacts-1">
+
+                <div class="flex-contact ">
+                    <div>
+                        <div class="purple-icon c-icon">
+                            <a href="/"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="orange-icon c-icon">
+                            <a href="/"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="telegram-icon c-icon">
+                            <a href="telegram.me/@HermineBaghdassarian">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="main-type-3">
+
+        <div class="wrapper">
+            <div class="flex-parent">
+                <div class="left_side">
+                    <div class="flex-card">
+                        <div class="path">
+                            <ul>
+                                <li>
+                                    <a href="/">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="/">Реабилитация</a>
+                                </li>
+                                <li>
+                                    <a href="/">Время первых</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="title">
+                            <div class="sub-title">Реабилитационный центр</div>
+                            <div class="h1">Решение, Москва</div>
+                        </div>
+                        <div class="dec"></div>
+
+                        <table>
+                            <thead>
+                            <tr>
+                                <th> Адрес:</th>
+                                <th> Цена:</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>г. Москва,<br>ул. Дубнинская 4 к 2,</td>
+                                <td>85 000 руб.<br>
+                                    месяц
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <form action="/" method="post" class="form-button">
+                            <div>
+                                <button class="btn btn-lg btn-cyan"><span>Заявка на лечение</span></button>
+                            </div>
+                            <div>
+                                <label class=" input-mask-group">
+                                    <input type="text" id="phoneNumber3" placeholder="+7 ____ ____ - ___ -___"/>
+                                    <i class="btn-icon">
+                                        <img src="images/icons/email-svg.svg" alt="Email"/>
+                                    </i>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="right_side">
+                    <img class="img-bg rc-bg-img" src="images/image 38.png" alt="img-bg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="center_assessment">
+        <div class="wrapper">
+            <div class="title">
+                <p class="text-purple">Оценка центра</p>
+                <div class="h3">Соотвествие параметрам качества:</div>
+            </div>
+            <div class="goals-list">
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-orange">
+                                <img src="images/icons/vector666 (4).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Экскурсия в центр
+                    </div>
+                    <div class="description">
+                        Вы можете приехать на экскурсию в центр. Для этого оставьте заявку на сайте.
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-purple">
+                                <img src="images/icons/vector666 (1).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Посещение зависимого
+                    </div>
+                    <div class="description">
+                        Во время прохождения вы сможете навещать близкого человека в центре.
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-blue">
+                                <img src="images/icons/vector666 (5).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Психолог
+                    </div>
+                    <div class="description">
+                        Наличие психолога для групповой и индивидуальной терапии.
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-green">
+                                <img src="images/icons/vector666 (3).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Детоксикация
+                    </div>
+                    <div class="description">
+                        При необходимости прямо в центре возможно прохождение детоксикации.
+                    </div>
+                </div>
+
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-blue">
+                                <img src="images/icons/vector666 (2).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Своя интервенция
+                    </div>
+                    <div class="description">
+                        Мы оказываем услугу интервенции. Другими словами мотивируем зависимого на лечение.
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-green">
+                                <img src="images/icons/vector666 (3).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Образование
+                    </div>
+                    <div class="description">
+                        Наличие образовательной программы, чтобы зависимый не выпал из учебного графика.
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-purple">
+                                <img src="images/icons/vector666 (1).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Работа с родственниками
+                    </div>
+                    <div class="description">
+                        Регулярная работа с родителями. Лечение созависимости на протяжении всего лечения.
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-bar">
+                        <div class="icon-round">
+                            <div class="icon bg-orange">
+                                <img src="images/icons/vector666 (4).png" alt="vector"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Амбулаторная программа
+                    </div>
+                    <div class="description">
+                        Регулярные анонимные встречи. Динамическое наблюдение за зависимым после реабилитации.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="on_the_map">
+        <div class="wrapper">
+            <div class="map-contacts-bar">
+                <div class="map-container">
+                    <div id="map" style="width: 100%; height: 100%"></div>
+                </div>
+                <div class="contacts">
+                    <p class="text-purple">
+                        Адрес подтвержден!
+                    </p>
+                    <p class="h3-title">На карте:</p>
+                    <p class="p-simple">г. Москва, Большая дубнинская 4 к 2</p>
+                    <div class="banner-type-4">
+                        <div class="left_side">
+                            <div class="banner-title">
+                                Центр прошел <span class="text-black">выездную</span> проверку
+                            </div>
+                            <p>
+                                Центр доступен для экскурсий
+                            </p>
+                            <a class="btn1 btn-gray" href="/">
+                                Заявка на экскурсию
+                            </a>
+                        </div>
+                        <div class="right_side">
+                            <img src="images/icons/Group777.png" alt="img-bg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="photo_gallery">
+        <div class="wrapper">
+            <div class="title">
+                <div class="h3-title">
+                    Фотогалерея
+                </div>
+            </div>
+            <div class="photo_gallery_bar">
+                <div class="photo-list">
+                    <div>
+                        <img src="images/photogallery/image 41.png" alt="img-1"/>
+                    </div>
+                    <div><img src="images/photogallery/image 40.png" alt="img-1"/></div>
+                    <div><img src="images/photogallery/image 39.png" alt="img-1"/></div>
+                </div>
+                <div class="more-info" data-toggle="photoGallery"></div>
+                <p class="see-more-toggle" data-more-toggle="photoGallery">Загрузить ещё</p>
+            </div>
+        </div>
+    </section>
+    <section class="details_and_documents m-185">
+        <div class="wrapper">
+            <div class="banner-type-3">
+                <div class="left_side">
+                    <p class="p-light">Необходимая документация</p>
+                    <p class="p-title">Реквизиты и документы</p>
+                    <table class="address-table md">
+                        <tr>
+                            <td class="key">
+                                Индекс:
+                            </td>
+                            <td class="value">129336</td>
+                        </tr>
+                        <tr>
+                            <td class="key">
+                                Адрес:
+                            </td>
+                            <td class="value">Москва,Таежная ул., 1</td>
+                        </tr>
+                        <tr>
+                            <td class="key">
+                                ИНН:
+                            </td>
+                            <td class="value">1655297178</td>
+                        </tr>
+                        <tr>
+                            <td class="key">
+                                КПП:
+                            </td>
+                            <td class="value">165501001</td>
+                        </tr>
+                        <tr>
+                            <td class="key">
+                                ОГРН:
+                            </td>
+                            <td class="value">1141690050545</td>
+                        </tr>
+                        <tr>
+                            <td class="file-td">
+
+                                <div class="file-download">ИНН лицензия</div>
+
+                            </td>
+                            <td class="file-td">
+
+                                <div class="file-download">ОГРН лицензия</div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right_side">
+                    <div class="banner-center">
+                        <div class="title">
+                            Семейная терапия с психологом!
+                        </div>
+                        <div class="p-light">
+                            Зависимость это не локальная проблема! Проблему необходимо решать всей семьей.
+                        </div>
+                        <div class="btn-bar">
+                            <a class="btn btn-sm btn-cyan" href="/"><span>Подробнее</span></a>
+                        </div>
+                        <img class="img-bg-bottom" src="images/Mask Group465.png" alt="img-bg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews p-170">
+        <div class="wrapper">
+            <div class="title">
+                <div class="h3">Отзывы о лечении</div>
+            </div>
+            <div class="reviews-list">
+                <div>
+                    <div class="username">Виктория</div>
+                    <div class="date">Мать зависимого | 01.04.20</div>
+                    <div class="review">Спасибо за такую качественную работу!Конеч. нам предстоит еще большой путьчтобы
+                        все вернулось на свои круги, но...
+                    </div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn  btn-cyan  btn-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="username">Виктория</div>
+                    <div class="date">01.04.20</div>
+                    <div class="review">Спасибо за такую качественную работу!</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="video-review">
+                    <div class="video-actions">
+                        <div class="user_image">
+                            <img src="images/review/Rectangle 17 (1).png" alt="review"/>
+                        </div>
+                        <div class="video-player">
+                            <div class="label">
+                                <img src="images/icons/Rectangle 22.png" alt="video player" class="video-player"/>
+                                Видео-отзыв
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="username">Александр</div>
+                    <div class="date">01.04.20</div>
+                    <div class="review">Героиновый нанаркоман</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-gray btn-gray-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="username">Виктория</div>
+                    <div class="date">01.04.20</div>
+                    <div class="review">Спасибо за такую качественную работу!Конеч. нам предстоит еще большой путьчтобы
+                        все вернулось на свои круги, но...
+                    </div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn  btn-cyan  btn-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-specialists m-220">
+        <div class="wrapper">
+            <div class="clearfix title-group">
+                <div class="title-left">
+                    <div class="title">
+                        <div class="h3">Наши специалисты</div>
+                    </div>
+                </div>
+                <div class="button-right d-desktop">
+                    <a href="/" class="btn btn-lg btn-orange">
+                        <span>  Заявка на лечение</span>
+                    </a>
+                </div>
+            </div>
+            <div class="specialists-list">
+                <div>
+                    <div class="top">
+                        <img src="images/specialists/image 32.png" alt="img1"/>
+                    </div>
+                    <div class="specialist-name">
+                        Анастасия Куликова
+                    </div>
+                    <div class="specialist-experience">
+                        стаж 5 лет
+                    </div>
+                    <div class="specialist-description">
+                        Клинический психолог
+                    </div>
+                    <div class="specialist-licence">
+                        <div class="file-download">Лицензия</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <img src="images/specialists/image 32.png" alt="img1"/>
+                    </div>
+                    <div class="specialist-name">
+                        Анастасия Куликова
+                    </div>
+                    <div class="specialist-experience">
+                        стаж 5 лет
+                    </div>
+                    <div class="specialist-description">
+                        Клинический психолог
+                    </div>
+                    <div class="specialist-licence">
+                        <div class="file-download">Лицензия</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <img src="images/specialists/image 32.png" alt="img1"/>
+                    </div>
+                    <div class="specialist-name">
+                        Виктория Проказникова
+                    </div>
+                    <div class="specialist-experience">
+                        стаж 5 лет
+                    </div>
+                    <div class="specialist-description">
+                        Клинический психолог, консультант, детский психолог
+                    </div>
+                    <div class="specialist-licence">
+                        <div class="file-download">Лицензия</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <img src="images/specialists/image 32.png" alt="img1"/>
+                    </div>
+                    <div class="specialist-name">
+                        Анастасия Куликова
+                    </div>
+                    <div class="specialist-experience">
+                        стаж 5 лет
+                    </div>
+                    <div class="specialist-description">
+                        Клинический психолог, консультант, детский психолог
+                    </div>
+                    <div class="specialist-licence">
+                        <div class="file-download">Лицензия</div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-right d-mobile">
+                <a href="/" class="btn btn-lg btn-orange">
+                    <span>  Заявка на лечение</span>
+                </a>
+            </div>
+            <div class="more-info" data-toggle="specialists"></div>
+            <p class="see-more-toggle" data-more-toggle="specialists">Загрузить ещё</p>
+        </div>
+    </section>
+    <section class="rehabilitation_stages p-225">
+        <div class="wrapper">
+            <div class="clearfix title-group">
+                <div class="title-left">
+                    <p class="text-purple">Мы проконсультируем вас по любому вопросу</p>
+                    <div class="title">
+                        <div class="h3">Как проходит реабилитация?</div>
+                    </div>
+                </div>
+                <div class="button-right d-desktop">
+                    <a href="/" class="btn btn-lg btn-orange">
+                        <span>  У меня есть вопрос </span>
+                    </a>
+                </div>
+            </div>
+            <div class="rehabilitation_stages_items">
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 15.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Подбор РЦ который подойдет именно вашему ребенку
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li>Выбор реабилитационного центра на основе личностного портрета.</li>
+                            <li>Мы предлагаем только проверенные центры, поэтому вы в любой момент можете приехать на
+                                экскурсию, чтобы составить собственное мнение.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 28.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Переезд в выбранный центр.
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> После знакомства с директором центра и подписания договора подросток полностью
+                                переезжает в выбранный РЦ. Мы рекомендуем реабилитацию от 6 месяцев.
+                            </li>
+                            <li> Самые сложные случаи это солевые наркоманы. При употреблении мефедрона необходима
+                                реабилитация 1 год.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 29.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Работа с родителями
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> На протяжении всей реабилитации проходит работа с родителями. Почти всегда в семье с
+                                зависимым есть созависимые родственники.
+                                Созависимость питает зависимость.
+                            </li>
+                            <li> Пока вы не избавитесь от своей созавивсмости, ребенок не сможет избавиться от
+                                зависимости.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 18.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Обратная связь с родителями
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> Во время реабилитации вам будет еженедельно отправлять отчеты о том как себя чувствует
+                                и ведет себя ваш ребенок. Вы сможете задать любые вопросы, получать полноценную обратную
+                                связь.
+                            </li>
+                            <li> В наших РЦ есть учителя, тренеры, творческие кружки все, что необходимо для получения
+                                полноценного образования.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 17.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Возращение ребенка в социум
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> Если вы замечали ребенка в плохой компании, с новыми друзьями, которые склоняли его к
+                                употреблению, то мы рекомендуем изменить круг общения. Иногда вплоть до перезда и смены
+                                школы.
+                            </li>
+                            <li> Ребенку важно чувствовать себя внутри семьи, поэтому требуется проводить больше
+                                семейных мероприятий.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 30.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Амбулаторная программа и ресоциализация
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> После прохождения реабилитации необходимо регулярно посещать тренинги и обследования в
+                                стационаре. Количество встреч вы регулируете сами. Обычно они проходят 1 раз в неделю.
+                            </li>
+                            <li> Мы рекомендуем семейную терапию для закрепления реабилитации.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="button-right d-mobile">
+                <a href="/" class="btn btn-lg btn-orange">
+                    <span>  У меня есть вопрос </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="rehabilitation_centers p-195">
+        <div class="wrapper">
+            <div class="clearfix title-group">
+                <div class="title-left">
+                    <div class="title">
+                        <div class="h3">Другие реабилитационные центры</div>
+                    </div>
+                </div>
+                <div class="button-right d-desktop">
+                    <a href="/" class="btn btn-lg btn-orange">
+                        <span>  Все РЦ: 45 </span>
+                    </a>
+                </div>
+            </div>
+            <div class="rehabilitation_list_items">
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn  btn-cyan  btn-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (1).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Время первых</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">85 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn  btn-cyan  btn-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (2).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Ускоренная</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                             <a href="/" class="btn  btn-cyan  btn-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                             <a href="/" class="btn  btn-cyan  btn-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-right d-mobile">
+                <a href="/" class="btn btn-lg btn-orange">
+                    <span>  Все РЦ: 45 </span>
+                </a>
+            </div>
+            <div class="banner-card">
+                <div class="image-bar">
+                    <img src="images/image 23.png" alt="img1"/>
+                </div>
+                <div class="content-bar">
+                    <p class="p-bold">Обратитесь к специалистам немедленно!</p>
+                    <div class="dec"></div>
+                    <div class="inline-title">
+                        <div class="h1 w-100">
+                            <div> Лечение солевой зависимости!</div>
+                            <div>Полное разрушение психики.</div>
+                        </div>
+
+                    </div>
+                    <div class="text-light">
+                        <p> Солевая подростковая наркомания может привести к необратимым
+                            последствиям всего за несколько месяцев.</p>
+                    </div>
+                    <form action="/" method="post" class="form-button">
+                        <div>
+                            <button class="btn btn-cyan btn-md"><span>Мне нужна помощь!</span></button>
+                        </div>
+                        <div>
+                            <label class=" input-mask-group">
+                                <input type="text" id="phoneNumber5" placeholder="+7 ____ ____ - ___ -___"/>
+                                <i class="btn-icon">
+                                    <img src="images/icons/email-svg.svg" alt="Email"/>
+                                </i>
+                            </label>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+<footer>
+    <div class="wrapper">
+        <div class="f-content">
+            <div class="f-menu">
+                <div class="f-title">
+                    Портал
+                </div>
+                <ul>
+                    <li><a href="/"> Специализированная реабилитация</a></li>
+                    <li><a href="/">Обычная реабилитация</a></li>
+                    <li><a href="/"> Терапия с психологом</a></li>
+                    <li><a href="/"> Созависимым</a></li>
+                    <li><a href="/"> Наркозависмость</a></li>
+                    <li><a href="/"> Алкозависимость</a></li>
+                    <li><a href="/"> Игромания</a></li>
+                    <li><a href="/"> Как узнать о зависимости</a></li>
+                    <li><a href="/"> О портале</a></li>
+                    <li><a href="/"> Контакты</a></li>
+                </ul>
+            </div>
+            <div class="f-menu">
+                <div class="f-title">
+                    Услуги
+                </div>
+                <ul>
+                    <li><a href="/">Детоксикация</a></li>
+                    <li><a href="/">Реабилитация</a></li>
+                    <li><a href="/"> Нарклог на дом</a></li>
+                    <li><a href="/">Вывод из запоя</a></li>
+                    <li><a href="/"> Солевая зависимость</a></li>
+                    <li><a href="/">Героиновая зависимость</a></li>
+                    <li><a href="/"> ВИП лечение</a></li>
+                    <li><a href="/"> Амбулаторное лечение</a></li>
+                    <li><a href="/"> Кодирование</a></li>
+                    <li><a href="/"> Снятие ломки</a></li>
+                </ul>
+            </div>
+            <div class="f-menu">
+                <div class="f-title">
+                    База знаний
+                </div>
+                <ul>
+                    <li><a href="/">Все статьи</a></li>
+                    <li><a href="/">Солевая зависимость</a></li>
+                    <li><a href="/"> Наркомания</a></li>
+                    <li><a href="/"> Алкоголизм</a></li>
+                    <li><a href="/"> Игромания</a></li>
+                    <li><a href="/"> Другие типы зависимости</a></li>
+                    <li><a href="/"> Подростки</a></li>
+                    <li><a href="/"> Созависимым</a></li>
+                    <li><a href="/"> Лечение</a></li>
+                    <li><a href="/"> Другое</a></li>
+                </ul>
+            </div>
+            <div class="f-menu d-mobile">
+                <ul>
+                    <li><a href="/">Героиновая зависимость</a></li>
+                    <li><a href="/"> ВИП лечение</a></li>
+                    <li><a href="/"> Амбулаторное лечение</a></li>
+                    <li><a href="/"> Кодирование</a></li>
+                    <li><a href="/"> Снятие ломки</a></li>
+                    <li><a href="/">  Женский алкоголизм</a></li>
+                </ul>
+            </div>
+            <div class="f-menu">
+                <div class="f-logo">
+                    Время решений
+                </div>
+                <p>Портал помощи несовершеннолетним зависимым и их родителям</p>
+                <div class="phone-num">
+                    <a href="tel:">
+                        8 800 900 90 90
+                    </a>
+                    <p>Круглосуточная бесплатная помощь</p>
+                </div>
+                <div class="btn-call">
+                    <label class=" input-mask-group">
+                        <input type="text" id="phoneNumber4" placeholder="+7 ____ ____ - ___ -___"/>
+                        <i class="btn-icon">
+                            <img src="images/icons/email-svg.svg" alt="Email"/>
+                        </i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main-events.js?a=a"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

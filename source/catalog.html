@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/fonts-stylesheet.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="shortcut icon" href="images/icons/Group 2.png" type="image/x-icon">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/imask@6.0.5/dist/imask.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4ba6a009-b4f5-48b3-9647-991a6b883920&lang=en_US"
+            type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="m-logo">
+                <div class="burger">
+                    <input id="burger" type="checkbox" />
+                    <label for="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <a href="/">
+                    <div class="logo-shadow">
+                        <img src="images/logo.png" alt="Время решений"/>
+                    </div>
+                    <span id="hiddenMobile">Время решений</span>
+                </a>
+            </div>
+            <div class="m-menu" id="m-menu"></div>
+            <div class="m-contacts-1">
+
+                <div class="flex-contact ">
+                    <div>
+                        <div class="purple-icon c-icon">
+                            <a href="/"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="orange-icon c-icon">
+                            <a href="/"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="telegram-icon c-icon">
+                            <a href="telegram.me/@HermineBaghdassarian">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="main-type-2 h-618">
+        <img class="img-bg-bottom img2" src="images/55565555.png" alt="img-bg"/>
+        <div class="wrapper">
+            <p class="title-label">Только проверенные центры!</p>
+            <div class="content">
+                <div class="h1">Реабилитационные центры</div>
+                <div class="form-button p-258">
+                    <div>
+                        <button class="btn btn-cyan btn-lg"><span>Заявка на лечение</span></button>
+                    </div>
+                    <div>
+                        <label class="input-mask-group">
+                            <input type="text" id="phoneNumber" placeholder="+7 ____ ____ - ___ -___"/>
+                            <i class="btn-icon">
+                                <img src="images/icons/Group78966.svg" alt="Email"/>
+                            </i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rehabilitation_centers p-155">
+        <div class="wrapper">
+            <div class="clearfix title-group">
+                <div class="title-left">
+                    <div class="title">
+                        <p class="text-purple">РЦ предоставляющие образовательную программу на время реабилитации</p>
+                        <div class="h3">Специализированные реабилитационные центры</div>
+                    </div>
+                </div>
+                <div class="button-right m-20 d-desktop">
+                    <a href="/" class="btn btn-orange btn-lg text-underline">
+                        <span>
+                            <img class="btn-icon-white" alt="btn-con" src="images/icons/pin-icon.svg"/>
+                            Москва и область
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="rehabilitation_list_items">
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (1).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Время первых</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">85 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-gray btn-gray-sm"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (2).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Ускоренная</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-right m-20 d-mobile">
+                <a href="/" class="btn btn-orange btn-lg text-underline">
+                        <span>
+                            <img class="btn-icon-white" alt="btn-con" src="images/icons/pin-icon.svg"/>
+                            Москва и область
+                        </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="map_container_section">
+        <div class="wrapper">
+            <div class="flex-parent">
+                <div class="left_side">
+                    <div id="map" style="width: 100%; height: 100%"></div>
+                </div>
+                <div class="right_side">
+                    <div class="banner p-40-15-72-25">
+                        <div class="title">
+                            <span class="title-sm ">Специализированные реабилитационные центры</span>
+                        </div>
+                        <div class="description p-25-90">
+                            <ul class="list-ul sm-text">
+                                <li>Проживание только несовершеннолетних</li>
+                                <li>Образовательная программа</li>
+                                <li>Спортивные площадки, профессиональные тренеры</li>
+                                <li>Наличие детских психологов и терапевтов</li>
+                                <li>Групповая и индивидуальная терапия</li>
+                            </ul>
+                        </div>
+                        <img class="img-bg-bottom" src="images/Mask Group (1)798.png" alt="img"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="rehabilitation_centers p-130">
+        <div class="wrapper">
+            <div class="clearfix title-group">
+                <div class="title-left">
+                    <div class="title">
+                        <p class="text-purple">Мы сделали для вас подборку центров, которые согласны брать несовершеннолетних</p>
+                        <div class="h3">Реабилитационные центры для всех возрастов</div>
+                    </div>
+                </div>
+                <div class="banner-right">
+                    <div class="banner-3">
+                        <img src="images/icons/secure-1.svg" alt="img1" class="banner-icon"/>
+                        <span class="banner-label">
+                            Все центры <span class="text-black">прошли выездную</span> проверку
+                        </span>
+                        <div class="right-abs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rehabilitation_list_items ">
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (1).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Время первых</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">85 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (2).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Ускоренная</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (1).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Время первых</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">85 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20 (2).png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Ускоренная</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/image 20.png" alt="img1"/>
+                    </div>
+                    <div class="item-title">
+                        <div class="h6-title-sm">Белая гвардия</div>
+                    </div>
+                    <div class="p-light">г. Казань, ул. Восстания, 35</div>
+                    <div class="p-normal">110 000 руб./месяц</div>
+                    <div class="reviews-bar">
+                        <div class="left">
+                            <ul class="stars">
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 4.png" alt="star"></li>
+                                <li><img src="images/icons/Star 5.png" alt="star"></li>
+                            </ul>
+                            <label class="reviews">Отзывы: 45</label>
+                        </div>
+                        <div class="right">
+                            <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-card m-86">
+                <div class="image-bar">
+                    <img src="images/image 23.png" alt="img1"/>
+                </div>
+                <div class="content-bar">
+                    <p class="p-bold">Обратитесь к специалистам немедленно!</p>
+                    <div class="dec"></div>
+                    <div class="inline-title">
+                        <div class="h1 w-100">
+                            <div> Лечение солевой зависимости!</div>
+                            <div>Полное разрушение психики.</div>
+                        </div>
+
+                    </div>
+                    <div class="text-light">
+                        <p> Солевая подростковая наркомания может привести к необратимым <br>
+                            последствиям всего за несколько месяцев.</p>
+                    </div>
+                    <form action="/" method="post" class="form-button">
+                        <div>
+                            <button class="btn btn-cyan btn-md"><span>Мне нужна помощь!</span></button>
+                        </div>
+                        <div>
+                            <label class="input-mask-group">
+                                <input type="text" id="phoneNumber6" placeholder="+7 ____ ____ - ___ -___"/>
+                                <i class="btn-icon">
+                                    <img src="images/icons/email-svg.svg" alt="Email"/>
+                                </i>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banners-section">
+        <div class="wrapper">
+            <div class="flex-parent">
+
+                <div class="banner-center">
+                    <div class="title">
+                        Лечение и иромании
+                    </div>
+                    <div class="p-light">
+                        Стабилищация физического состояния и психики.  Полное ограничение доступа к какому-либо виду игр.
+                    </div>
+                    <div class="btn-bar">
+                        <a class="btn btn-cyan btn-sm" href="/"><span>Подробнее</span></a>
+                    </div>
+                    <img class="img-bg-bottom" src="images/Mask Group5654 (2).png"  alt="img-bg"/>
+                </div>
+
+
+                <div class="banner-center">
+                    <div class="title">
+                        Снятие ломки!
+                    </div>
+                    <div class="p-light">
+                        Самостоятельное снятие ломки приводит к нарушениям нервной системы и заболеваниям психики
+                    </div>
+                    <div class="btn-bar">
+                        <a class="btn btn-cyan btn-sm" href="/"><span>Подробнее</span></a>
+                    </div>
+                    <img class="img-bg-bottom" src="images/Mask Group5654 (1).png"  alt="img-bg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rehabilitation_stages p-180">
+        <div class="wrapper">
+            <div class="clearfix title-group">
+                <div class="title-left">
+                    <p class="text-purple">Мы проконсультируем вас по любому вопросу</p>
+                    <div class="title">
+                        <div class="h3">Как проходит реабилитация?</div>
+                    </div>
+                </div>
+                <div class="button-right d-desktop">
+                    <a href="/" class="btn btn-orange btn-lg ">
+                        <span> У меня есть вопрос</span>
+                    </a>
+                </div>
+            </div>
+            <div class="rehabilitation_stages_items">
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 15.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Подбор РЦ который подойдет именно вашему ребенку
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li>Выбор реабилитационного центра на основе личностного портрета.</li>
+                            <li>Мы предлагаем только проверенные центры, поэтому вы в любой момент можете приехать на
+                                экскурсию, чтобы составить собственное мнение.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 28.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Переезд в выбранный центр.
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> После знакомства с директором центра и подписания договора подросток полностью
+                                переезжает в выбранный РЦ. Мы рекомендуем реабилитацию от 6 месяцев.
+                            </li>
+                            <li> Самые сложные случаи это солевые наркоманы. При употреблении мефедрона необходима
+                                реабилитация 1 год.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 29.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Работа с родителями
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> На протяжении всей реабилитации проходит работа с родителями. Почти всегда в семье с
+                                зависимым есть созависимые родственники.
+                                Созависимость питает зависимость.
+                            </li>
+                            <li> Пока вы не избавитесь от своей созавивсмости, ребенок не сможет избавиться от
+                                зависимости.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 18.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Обратная связь с родителями
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> Во время реабилитации вам будет еженедельно отправлять отчеты о том как себя чувствует
+                                и ведет себя ваш ребенок. Вы сможете задать любые вопросы, получать полноценную обратную
+                                связь.
+                            </li>
+                            <li> В наших РЦ есть учителя, тренеры, творческие кружки все, что необходимо для получения
+                                полноценного образования.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 17.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Возращение ребенка в социум
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> Если вы замечали ребенка в плохой компании, с новыми друзьями, которые склоняли его к
+                                употреблению, то мы рекомендуем изменить круг общения. Иногда вплоть до перезда и смены
+                                школы.
+                            </li>
+                            <li> Ребенку важно чувствовать себя внутри семьи, поэтому требуется проводить больше
+                                семейных мероприятий.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="image-bar">
+                        <img src="images/rehabilitation/image 30.png" alt="img1"/>
+                    </div>
+                    <div class="title-bar">
+                        <div class="h6-title-sm">
+                            Амбулаторная программа и ресоциализация
+                        </div>
+                    </div>
+                    <div class="description-bar">
+                        <ul class="solutions-light">
+                            <li> После прохождения реабилитации необходимо регулярно посещать тренинги и обследования в
+                                стационаре. Количество встреч вы регулируете сами. Обычно они проходят 1 раз в неделю.
+                            </li>
+                            <li> Мы рекомендуем семейную терапию для закрепления реабилитации.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="button-right d-mobile">
+                <a href="/" class="btn btn-orange btn-lg ">
+                    <span> У меня есть вопрос</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="teenage_addiction p-0">
+        <div class="wrapper">
+            <div class="title">
+                <p class="text-gray">Наши специалисты помогут на любой стадии зависмости!</p>
+                <div class="h3">Подростковая наркомания, как бороться?</div>
+            </div>
+            <div class="content-main">
+                <div class="text-side">
+                    <div class="content">
+                        <p> Причин для такой увлеченности может быть несколько, мы приведем пока одну — дома время игры
+                            ограничено и надо успеть сейчас.</p>
+
+                        <p> Мама и сын 10 лет. Мама ведет его из школы, держа за капюшон. Руки его заняты PSP. Он
+                            натыкается на заборы на узких дорожках, шлепает по лужам. Согласитесь, такую ситуацию мы не
+                            видим на улицах часто. Конечно, такая пара привлекает внимание прохожих. Мама, видя
+                            изумленные взгляды, смущается. Она пытается сделать замечание, но ребенок ее не слышит.
+                            Поменять ситуацию она больше не пытается. Грустно в этой ситуации то, что мама не хочет
+                            ничего менять, она это делает только на людях.</p>
+
+                        <p> Причин для такой увлеченности мало, мы назовем одну — ребенок играет и не мешает, а нам
+                            нужно быстро дойти до пункта А.</p>
+
+                        <p> Те способы преодоления игровой зависимости у подростков, которые будут описываться ниже,
+                            подходят только подросткам в силу сочетания их психологического и физического состояний в
+                            этот момент.</p>
+
+                        <p> В подростковом возрасте ребенок очень уязвим и агрессивен к любым посягательствам на его
+                            личное пространство. Вы как родитель «теряете» свой авторитет в его глазах — даже если Вы
+                            идеальный. Ребенок хочет самоутвердиться, показать, КАК он может! Особенно в этом возрасте
+                            старайтесь не командовать, не менять резко домашние правила. Лучше будет, если в окружении
+                            ребенка будет взрослый человек, через которого Вы сможете воздействовать на него. Может, это
+                            крестный, тетя, дядя, соседи, учитель, старший брат. Все ваши действия, направленные на
+                            изменение ситуации, постарайтесь передавать через такого человека. Причин для такой
+                            увлеченности может быть несколько, мы приведем пока одну — дома время игры ограничено и надо
+                            успеть сейчас.</p>
+
+                        <p class="p-title"> Второй пример:</p>
+
+                        <p> Мама и сын 10 лет. Мама ведет его из школы, держа за капюшон. Руки его заняты PSP. Он
+                            натыкается на заборы на узких дорожках, шлепает по лужам. Согласитесь, такую ситуацию мы не
+                            видим на улицах часто. Конечно, такая пара привлекает внимание прохожих. Мама, видя
+                            изумленные взгляды, смущается. Она пытается сделать замечание, но ребенок ее не слышит.
+                            Поменять ситуацию она больше не пытается. Грустно в этой ситуации то, что мама не хочет
+                            ничего менять, она это делает только на людях.</p>
+
+                        <p class="p-title"> Причин для такой увлеченности мало, мы назовем одну — ребенок играет и не
+                            мешает, а нам нужно быстро дойти до пункта А.</p>
+
+                        <p> Те способы преодоления игровой зависимости у подростков, которые будут описываться ниже,
+                            подходят только подросткам в силу сочетания их психологического и физического состояний в
+                            этот момент.</p>
+
+                        <p> В подростковом возрасте ребенок очень уязвим и агрессивен к любым посягательствам на его
+                            личное пространство. Вы как родитель «теряете» свой авторитет в его глазах — даже если Вы
+                            идеальный. Ребенок хочет самоутвердиться, показать, КАК он может! Особенно в этом возрасте
+                            старайтесь не командовать, не менять резко домашние правила. Лучше будет, если в окружении
+                            ребенка будет взрослый человек, через которого Вы сможете воздействовать на него. Может, это
+                            крестный, тетя, дядя, соседи, учитель, старший брат. Все ваши действия, направленные на
+                            изменение ситуации, постарайтесь передавать через такого человека.Причин для такой
+                            увлеченности может быть несколько, мы приведем пока одну — дома время игры ограничено и надо
+                            успеть сейчас.</p>
+
+                        <p class="p-title"> Второй пример:</p>
+
+                        <p> Мама и сын 10 лет. Мама ведет его из школы, держа за капюшон. Руки его заняты PSP. Он
+                            натыкается на заборы на узких дорожках, шлепает по лужам. Согласитесь, такую ситуацию мы не
+                            видим на улицах часто. Конечно, такая пара привлекает внимание прохожих. Мама, видя
+                            изумленные взгляды, смущается. Она пытается сделать замечание, но ребенок ее не слышит.
+                            Поменять ситуацию она больше не пытается. Грустно в этой ситуации то, что мама не хочет
+                            ничего менять, она это делает только на людях.</p>
+
+                        <p class="p-title"> Причин для такой увлеченности мало, мы назовем одну — ребенок играет и не
+                            мешает, а нам нужно быстро дойти до пункта А.</p>
+
+                        <p> Те способы преодоления игровой зависимости у подростков, которые будут описываться ниже,
+                            подходят только подросткам в силу сочетания их психологического и физического состояний в
+                            этот момент.</p>
+
+                        <p> В подростковом возрасте ребенок очень уязвим и агрессивен к любым посягательствам на его
+                            личное пространство. Вы как родитель «теряете» свой авторитет в его глазах — даже если Вы
+                            идеальный. Ребенок хочет самоутвердиться, показать, КАК он может! Особенно в этом возрасте
+                            старайтесь не командовать, не менять резко домашние правила. Лучше будет, если в окружении
+                            ребенка будет взрослый человек, через которого Вы сможете воздействовать на него. Может, это
+                            крестный, тетя, дядя, соседи, учитель, старший брат. Все ваши действия, направленные на
+                            изменение ситуации, постарайтесь передавать через такого человека.В подростковом возрасте
+                            ребенок очень уязвим и агрессивен к любым посягательствам на его личное пространство. Вы как
+                            родитель «теряете» свой авторитет в его глазах — даже если Вы идеальный. Ребенок хочет
+                            самоутвердиться, показать, КАК он может! Особенно в этом возрасте старайтесь не командовать,
+                            не менять резко домашние правила. Лучше будет, если в окружении ребенка будет взрослый
+                            человек, через которого Вы сможете воздействовать на него. Может, это крестный, тетя, дядя,
+                            соседи, учитель, старший брат. Все ваши действия, направленные на изменение ситуации,
+                            постарайтесь передавать через такого человека.</p>
+                    </div>
+                </div>
+                <div class="banner-side">
+                    <div class="banner">
+                        <div class="title">
+                            Детоксикация
+                            в клинике!
+                        </div>
+                        <div class="description">
+                            Детоксикая поможет справиться с фищическими недомоганиями в кроткий срок!
+                        </div>
+                        <img src="images/Mask Group (1).png" alt="img-bg" class="img-bg-bottom"/>
+                    </div>
+                    <div class="banner">
+                        <div class="title">
+                            Лечение героиновой зависимости!
+                        </div>
+                        <div class="description">
+                            Поможем составить план лечения и выбрать реабилитационный цент!
+                        </div>
+                        <img src="images/Mask Group (2).png" alt="img-bg" class="img-bg-bottom"/>
+                    </div>
+                    <div class="banner">
+                        <div class="title">
+                            Консультация нарколога онлайн.
+                        </div>
+                        <div class="description">
+                            Мы ответим на ваши вопросы онлайн, первая консультация бесплатно!
+                        </div>
+                        <img src="images/Mask Group (3).png" alt="img-bg" class="img-bg-bottom"/>
+                    </div>
+                    <div class="banner">
+                        <div class="title">
+                            Классическая интервенция
+                        </div>
+                        <div class="description">
+                            Поможем уговорить подростка на лечение. Возможность проведения экскурсии в РЦ.
+                        </div>
+                        <img src="images/Mask Group (4).png" alt="img-bg" class="img-bg-bottom"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+<footer>
+    <div class="wrapper">
+        <div class="f-content">
+            <div class="f-menu">
+                <div class="f-title">
+                    Портал
+                </div>
+                <ul>
+                    <li><a href="/"> Специализированная реабилитация</a></li>
+                    <li><a href="/">Обычная реабилитация</a></li>
+                    <li><a href="/"> Терапия с психологом</a></li>
+                    <li><a href="/"> Созависимым</a></li>
+                    <li><a href="/"> Наркозависмость</a></li>
+                    <li><a href="/"> Алкозависимость</a></li>
+                    <li><a href="/"> Игромания</a></li>
+                    <li><a href="/"> Как узнать о зависимости</a></li>
+                    <li><a href="/"> О портале</a></li>
+                    <li><a href="/"> Контакты</a></li>
+                </ul>
+            </div>
+            <div class="f-menu">
+                <div class="f-title">
+                    Услуги
+                </div>
+                <ul>
+                    <li><a href="/">Детоксикация</a></li>
+                    <li><a href="/">Реабилитация</a></li>
+                    <li><a href="/"> Нарклог на дом</a></li>
+                    <li><a href="/">Вывод из запоя</a></li>
+                    <li><a href="/"> Солевая зависимость</a></li>
+                    <li><a href="/">Героиновая зависимость</a></li>
+                    <li><a href="/"> ВИП лечение</a></li>
+                    <li><a href="/"> Амбулаторное лечение</a></li>
+                    <li><a href="/"> Кодирование</a></li>
+                    <li><a href="/"> Снятие ломки</a></li>
+                </ul>
+            </div>
+            <div class="f-menu">
+                <div class="f-title">
+                    База знаний
+                </div>
+                <ul>
+                    <li><a href="/">Все статьи</a></li>
+                    <li><a href="/">Солевая зависимость</a></li>
+                    <li><a href="/"> Наркомания</a></li>
+                    <li><a href="/"> Алкоголизм</a></li>
+                    <li><a href="/"> Игромания</a></li>
+                    <li><a href="/"> Другие типы зависимости</a></li>
+                    <li><a href="/"> Подростки</a></li>
+                    <li><a href="/"> Созависимым</a></li>
+                    <li><a href="/"> Лечение</a></li>
+                    <li><a href="/"> Другое</a></li>
+                </ul>
+            </div>
+            <div class="f-menu d-mobile">
+                <ul>
+                    <li><a href="/">Героиновая зависимость</a></li>
+                    <li><a href="/"> ВИП лечение</a></li>
+                    <li><a href="/"> Амбулаторное лечение</a></li>
+                    <li><a href="/"> Кодирование</a></li>
+                    <li><a href="/"> Снятие ломки</a></li>
+                    <li><a href="/">  Женский алкоголизм</a></li>
+                </ul>
+            </div>
+            <div class="f-menu">
+                <div class="f-logo">
+                    Время решений
+                </div>
+                <p>Портал помощи несовершеннолетним зависимым и их родителям</p>
+                <div class="phone-num">
+                    <a href="tel:">
+                        8 800 900 90 90
+                    </a>
+                    <p>Круглосуточная бесплатная помощь</p>
+                </div>
+                <div class="btn-call">
+                    <label class=" input-mask-group">
+                        <input type="text" id="phoneNumber4" placeholder="+7 ____ ____ - ___ -___"/>
+                        <i class="btn-icon">
+                            <img src="images/icons/email-svg.svg" alt="Email"/>
+                        </i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main-events.js?a=a"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
