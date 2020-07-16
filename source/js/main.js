@@ -1,6 +1,6 @@
 class MainApp {
     constructor() {
-        this.menu();
+        // this.menu();
 
         if (document.getElementById('services') !== null) {
             if(window.innerWidth > 767) {
@@ -636,228 +636,228 @@ class MainApp {
         document.getElementById('services').innerHTML += `${_block}`;
     }
 
-    menu() {
+    // menu() {
 
-        let _block_inner = ``;
-        let _obj = [
-            {
-                menu: 'Наркомания',
-                submenu: [
-                    {
-                        title: 'Как узнать о заивисимости?',
-                        link: '/'
-                    },
-                    {
-                        title: 'Специализированная реабилитация',
-                        link: '/'
-                    },
-                    {
-                        title: 'Снятие ломки',
-                        link: '/'
-                    },
-                    {
-                        title: 'Солевая зависимость',
-                        link: '/'
-                    },
-                    {
-                        title: 'Героиновая зависимость',
-                        link: '/'
-                    },
-                    {
-                        title: 'Спайсовая зависимость',
-                        link: '/'
-                    },
-                    {
-                        title: 'Семейная терапия',
-                        link: '/'
-                    },
-                    {
-                        title: 'ВИП лечение',
-                        link: '/'
-                    },
-                    {
-                        title: 'Амбулаторное лечение',
-                        link: '/'
-                    },
-                ]
-            },
-            {
-                menu: 'Алкоголизм',
-                submenu: [
-                    {
-                        title: 'Детоксикация',
-                        link: '/'
-                    },
-                    {
-                        title: 'Специализированная реабилитация',
-                        link: '/'
-                    },
-                    {
-                        title: 'Нарколог на дом',
-                        link: '/'
-                    },
-                    {
-                        title: ' Вывод из запоя',
-                        link: '/'
-                    },
-                    {
-                        title: 'Семейная терапия',
-                        link: '/'
-                    },
-                    {
-                        title: 'ВИП лечение',
-                        link: '/'
-                    },
-                    {
-                        title: 'Амбулаторное лечение',
-                        link: '/'
-                    },
-                    {
-                        title: 'Кодирование',
-                        link: '/'
-                    },
-                ]
-            },
-            {
-                menu: 'Игромания',
-                submenu: [
-                    {
-                        title: 'Специализированная реабилитация',
-                        link: '/'
-                    },
-                    {
-                        title: 'Интернет зависимость',
-                        link: '/'
-                    },
-                    {
-                        title: 'Online игры',
-                        link: '/'
-                    },
-                    {
-                        title: 'Семейная терапия',
-                        link: '/'
-                    },
-                    {
-                        title: 'ВИП лечение',
-                        link: '/'
-                    },
-                    {
-                        title: ' Амбулаторное лечение',
-                        link: '/'
-                    }
-                ]
-            },
-            {
-                menu: 'Созависимость',
-                submenu: [
-                    {
-                        title: 'Родственникам',
-                        link: '/'
-                    },
-                    {
-                        title: ' Семейная терапия',
-                        link: '/'
-                    },
-                    {
-                        title: 'Родителям (раздел статей)',
-                        link: '/'
-                    }
-                ]
-            },
-            {
-                menu: 'Реабилитация',
-                mainlink: 'catalog.html'
-                // submenu: [
-                //     {
-                //         title: 'Родственникам',
-                //         link: '/'
-                //     },
-                //     {
-                //         title: ' Семейная терапия',
-                //         link: '/'
-                //     },
-                //     {
-                //         title: 'Родителям (раздел статей)',
-                //         link: '/'
-                //     }
-                // ]
-            },
-            {
-                menu: 'Психолог',
-                mainlink: 'catalog.html'
-                // submenu: [
-                //     {
-                //         title: 'Родственникам',
-                //         link: '/'
-                //     },
-                //     {
-                //         title: ' Семейная терапия',
-                //         link: '/'
-                //     },
-                //     {
-                //         title: 'Родителям (раздел статей)',
-                //         link: '/'
-                //     }
-                // ]
-            },
-            {
+    //     let _block_inner = ``;
+    //     let _obj = [
+    //         {
+    //             menu: 'Наркомания',
+    //             submenu: [
+    //                 {
+    //                     title: 'Как узнать о заивисимости?',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Специализированная реабилитация',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Снятие ломки',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Солевая зависимость',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Героиновая зависимость',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Спайсовая зависимость',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Семейная терапия',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'ВИП лечение',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Амбулаторное лечение',
+    //                     link: '/'
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             menu: 'Алкоголизм',
+    //             submenu: [
+    //                 {
+    //                     title: 'Детоксикация',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Специализированная реабилитация',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Нарколог на дом',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: ' Вывод из запоя',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Семейная терапия',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'ВИП лечение',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Амбулаторное лечение',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Кодирование',
+    //                     link: '/'
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             menu: 'Игромания',
+    //             submenu: [
+    //                 {
+    //                     title: 'Специализированная реабилитация',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Интернет зависимость',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Online игры',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Семейная терапия',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'ВИП лечение',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: ' Амбулаторное лечение',
+    //                     link: '/'
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             menu: 'Созависимость',
+    //             submenu: [
+    //                 {
+    //                     title: 'Родственникам',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: ' Семейная терапия',
+    //                     link: '/'
+    //                 },
+    //                 {
+    //                     title: 'Родителям (раздел статей)',
+    //                     link: '/'
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             menu: 'Реабилитация',
+    //             mainlink: 'catalog.html'
+    //             // submenu: [
+    //             //     {
+    //             //         title: 'Родственникам',
+    //             //         link: '/'
+    //             //     },
+    //             //     {
+    //             //         title: ' Семейная терапия',
+    //             //         link: '/'
+    //             //     },
+    //             //     {
+    //             //         title: 'Родителям (раздел статей)',
+    //             //         link: '/'
+    //             //     }
+    //             // ]
+    //         },
+    //         {
+    //             menu: 'Психолог',
+    //             mainlink: 'catalog.html'
+    //             // submenu: [
+    //             //     {
+    //             //         title: 'Родственникам',
+    //             //         link: '/'
+    //             //     },
+    //             //     {
+    //             //         title: ' Семейная терапия',
+    //             //         link: '/'
+    //             //     },
+    //             //     {
+    //             //         title: 'Родителям (раздел статей)',
+    //             //         link: '/'
+    //             //     }
+    //             // ]
+    //         },
+    //         {
 
-                menu: 'О портале',
-                submenu: [
-                    {
-                        title: 'О портале “Время решений”',
-                        link: 'about.html'
-                    },
-                    {
-                        title: 'База знаний',
-                        link: 'knowledge_base.html'
-                    },
-                    {
-                        title: 'Контакты',
-                        link: 'contacts.html'
-                    }
-                ]
-            }
-        ];
+    //             menu: 'О портале',
+    //             submenu: [
+    //                 {
+    //                     title: 'О портале “Время решений”',
+    //                     link: 'about.html'
+    //                 },
+    //                 {
+    //                     title: 'База знаний',
+    //                     link: 'knowledge_base.html'
+    //                 },
+    //                 {
+    //                     title: 'Контакты',
+    //                     link: 'contacts.html'
+    //                 }
+    //             ]
+    //         }
+    //     ];
 
-        for (let prop in _obj) {
-            let item = _obj[prop];
-            let _dropdown = ``;
-            let _toggle_id = `menu-${prop}`;
+    //     for (let prop in _obj) {
+    //         let item = _obj[prop];
+    //         let _dropdown = ``;
+    //         let _toggle_id = `menu-${prop}`;
 
-            for (let _prop in item.submenu) {
-                let sub_item = item.submenu[_prop];
-                _dropdown += `<li>
-                            <a href="${sub_item.link}">${sub_item.title}</a>
-                            </li>`;
-            }
+    //         for (let _prop in item.submenu) {
+    //             let sub_item = item.submenu[_prop];
+    //             _dropdown += `<li>
+    //                         <a href="${sub_item.link}">${sub_item.title}</a>
+    //                         </li>`;
+    //         }
 
-            if (_dropdown !== '') {
-                _dropdown = `<ul class="sub-dropdown" id="${_toggle_id}">${_dropdown}</ul>`
-            } else {
-              let _single_link = _obj[prop].mainlink;
-              _block_inner += ` <li class="dropdown-toggle" data-toggle="${_toggle_id}">
-                         <a href="${_single_link}" class="menu-a clearfix">
-                         <span>${item.menu}</span>
-                         <span class="d-mobile pull-right plus-minus"><i></i></span>
-                         </a>
-                         ${_dropdown}
-                        </li>`;
+    //         if (_dropdown !== '') {
+    //             _dropdown = `<ul class="sub-dropdown" id="${_toggle_id}">${_dropdown}</ul>`
+    //         } else {
+    //           let _single_link = _obj[prop].mainlink;
+    //           _block_inner += ` <li class="dropdown-toggle" data-toggle="${_toggle_id}">
+    //                      <a href="${_single_link}" class="menu-a clearfix">
+    //                      <span>${item.menu}</span>
+    //                      <span class="d-mobile pull-right plus-minus"><i></i></span>
+    //                      </a>
+    //                      ${_dropdown}
+    //                     </li>`;
 
-              continue;
-            }
+    //           continue;
+    //         }
 
-            _block_inner += ` <li class="dropdown-toggle" data-toggle="${_toggle_id}">
-                         <a class="menu-a clearfix">
-                         <span>${item.menu}</span>
-                         <span class="d-mobile pull-right plus-minus"><i></i></span>
-                         </a>
-                         ${_dropdown}
-                        </li>`;
-        }
+    //         _block_inner += ` <li class="dropdown-toggle" data-toggle="${_toggle_id}">
+    //                      <a class="menu-a clearfix">
+    //                      <span>${item.menu}</span>
+    //                      <span class="d-mobile pull-right plus-minus"><i></i></span>
+    //                      </a>
+    //                      ${_dropdown}
+    //                     </li>`;
+    //     }
 
-        let _block = `  <ul class="menu-ul">${_block_inner}</ul>`;
-        document.getElementById('m-menu').innerHTML = `${_block}`;
-    }
+    //     let _block = `  <ul class="menu-ul">${_block_inner}</ul>`;
+    //     document.getElementById('m-menu').innerHTML = `${_block}`;
+    // }
 }
 new MainApp();
