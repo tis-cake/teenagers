@@ -114,6 +114,9 @@ header {
 .overflow-hidden {
   overflow: hidden; }
 
+.phoneNumber:-moz-ui-invalid {
+  box-shadow: none; }
+
 .d-none {
   display: none !important; }
 

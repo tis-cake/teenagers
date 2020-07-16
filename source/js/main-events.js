@@ -263,4 +263,6 @@ $(document).ready(function () {
     //         mask: '+{7} 000 000-00-00'
     //     });
     // }
+
+    $(".phoneNumber").mask("+7 999 999-99-99");
 });

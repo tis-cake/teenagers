@@ -606,7 +606,7 @@ class MainApp {
 
 
             _block_inner += `<div>
-<!--                               <a href="${item.more_link}">  -->
+                      <!-- <a href="${item.more_link}">  -->
                                     <div class="top">
                                         <div class="icon">
                                             <img src="${item.icon}" alt="icon1"/>
@@ -627,7 +627,7 @@ class MainApp {
                                              <a href="${item.more_link}" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
                                         </div>
                                     </div>
-<!--                                </a>-->
+          <!--             </a>-->
                           </div>`;
         }
 
@@ -648,27 +648,35 @@ class MainApp {
                         link: '/'
                     },
                     {
-                        title: 'Алкоголизм',
+                        title: 'Специализированная реабилитация',
                         link: '/'
                     },
                     {
-                        title: 'Игромания',
+                        title: 'Снятие ломки',
                         link: '/'
                     },
                     {
-                        title: 'Созависимость',
+                        title: 'Солевая зависимость',
                         link: '/'
                     },
                     {
-                        title: 'Реабилитация',
+                        title: 'Героиновая зависимость',
                         link: '/'
                     },
                     {
-                        title: 'Психолог',
+                        title: 'Спайсовая зависимость',
                         link: '/'
                     },
                     {
-                        title: 'О портале',
+                        title: 'Семейная терапия',
+                        link: '/'
+                    },
+                    {
+                        title: 'ВИП лечение',
+                        link: '/'
+                    },
+                    {
+                        title: 'Амбулаторное лечение',
                         link: '/'
                     },
                 ]
@@ -726,6 +734,10 @@ class MainApp {
                         link: '/'
                     },
                     {
+                        title: 'Семейная терапия',
+                        link: '/'
+                    },
+                    {
                         title: 'ВИП лечение',
                         link: '/'
                     },
@@ -754,37 +766,39 @@ class MainApp {
             },
             {
                 menu: 'Реабилитация',
-                submenu: [
-                    {
-                        title: 'Родственникам',
-                        link: '/'
-                    },
-                    {
-                        title: ' Семейная терапия',
-                        link: '/'
-                    },
-                    {
-                        title: 'Родителям (раздел статей)',
-                        link: '/'
-                    }
-                ]
+                mainlink: 'catalog.html'
+                // submenu: [
+                //     {
+                //         title: 'Родственникам',
+                //         link: '/'
+                //     },
+                //     {
+                //         title: ' Семейная терапия',
+                //         link: '/'
+                //     },
+                //     {
+                //         title: 'Родителям (раздел статей)',
+                //         link: '/'
+                //     }
+                // ]
             },
             {
                 menu: 'Психолог',
-                submenu: [
-                    {
-                        title: 'Родственникам',
-                        link: '/'
-                    },
-                    {
-                        title: ' Семейная терапия',
-                        link: '/'
-                    },
-                    {
-                        title: 'Родителям (раздел статей)',
-                        link: '/'
-                    }
-                ]
+                mainlink: 'catalog.html'
+                // submenu: [
+                //     {
+                //         title: 'Родственникам',
+                //         link: '/'
+                //     },
+                //     {
+                //         title: ' Семейная терапия',
+                //         link: '/'
+                //     },
+                //     {
+                //         title: 'Родителям (раздел статей)',
+                //         link: '/'
+                //     }
+                // ]
             },
             {
 
@@ -792,15 +806,15 @@ class MainApp {
                 submenu: [
                     {
                         title: 'О портале “Время решений”',
-                        link: '/'
+                        link: 'about.html'
                     },
                     {
                         title: 'База знаний',
-                        link: '/'
+                        link: 'knowledge_base.html'
                     },
                     {
                         title: 'Контакты',
-                        link: '/'
+                        link: 'contacts.html'
                     }
                 ]
             }
@@ -820,6 +834,17 @@ class MainApp {
 
             if (_dropdown !== '') {
                 _dropdown = `<ul class="sub-dropdown" id="${_toggle_id}">${_dropdown}</ul>`
+            } else {
+              let _single_link = _obj[prop].mainlink;
+              _block_inner += ` <li class="dropdown-toggle" data-toggle="${_toggle_id}">
+                         <a href="${_single_link}" class="menu-a clearfix">
+                         <span>${item.menu}</span>
+                         <span class="d-mobile pull-right plus-minus"><i></i></span>
+                         </a>
+                         ${_dropdown}
+                        </li>`;
+
+              continue;
             }
 
             _block_inner += ` <li class="dropdown-toggle" data-toggle="${_toggle_id}">
