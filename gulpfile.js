@@ -6,14 +6,17 @@ const sourcemap = require("gulp-sourcemaps");
 const scss = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const watch = require('gulp-watch');
 const server = require("browser-sync").create();
 const uglify = require('gulp-uglify-es').default;
 
 gulp.task("css", function () {
   return gulp.src("source/scss/style.scss")
+
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(scss())
+    // .pipe(scss({ includePaths : ['./source/assets/scss/main/'] }))
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))

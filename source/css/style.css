@@ -1,58 +1,110 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Conv_ofont.ru_Futura PT';
-  src: url("../fonts/ofont/ofont.ru_Futura PT.eot");
-  src: local("☺"), url("../fonts/ofont/ofont.ru_Futura PT.woff") format("woff"), url("../fonts/ofont/ofont.ru_Futura PT.ttf") format("truetype"), url("../fonts/ofont/ofont.ru_Futura PT.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-display: swap;
+  font-family: 'Futura PT';
+  src: local("Futura PT Bold Italic"), local("Futura-PT-Bold-Italic"), url("../fonts/Futura-PT/FuturaPT-BoldIt.woff2") format("woff2"), url("../fonts/Futura-PT/FuturaPT-BoldIt.woff") format("woff"), url("../fonts/Futura-PT/FuturaPT-BoldIt.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
 
 @font-face {
+  font-display: swap;
   font-family: 'Circe';
   src: url("../fonts/circe/Circe-Regular.eot");
-  src: local("Circe"), local("Circe-Regular"), url("../fonts/circe/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/circe/Circe-Regular.woff") format("woff"), url("../fonts/circe/Circe-Regular.ttf") format("truetype");
-  font-weight: normal;
+  src: local("Circe"), local("Circe-Regular"), url("../fonts/Circe/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Regular.woff") format("woff"), url("../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
+  font-display: swap;
   font-family: 'Circe';
   src: url("../fonts/circe/Circe-ExtraLight.eot");
-  src: local("Circe ExtraLight"), local("Circe-ExtraLight"), url("../fonts/circe/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/circe/Circe-ExtraLight.woff") format("woff"), url("../fonts/circe/Circe-ExtraLight.ttf") format("truetype");
+  src: local("Circe ExtraLight"), local("Circe-ExtraLight"), url("../fonts/Circe/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-ExtraLight.woff") format("woff"), url("../fonts/Circe/Circe-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
+  font-display: swap;
   font-family: 'Circe';
   src: url("../fonts/circe/Circe-Thin.eot");
-  src: local("Circe Thin"), local("Circe-Thin"), url("../fonts/circe/Circe-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/circe/Circe-Thin.woff") format("woff"), url("../fonts/circe/Circe-Thin.ttf") format("truetype");
+  src: local("Circe Thin"), local("Circe-Thin"), url("../fonts/Circe/Circe-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Thin.woff") format("woff"), url("../fonts/Circe/Circe-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
+  font-display: swap;
   font-family: 'Circe';
   src: url("../fonts/circe/Circe-Light.eot");
-  src: local("Circe Light"), local("Circe-Light"), url("../fonts/circe/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/circe/Circe-Light.woff") format("woff"), url("../fonts/circe/Circe-Light.ttf") format("truetype");
+  src: local("Circe Light"), local("Circe-Light"), url("../fonts/Circe/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Light.woff") format("woff"), url("../fonts/Circe/Circe-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
+  font-display: swap;
   font-family: 'Circe';
   src: url("../fonts/circe/Circe-Bold.eot");
-  src: local("Circe Bold"), local("Circe-Bold"), url("../fonts/circe/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/circe/Circe-Bold.woff") format("woff"), url("../fonts/circe/Circe-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: local("Circe Bold"), local("Circe-Bold"), url("../fonts/Circe/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Bold.woff") format("woff"), url("../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
+  font-display: swap;
   font-family: 'Circe';
   src: url("../fonts/circe/Circe-ExtraBold.eot");
-  src: local("Circe ExtraBold"), local("Circe-ExtraBold"), url("../fonts/circe/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/circe/Circe-ExtraBold.woff") format("woff"), url("../fonts/circe/Circe-ExtraBold.ttf") format("truetype");
+  src: local("Circe ExtraBold"), local("Circe-ExtraBold"), url("../fonts/Circe/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe/Circe-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
+
+html {
+  font-size: 62.5%; }
+
+@media (max-width: 113em) {
+  html {
+    font-size: 54%; } }
+
+@media (max-width: 108em) {
+  html {
+    font-size: 52%; } }
+
+@media (max-width: 105em) {
+  html {
+    font-size: 50%; } }
+
+@media (max-width: 96em) {
+  html {
+    font-size: 48%; } }
+
+@media (max-width: 90em) {
+  html {
+    font-size: 46.875%; } }
+
+@media (max-width: 80em) {
+  html {
+    font-size: 41.667%; } }
+
+@media (max-width: 69em) {
+  html {
+    font-size: 33.333%; } }
+
+@media (max-width: 48em) {
+  html {
+    font-size: 62.5%; } }
+
+@media (max-width: 23em) {
+  html {
+    font-size: 60%; } }
+
+@media (max-width: 22em) {
+  html {
+    font-size: 58%; } }
+
+@media (max-width: 21em) {
+  html {
+    font-size: 53%; } }
 
 body, html {
   padding: 0;
   box-sizing: border-box;
   background: #f4f7ff;
-  max-width: 1920px;
   margin: 0 auto; }
 
 header {
@@ -86,7 +138,7 @@ header {
 
 * {
   box-sizing: border-box;
-  font-family: "Circe"; }
+  font-family: "Circe", "Arial", sans-serif; }
 
 a {
   text-decoration: none;
@@ -162,7 +214,7 @@ h1, h2, h3, h4, h5, h6, p {
       .list-ol > div .icon-bar.bg-4 {
         background-image: url("../images/icons/4.png"); }
       .list-ol > div .icon-bar span {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 40px;
@@ -172,14 +224,14 @@ h1, h2, h3, h4, h5, h6, p {
     .list-ol > div .title {
       margin-bottom: 25px; }
       .list-ol > div .title .h6 {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 22px;
         line-height: 1.27;
         color: #2D2C42; }
     .list-ol > div .description {
-      font-family: "Circe";
+      font-family: "Circe", "Arial", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -206,7 +258,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: block; }
 
 .h1 {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -214,14 +266,14 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2D2C42; }
 
 .h3 {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   color: #2D2C42; }
 
 .h6-title {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -229,7 +281,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2D2C42; }
 
 .h6-title-sm {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -237,7 +289,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2D2C42; }
 
 .text-purple {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -245,7 +297,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #A253C5; }
 
 .text-gray {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -253,7 +305,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #88879C; }
 
 .text-purple-sm {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -261,7 +313,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #A253C5; }
 
 .p-light {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -269,7 +321,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #777777; }
 
 .p-normal {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -277,7 +329,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #3E3C56; }
 
 .p-main, p {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -289,10 +341,10 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   align-items: center; }
   .form-button > div:not(:last-child) {
-    padding: 0 30px 0 0; }
+    padding: 0 25px 0 0; }
 
 .text-light p {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -300,7 +352,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2D2C42; }
 
 p {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -308,7 +360,7 @@ p {
   color: #2D2C42; }
 
 .p-bold {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -343,10 +395,14 @@ p {
   .reviews-bar .stars {
     list-style: none;
     margin: 0;
+    margin-bottom: 4px;
     padding: 0;
     display: flex;
     width: 110px;
     justify-content: space-between; }
+    .reviews-bar .stars li {
+      display: flex;
+      align-items: center; }
     .reviews-bar .stars img {
       width: 100%; }
     .reviews-bar .stars.stars-lg {
@@ -355,7 +411,7 @@ p {
         width: 34px;
         height: 34px; }
   .reviews-bar .reviews {
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -435,7 +491,8 @@ p {
 .input-mask-group {
   display: block;
   width: 200px;
-  position: relative; }
+  position: relative;
+  transition: all 0.4s ease; }
   .input-mask-group:before {
     content: "";
     position: absolute;
@@ -446,7 +503,10 @@ p {
     border-radius: 180px;
     background: #D9E0ED;
     border: 2px solid #CFD4E2;
-    transform: perspective(156px) rotateY(-16deg); }
+    transform: perspective(156px) rotateY(-16deg);
+    transition: inherit; }
+  .input-mask-group:hover::before {
+    box-shadow: 0px 16.9767px 33.9535px #9192A1; }
   .input-mask-group .btn-icon {
     width: 48px;
     height: 47px;
@@ -474,7 +534,7 @@ p {
     outline: none;
     position: relative;
     z-index: 4;
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -482,7 +542,7 @@ p {
     color: #9192A1; }
 
 .h3-title {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -541,7 +601,7 @@ p {
     background-repeat: no-repeat;
     background-size: 100% 100%; }
   .banner-card .content-bar {
-    padding: 90px 10px 20px 10px;
+    padding: 83px 10px 74px 10px;
     position: relative;
     z-index: 9; }
     .banner-card .content-bar.p-70-10 {
@@ -587,7 +647,7 @@ p {
   vertical-align: bottom; }
 
 .form-button {
-  margin-top: 22px; }
+  margin-top: 25px; }
   .form-button.m-45 {
     margin-top: 45px; }
   .form-button.m-30 {
@@ -693,7 +753,7 @@ p {
         text-align: center;
         margin: -8px 0 0 0; }
     .list-bottom-bg > div .bottom .h6 {
-      font-family: "Circe";
+      font-family: "Circe", "Arial", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 28px;
@@ -713,16 +773,18 @@ p {
       box-shadow: 20px 40px 100px rgba(254, 188, 128, 0.7); }
 
 .treatment_methods {
-  padding: 160px 0 0 0; }
+  padding: 167px 0 0 0; }
   .treatment_methods.p-185 {
     padding: 185px 0 0 0; }
   .treatment_methods .title {
     padding: 0 0 20px 0; }
   .treatment_methods .banner-card {
     margin: 155px 0 0 0; }
+  .treatment_methods .form-button > div:not(:last-child) {
+    padding-right: 10px; }
 
 .btn-more {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -745,7 +807,7 @@ p {
   border: 0;
   outline: none;
   background-color: transparent;
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -820,7 +882,7 @@ p {
   border: 0;
   outline: none;
   background-color: transparent;
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -871,7 +933,7 @@ p {
     display: inline-block; }
   .btn.btn-sm {
     font-size: 12px !important;
-    padding: 7px 24px !important; }
+    padding: 5px 22px !important; }
     .btn.btn-sm:before {
       top: 0px;
       left: -6px;
@@ -984,7 +1046,7 @@ p {
     .btn.btn-default.btn-sm {
       font-size: 12px !important;
       padding: 7px 12px !important; }
-    .btn.btn-default:hover {
+    .btn.btn-default:hover::before {
       box-shadow: 0px 16.9767px 33.9535px #9192A1; }
   .btn.btn-cyan {
     color: #ffffff; }
@@ -1003,7 +1065,7 @@ p {
   border: 5px solid #1C1B2C;
   box-sizing: border-box;
   border-radius: 45px;
-  margin-top: 10px;
+  margin-top: 18px;
   position: relative;
   max-width: 1400px;
   height: 108px;
@@ -1113,7 +1175,7 @@ p {
           bottom: 15px;
           transform: rotate(-405deg); }
     .menu .m-logo span {
-      font-family: "Conv_ofont.ru_Futura PT";
+      font-family: "Futura PT", "Arial", sans-serif;
       font-style: italic;
       font-weight: bold;
       font-size: 27px;
@@ -1139,7 +1201,7 @@ p {
       width: 100%; }
       .menu .m-menu .menu-ul > li {
         display: table-cell;
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
         line-height: 78px;
@@ -1179,7 +1241,7 @@ p {
           margin: 0;
           padding: 17px 12px 20px 21px;
           width: 235px;
-          font-family: "Circe";
+          font-family: "Circe", "Arial", sans-serif;
           font-style: normal;
           font-weight: normal;
           transition: all 0.4s ease;
@@ -1223,14 +1285,14 @@ p {
       .menu .m-contacts .contacts a {
         display: block; }
       .menu .m-contacts .contacts .phone-num {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 19px;
         line-height: 18px;
         color: #FFFFFF; }
       .menu .m-contacts .contacts .email {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -1255,7 +1317,7 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   height: 20px;
-  margin: 10px 0 0 0; }
+  margin-top: 13px; }
 
 .ul-path ul {
   display: table;
@@ -1264,9 +1326,9 @@ p {
   .ul-path ul li {
     display: table-cell;
     position: relative;
-    padding: 0px 35px 0 0; }
+    padding: 0 27px 0 0; }
     .ul-path ul li a {
-      font-family: "Circe";
+      font-family: "Circe", "Arial", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -1279,7 +1341,7 @@ p {
       background: #3E3C56;
       top: 50%;
       position: absolute;
-      right: 16px;
+      right: 11px;
       border-radius: 50%;
       transform: translate(0, -50%); }
 
@@ -1294,7 +1356,7 @@ p {
   .main-block.bg-e9edf5, .main-block .block-1 {
     background-color: #e9edf5 !important; }
   .main-block .main-img {
-    width: 50%;
+    width: 50.5%;
     display: table-cell;
     vertical-align: bottom;
     position: relative;
@@ -1309,13 +1371,13 @@ p {
       -o-object-position: top;
          object-position: top; }
   .main-block .block-1 {
-    padding-bottom: 73px;
+    padding-bottom: 80px;
     height: 100%;
     align-items: flex-end;
     display: inline-flex;
     position: relative;
     z-index: 5;
-    width: 50%; }
+    width: 49.5%; }
     .main-block .block-1:before {
       content: "";
       width: 270px;
@@ -1348,7 +1410,7 @@ p {
     .main-block .block-1 .w-555 {
       width: 555px; }
     .main-block .block-1 .title {
-      margin: 50px 0 0 0; }
+      margin-top: 44px; }
     .main-block .block-1 .flex-card {
       position: relative;
       z-index: 8; }
@@ -1385,7 +1447,7 @@ p {
       height: 18px; }
   .list-ul li {
     display: block;
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1415,6 +1477,8 @@ p {
         padding: 35px 0 0 0;
         width: 100%; }
   .services .services-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: 25px 0 0 0; }
     .services .services-list > div {
       width: 323px;
@@ -1428,22 +1492,36 @@ p {
       vertical-align: top;
       margin-bottom: 50px;
       transition: all 0.4s ease; }
+      .services .services-list > div .btn,
+      .services .services-list > div .btn::before,
+      .services .services-list > div .btn::after {
+        transition: all 0s, box-shadow 0.4s; }
+      .services .services-list > div:hover {
+        transform: translateY(-20px); }
+        .services .services-list > div:hover .btn {
+          color: #9192A1; }
+          .services .services-list > div:hover .btn::before {
+            background-image: linear-gradient(180deg, #E8EBF1 0%, #E8EBF1 100%); }
+          .services .services-list > div:hover .btn::after {
+            background-image: linear-gradient(to bottom, #D8DCE7, #D8DCE7);
+            border-bottom: 4px solid #D8DCE7;
+            border-top: 2px solid #D8DCE7; }
+          .services .services-list > div:hover .btn:hover::before {
+            box-shadow: 0px 10px 20px #E2E5EE; }
       .services .services-list > div:not(:nth-child(4n)) {
         margin-right: 35px; }
       .services .services-list > div .top {
         display: flex; }
         .services .services-list > div .top .description {
-          margin: -5px 0 0 20px; }
-          .services .services-list > div .top .description .h6-title {
-            padding: 4px 0 0 0; }
+          margin: -5px 0 0 17px; }
       .services .services-list > div .middle ul {
-        margin: 14px -10px 0 -10px;
+        margin: 12px 0px 0 -10px;
         padding: 0; }
         .services .services-list > div .middle ul li {
           position: relative;
           display: inline-block; }
           .services .services-list > div .middle ul li a {
-            font-family: "Circe";
+            font-family: "Circe", "Arial", sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -1453,13 +1531,15 @@ p {
             color: #3E3C56;
             padding: 0 10px; }
           .services .services-list > div .middle ul li:not(:last-child) a:after {
-            width: 1px;
-            height: 16px;
             right: 0;
-            top: 7px;
+            width: 2px;
+            height: 11px;
+            top: 9px;
             background: #3E3C56;
             content: "";
             position: absolute; }
+      .services .services-list > div .reviews-bar {
+        padding: 15px 20px 0 0; }
 
 .title-group .title-left {
   float: left; }
@@ -1512,24 +1592,27 @@ p {
   padding: 160px 0 0 0;
   flex-wrap: wrap; }
   .rehabilitation_list_items > div {
+    position: relative;
     width: 323px;
     min-height: 272px;
     background: #FFFFFF;
     border-radius: 20px;
     transition: all 0.3s ease;
-    padding: 0 20px 0 20px;
-    margin: 0 0 140px 0; }
+    padding: 74px 20px 0 20px;
+    margin: 0 0 140px 0;
+    box-shadow: 10px 20px 25px #EDF0FA; }
     .rehabilitation_list_items > div .item-title {
-      margin: 23px 0 5px 0; }
+      margin: 15px 0 7px 0; }
     .rehabilitation_list_items > div .image-bar {
+      position: absolute;
+      top: -97px;
       width: 176px;
       height: 170px;
       background: #FFFFFF;
       border: 4px solid #D9D9F1;
       box-sizing: border-box;
       border-radius: 20px;
-      overflow: hidden;
-      margin: -100px 0 0 0; }
+      overflow: hidden; }
       .rehabilitation_list_items > div .image-bar img {
         width: 100%;
         height: 100%;
@@ -1537,9 +1620,25 @@ p {
         border-radius: 20px;
         -o-object-fit: cover;
            object-fit: cover; }
+    .rehabilitation_list_items > div .btn,
+    .rehabilitation_list_items > div .btn::before,
+    .rehabilitation_list_items > div .btn::after {
+      transition: all 0s, box-shadow 0.4s; }
+    .rehabilitation_list_items > div:hover {
+      transform: translateY(-20px); }
+      .rehabilitation_list_items > div:hover .btn {
+        color: #9192A1; }
+        .rehabilitation_list_items > div:hover .btn::before {
+          background-image: linear-gradient(180deg, #E8EBF1 0%, #E8EBF1 100%); }
+        .rehabilitation_list_items > div:hover .btn::after {
+          background-image: linear-gradient(to bottom, #D8DCE7, #D8DCE7);
+          border-bottom: 4px solid #D8DCE7;
+          border-top: 2px solid #D8DCE7; }
+        .rehabilitation_list_items > div:hover .btn:hover::before {
+          box-shadow: 0px 10px 20px #E2E5EE; }
 
 .rehabilitation_centers {
-  padding: 150px 0 0 0; }
+  padding: 165px 0 0 0; }
   .rehabilitation_centers.p-180 {
     padding: 180px 0 0 0; }
   .rehabilitation_centers.p-155 {
@@ -1553,9 +1652,9 @@ p {
   .rehabilitation_centers.p-220 {
     padding: 220px 0 0 0; }
   .rehabilitation_centers .banner-card {
-    margin: 158px 0 0 0; }
+    margin: 18px 0 0 0; }
     .rehabilitation_centers .banner-card .content-bar {
-      padding: 97px 10px 0 10px; }
+      padding: 97px 10px 100px 10px; }
     .rehabilitation_centers .banner-card .title {
       margin: 45px 0 12px 0; }
     .rehabilitation_centers .banner-card .form-button {
@@ -1567,7 +1666,7 @@ p {
   .solutions li {
     display: block;
     position: relative;
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1590,7 +1689,7 @@ p {
   .solutions-light li {
     display: block;
     position: relative;
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1608,7 +1707,7 @@ p {
       background: #A253C5; }
 
 .solutions_possible_problems {
-  padding: 148px 0 0 0; }
+  padding: 153px 0 0 0; }
   .solutions_possible_problems .solutions-list {
     display: flex;
     justify-content: space-between;
@@ -1620,7 +1719,8 @@ p {
       padding: 0 25px;
       box-shadow: 20px 50px 120px #C7CCE0;
       border-radius: 100%;
-      z-index: 3; }
+      z-index: 3;
+      padding-top: 158px; }
       .solutions_possible_problems .solutions-list > div > div, .solutions_possible_problems .solutions-list > div p, .solutions_possible_problems .solutions-list > div ul {
         position: relative;
         z-index: 2; }
@@ -1656,14 +1756,19 @@ p {
         text-align: center;
         height: 164px;
         vertical-align: bottom;
-        position: relative; }
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(50%); }
         .solutions_possible_problems .solutions-list > div .image-bar img {
           position: absolute;
           bottom: 20px;
           left: 50%;
           transform: translate(-50%, 0); }
+      .solutions_possible_problems .solutions-list > div .title {
+        margin-bottom: 13px; }
       .solutions_possible_problems .solutions-list > div .text-purple-sm {
-        line-height: 45px; }
+        margin-bottom: 4px; }
       .solutions_possible_problems .solutions-list > div .solutions li {
         font-size: 16px;
         line-height: 1.33;
@@ -1673,17 +1778,17 @@ p {
           width: 8px;
           height: 2px; }
   .solutions_possible_problems .banner-card {
-    margin: 170px 0 0 0; }
+    margin: 164px 0 0 0; }
     .solutions_possible_problems .banner-card .content-bar {
-      padding: 100px 0 0 10px; }
+      padding: 100px 0 93px 10px; }
       .solutions_possible_problems .banner-card .content-bar .inline-title .h1 {
-        padding: 50px 0 0 0;
+        padding: 42px 0 0 0;
         width: 100%; }
       .solutions_possible_problems .banner-card .content-bar .text-light {
         width: calc(100% - 100px); }
 
 .what_i_do_now {
-  margin: 155px 0 0 0; }
+  margin: 160px 0 0 0; }
   .what_i_do_now .list-ol {
     margin: 80px 0 0 0; }
 
@@ -1695,6 +1800,8 @@ p {
     padding: 0 0 160px 0; }
   .teenage_addiction.p-225 {
     padding: 225px 0 0 0; }
+  .teenage_addiction .banner-side .title {
+    margin: 0 0 16px 0; }
   .teenage_addiction .title {
     margin: 0 0 45px 0; }
 
@@ -1743,7 +1850,7 @@ p {
   .content-main.mt-45 {
     margin: 45px 0 0 0; }
   .content-main p {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1752,7 +1859,7 @@ p {
   .content-main .p-title {
     font-weight: bold;
     font-size: 26px;
-    margin: 35px 0; }
+    margin: 35px 0 28px 0; }
     .content-main .p-title.m-45 {
       margin: 45px 0 0 0; }
   .content-main .btn-bar {
@@ -1795,7 +1902,7 @@ p {
   min-height: 443px;
   background-color: #E9EDF5;
   border-radius: 40px;
-  padding: 55px 25px;
+  padding: 55px 35px 0 25px;
   margin-bottom: 40px;
   position: relative; }
   .banner.p-55-15 {
@@ -1816,7 +1923,7 @@ p {
   .banner.bg-5 {
     background-image: url("../images/Mask Group.png"); }
   .banner .title {
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -1826,7 +1933,7 @@ p {
       font-size: 23px;
       line-height: 28px; }
   .banner .description {
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1875,7 +1982,7 @@ footer {
             font-weight: bold;
             transition: all 0.3s ease; }
       footer .f-content .f-menu .f-logo {
-        font-family: "Conv_ofont.ru_Futura PT";
+        font-family: "Futura PT", "Arial", sans-serif;
         font-style: italic;
         font-weight: bold;
         font-size: 35px;
@@ -2031,13 +2138,13 @@ footer {
 .steps-list {
   display: flex;
   justify-content: space-between;
-  margin: 70px 0 0 0; }
+  margin: 75px 0 0 0; }
   .steps-list.st-1 > div {
     height: 200px; }
   .steps-list > div {
     width: 323px;
     min-height: 272px;
-    padding: 0 23px 0 20px;
+    padding: 0 40px 0 20px;
     background: #FFFFFF;
     border-radius: 20px;
     border-bottom: 6px solid #D9D9F1;
@@ -2105,7 +2212,7 @@ footer {
 .goals-list .icon-bar, .steps-list .icon-bar {
   text-align: center; }
   .goals-list .icon-bar .text-icon, .steps-list .icon-bar .text-icon {
-    font-family: "Circe";
+    font-family: "Circe", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
@@ -2184,7 +2291,7 @@ footer {
         background: #FFFFFF;
         border-bottom: 6px solid #FFFFFF; }
       .reviews .reviews-list > div .video-player .label {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -2192,7 +2299,7 @@ footer {
         color: #A253C5;
         margin: 8px 0 0 0; }
       .reviews .reviews-list > div .username {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 28px;
@@ -2202,7 +2309,7 @@ footer {
           font-size: 22px;
           line-height: 30px; }
       .reviews .reviews-list > div .date {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -2210,7 +2317,7 @@ footer {
         /* identical to box height, or 187% */
         color: #777777; }
       .reviews .reviews-list > div .review {
-        font-family: "Circe";
+        font-family: "Circe", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -2300,7 +2407,7 @@ footer {
         .signs_addiction .signs_addiction_list > div .icon-bar > div {
           display: inline-block; }
         .signs_addiction .signs_addiction_list > div .icon-bar .text-icon {
-          font-family: "Circe";
+          font-family: "Circe", "Arial", sans-serif;
           font-style: normal;
           font-weight: 800;
           font-size: 40px;

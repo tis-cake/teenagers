@@ -44,7 +44,7 @@ $(document).ready(function () {
         _services.services(2);
         $(this).fadeOut();
     });
-    form_musk ();
+    // form_musk ();
 
     function photoGallery() {
 
@@ -89,7 +89,6 @@ $(document).ready(function () {
 
     }
     function webinars() {
-//
         let obj = [
             {
                 src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
@@ -157,7 +156,6 @@ $(document).ready(function () {
         return `<div class="webinars-list" id="more-webinars"> ${_more} <div>`;
     }
     function specialists() {
-//
         let obj = [
             {
                 name: 'Виктория Проказникова',
@@ -228,7 +226,7 @@ $(document).ready(function () {
                             </div>
                             <div class="specialist-licence">
                                  <div class="file-download" data-licence="${_item.licence}">Лицензия</div>
-                            </div>                
+                            </div>
                       </div>`;
         }
 
@@ -236,36 +234,33 @@ $(document).ready(function () {
     }
 
 
-    function form_musk () {
-        var phoneMask = IMask(document.getElementById('phoneNumber'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask1 = IMask(document.getElementById('phoneNumber1'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask2 = IMask(document.getElementById('phoneNumber2'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask3 = IMask(document.getElementById('phoneNumber3'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask4 = IMask(document.getElementById('phoneNumber4'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask6 = IMask(document.getElementById('phoneNumber6'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask5 = IMask(document.getElementById('phoneNumber5'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask7 = IMask(document.getElementById('phoneNumber7'), {
-            mask: '+{7} 000 000-00-00'
-        });
-        var phoneMask9 = IMask(document.getElementById('phoneNumber9'), {
-            mask: '+{7} 000 000-00-00'
-        });
-
-    }
-
-
+    // function form_musk () {
+    //     var phoneMask = IMask(document.getElementById('phoneNumber'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask1 = IMask(document.getElementById('phoneNumber1'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask2 = IMask(document.getElementById('phoneNumber2'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask3 = IMask(document.getElementById('phoneNumber3'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask4 = IMask(document.getElementById('phoneNumber4'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask6 = IMask(document.getElementById('phoneNumber6'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask5 = IMask(document.getElementById('phoneNumber5'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask7 = IMask(document.getElementById('phoneNumber7'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    //     var phoneMask9 = IMask(document.getElementById('phoneNumber9'), {
+    //         mask: '+{7} 000 000-00-00'
+    //     });
+    // }
 });
