@@ -54,9 +54,6 @@
   font-weight: 800;
   font-style: normal; }
 
-html {
-  font-size: 62.5%; }
-
 @media (max-width: 113em) {
   html {
     font-size: 54%; } }
@@ -101,11 +98,17 @@ html {
   html {
     font-size: 53%; } }
 
+html {
+  font-size: 62.5%; }
+
 body, html {
   padding: 0;
   box-sizing: border-box;
   background: #f4f7ff;
   margin: 0 auto; }
+
+body {
+  font-size: 1.8rem; }
 
 header {
   position: relative;
