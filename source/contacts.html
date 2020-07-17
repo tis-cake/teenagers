@@ -240,7 +240,7 @@
                         </div>
                         <div>
                             <label class=" input-mask-group">
-                                <input class="phoneNumber" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
+                                <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
                                 <i class="btn-icon">
                                     <img src="images/icons/email-svg.svg" alt="Email"/>
                                 </i>
@@ -277,7 +277,7 @@
                         </div>
                         <div>
                             <label class=" input-mask-group">
-                                <input class="phoneNumber" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
+                                <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
                                 <i class="btn-icon">
                                     <img src="images/icons/email-svg.svg" alt="Email"/>
                                 </i>
@@ -359,18 +359,18 @@
                 </div>
                 <p>Портал помощи несовершеннолетним зависимым и их родителям</p>
                 <div class="phone-num">
-                    <a href="tel:">
+                    <a href="tel:+78009009090">
                         8 800 900 90 90
                     </a>
                     <p>Круглосуточная бесплатная помощь</p>
                 </div>
                 <div class="btn-call">
-                    <label class=" input-mask-group">
-                        <input class="phoneNumber" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
+                    <form method="POST" action="" class=" input-mask-group">
+                        <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
                         <i class="btn-icon">
                             <img src="images/icons/email-svg.svg" alt="Email"/>
                         </i>
-                    </label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -392,20 +392,20 @@
                     <div class="oval-container-form">
                         <div class="flex-card">
                             <div>
-                                <input class="form-control-oval" placeholder="Ваше имя"/>
+                                <input class="form-control-oval" placeholder="Ваше имя" type="text" name="NAME" required/>
                             </div>
                             <div>
-                                <input class="form-control-oval" placeholder="Ваш телефон"/>
+                                <input class="form-control-oval phoneNumber" name="TEL" placeholder="Ваш телефон" type="tel" required />
                             </div>
                         </div>
                         <div class="flex-card">
                             <div>
-                                <input class="form-control-oval" placeholder="Комментарий"/>
+                                <input class="form-control-oval" placeholder="Комментарий" name="TEXT"/>
                             </div>
                         </div>
                     </div>
                     <div class="btn-form text-center">
-                        <a class="btn btn-cyan btn-lg"><span>Отправить</span></a>
+                        <button class="btn btn-cyan btn-lg"><span>Отправить</span></button>
                     </div>
                 </form>
             </div>

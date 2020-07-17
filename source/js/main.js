@@ -2,13 +2,13 @@ class MainApp {
     constructor() {
         // this.menu();
 
-        if (document.getElementById('services') !== null) {
-            if(window.innerWidth > 767) {
-                this.services(0);
-            } else {
-                this.services(0, 3);
-            }
-        }
+        // if (document.getElementById('services') !== null) {
+        //     if(window.innerWidth > 767) {
+        //         this.services(0);
+        //     } else {
+        //         this.services(0, 3);
+        //     }
+        // }
         if (document.getElementById('addresses-list') !== null) {
             this.contacts();
         }
@@ -353,288 +353,288 @@ class MainApp {
         document.getElementById('addresses-list').innerHTML = _contacts;
     }
 
-    services(_start = 0 , _length = undefined) {
-        let _obj = [
-            {
-                icon: 'images/icons/service_icon (6).png',
-                title: 'Лечение наркомании',
-                description: 'Лечение от 6 месяцев',
-                menu_items: [
-                    {
-                        text: 'Солевая',
-                        href: '/'
-                    },
-                    {
-                        text: 'Героиновая',
-                        href: '/'
-                    },
-                    {
-                        text: 'Бутират',
-                        href: '/'
-                    },
-                    {
-                        text: 'Опиаты',
-                        href: '/'
-                    },
-                    {
-                        text: 'Спайсы',
-                        href: '/'
-                    },
-                    {
-                        text: 'Лирика',
-                        href: '/'
-                    },
-                    {
-                        text: 'Другие',
-                        href: '/'
-                    },
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-            {
-                icon: 'images/icons/service_icon (7).png',
-                title: 'Лечение алкоголизма',
-                description: 'Лечение от 6 месяцев',
-                menu_items: [
-                    {
-                        text: 'Вывод из запоя',
-                        href: '/'
-                    },
-                    {
-                        text: 'Групповая терапия',
-                        href: '/'
-                    },
-                    {
-                        text: 'Реабилитация',
-                        href: '/'
-                    },
-                    {
-                        text: 'Детоксикация',
-                        href: '/'
-                    },
+    // services(_start = 0 , _length = undefined) {
+    //     let _obj = [
+    //         {
+    //             icon: 'images/icons/service_icon (6).png',
+    //             title: 'Лечение наркомании',
+    //             description: 'Лечение от 6 месяцев',
+    //             menu_items: [
+    //                 {
+    //                     text: 'Солевая',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Героиновая',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Бутират',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Опиаты',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Спайсы',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Лирика',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Другие',
+    //                     href: '/'
+    //                 },
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //         {
+    //             icon: 'images/icons/service_icon (7).png',
+    //             title: 'Лечение алкоголизма',
+    //             description: 'Лечение от 6 месяцев',
+    //             menu_items: [
+    //                 {
+    //                     text: 'Вывод из запоя',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Групповая терапия',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Реабилитация',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Детоксикация',
+    //                     href: '/'
+    //                 },
 
 
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-            {
-                icon: 'images/icons/games.png',
-                title: 'Лечение игромании',
-                description: 'Лечение от 5 месяцев',
-                menu_items: [
-                    {
-                        text: 'Онлайн игры',
-                        href: '/'
-                    },
-                    {
-                        text: 'Интернет-зависимость',
-                        href: '/'
-                    },
-                    {
-                        text: 'Казино',
-                        href: '/'
-                    },
-                    {
-                        text: 'Социальные сети',
-                        href: '/'
-                    },
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-            {
-                icon: 'images/icons/service_icon (1).png',
-                title: 'Лечение булимии',
-                description: 'Лечение от 2 месяцев',
-                menu_items: [
-                    {
-                        text: 'Нервная булимия',
-                        href: '/'
-                    },
-                    {
-                        text: 'Тестирование',
-                        href: '/'
-                    },
-                    {
-                        text: 'Лекарственная терапия',
-                        href: '/'
-                    },
-                    {
-                        text: 'Психотерапия',
-                        href: '/'
-                    },
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-            {
-                icon: 'images/icons/service_icon (2).png',
-                title: 'Консультация нарколога',
-                description: 'Круглосуточно',
-                menu_items: [
-                    {
-                        text: 'Консультация онлайн',
-                        href: '/'
-                    },
-                    {
-                        text: 'Выезд на дом',
-                        href: '/'
-                    },
-                    {
-                        text: 'Консультация в стационаре',
-                        href: '/'
-                    },
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //         {
+    //             icon: 'images/icons/games.png',
+    //             title: 'Лечение игромании',
+    //             description: 'Лечение от 5 месяцев',
+    //             menu_items: [
+    //                 {
+    //                     text: 'Онлайн игры',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Интернет-зависимость',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Казино',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Социальные сети',
+    //                     href: '/'
+    //                 },
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //         {
+    //             icon: 'images/icons/service_icon (1).png',
+    //             title: 'Лечение булимии',
+    //             description: 'Лечение от 2 месяцев',
+    //             menu_items: [
+    //                 {
+    //                     text: 'Нервная булимия',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Тестирование',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Лекарственная терапия',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Психотерапия',
+    //                     href: '/'
+    //                 },
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //         {
+    //             icon: 'images/icons/service_icon (2).png',
+    //             title: 'Консультация нарколога',
+    //             description: 'Круглосуточно',
+    //             menu_items: [
+    //                 {
+    //                     text: 'Консультация онлайн',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Выезд на дом',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Консультация в стационаре',
+    //                     href: '/'
+    //                 },
 
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-            {
-                icon: 'images/icons/service_icon (3).png',
-                title: 'Работа с психологом',
-                description: 'Семейная терапия',
-                menu_items: [
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //         {
+    //             icon: 'images/icons/service_icon (3).png',
+    //             title: 'Работа с психологом',
+    //             description: 'Семейная терапия',
+    //             menu_items: [
 
-                    {
-                        text: 'Онлайн встречи',
-                        href: '/'
-                    },
-                    {
-                        text: 'Личные встречи',
-                        href: '/'
-                    },
-                    {
-                        text: 'Семеная терапия',
-                        href: '/'
-                    },
-
-
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-            {
-                icon: 'images/icons/service_icon (4).png',
-                title: 'Амбулаторное лечение',
-                description: 'Лечение от 1 года',
-                menu_items: [
-                    {
-                        text: 'Наркомания',
-                        href: '/'
-                    },
-                    {
-                        text: 'Алкоголизм',
-                        href: '/'
-                    },
-                    {
-                        text: 'Игромания',
-                        href: '/'
-                    },
-                    {
-                        text: 'Встречи АА ',
-                        href: '/'
-                    },
-                    {
-                        text: 'Встречи АН',
-                        href: '/'
-                    },
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-            {
-                icon: 'images/icons/service_icon (5).png',
-                title: 'Лечение за границей',
-                description: 'Реабилитация + Детокс',
-                menu_items: [
-                    {
-                        text: 'Израиль',
-                        href: '/'
-                    },
-                    {
-                        text: 'Черногория',
-                        href: '/'
-                    },
-                    {
-                        text: 'Таиланд',
-                        href: '/'
-                    },
-                    {
-                        text: 'Казахстан',
-                        href: '/'
-                    },
-                    {
-                        text: 'Украина',
-                        href: '/'
-                    },
-                ],
-                reviews: 45,
-                stars: 4,
-                more_link: '/'
-            },
-        ];
-        let _block_inner = ``;
-        _length = _length === undefined?_obj.length:3;
-
-        for (let j = _start; j < _length; j++) {
-            let item = _obj[j];
-            let inner_menu = ``;
-            for (let i = 0; i < item['menu_items'].length; i++) {
-                let _item = item['menu_items'][i];
-                inner_menu += `<li>
-                <a href="/${_item.href}">${_item.text}</a>
-                </li>`
-            }
-
-            let stars = ``;
-            for (let j = 0; j < item.stars; j++) {
-                stars += `<li><img src="images/icons/Star 4.png" alt="star" /></li>`;
-            }
-            for (let j = 0; j < (5 - item.stars); j++) {
-                stars += `<li><img src="images/icons/Star 5.png" alt="star" /></li>`;
-            }
-            stars = `<ul class="stars">${stars}</ul>`;
+    //                 {
+    //                     text: 'Онлайн встречи',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Личные встречи',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Семеная терапия',
+    //                     href: '/'
+    //                 },
 
 
-            _block_inner += `<div>
-                      <!-- <a href="${item.more_link}">  -->
-                                    <div class="top">
-                                        <div class="icon">
-                                            <img src="${item.icon}" alt="icon1"/>
-                                        </div>
-                                        <div class="description">
-                                            <h6 class="h6-title">
-                                            ${item.title}
-                                            </h6>
-                                           <p class="p-light"> ${item.description}</p>
-                                        </div>
-                                    </div>
-                                    <div class="middle"><ul>${inner_menu}</ul></div>
-                                    <div class="reviews-bar">
-                                       <div class="left"> ${stars}
-                                           <label class="reviews">Отзывы:  ${item.reviews}</label>
-                                        </div>
-                                        <div class="right">
-                                             <a href="${item.more_link}" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
-                                        </div>
-                                    </div>
-          <!--             </a>-->
-                          </div>`;
-        }
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //         {
+    //             icon: 'images/icons/service_icon (4).png',
+    //             title: 'Амбулаторное лечение',
+    //             description: 'Лечение от 1 года',
+    //             menu_items: [
+    //                 {
+    //                     text: 'Наркомания',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Алкоголизм',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Игромания',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Встречи АА ',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Встречи АН',
+    //                     href: '/'
+    //                 },
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //         {
+    //             icon: 'images/icons/service_icon (5).png',
+    //             title: 'Лечение за границей',
+    //             description: 'Реабилитация + Детокс',
+    //             menu_items: [
+    //                 {
+    //                     text: 'Израиль',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Черногория',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Таиланд',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Казахстан',
+    //                     href: '/'
+    //                 },
+    //                 {
+    //                     text: 'Украина',
+    //                     href: '/'
+    //                 },
+    //             ],
+    //             reviews: 45,
+    //             stars: 4,
+    //             more_link: '/'
+    //         },
+    //     ];
+    //     let _block_inner = ``;
+    //     _length = _length === undefined?_obj.length:3;
+
+    //     for (let j = _start; j < _length; j++) {
+    //         let item = _obj[j];
+    //         let inner_menu = ``;
+    //         for (let i = 0; i < item['menu_items'].length; i++) {
+    //             let _item = item['menu_items'][i];
+    //             inner_menu += `<li>
+    //             <a href="/${_item.href}">${_item.text}</a>
+    //             </li>`
+    //         }
+
+    //         let stars = ``;
+    //         for (let j = 0; j < item.stars; j++) {
+    //             stars += `<li><img src="images/icons/Star 4.png" alt="star" /></li>`;
+    //         }
+    //         for (let j = 0; j < (5 - item.stars); j++) {
+    //             stars += `<li><img src="images/icons/Star 5.png" alt="star" /></li>`;
+    //         }
+    //         stars = `<ul class="stars">${stars}</ul>`;
 
 
-        let _block = ` ${_block_inner}`;
-        document.getElementById('services').innerHTML += `${_block}`;
-    }
+    //         _block_inner += `<div>
+    //                   <!-- <a href="${item.more_link}">  -->
+    //                                 <div class="top">
+    //                                     <div class="icon">
+    //                                         <img src="${item.icon}" alt="icon1"/>
+    //                                     </div>
+    //                                     <div class="description">
+    //                                         <h6 class="h6-title">
+    //                                         ${item.title}
+    //                                         </h6>
+    //                                        <p class="p-light"> ${item.description}</p>
+    //                                     </div>
+    //                                 </div>
+    //                                 <div class="middle"><ul>${inner_menu}</ul></div>
+    //                                 <div class="reviews-bar">
+    //                                    <div class="left"> ${stars}
+    //                                        <label class="reviews">Отзывы:  ${item.reviews}</label>
+    //                                     </div>
+    //                                     <div class="right">
+    //                                          <a href="${item.more_link}" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+    //                                     </div>
+    //                                 </div>
+    //       <!--             </a>-->
+    //                       </div>`;
+    //     }
+
+
+    //     let _block = ` ${_block_inner}`;
+    //     document.getElementById('services').innerHTML += `${_block}`;
+    // }
 
     // menu() {
 

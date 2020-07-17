@@ -1518,6 +1518,8 @@ p {
         .services .services-list > div .top .description {
           margin: -5px 0 0 17px; }
       .services .services-list > div .middle ul {
+        display: flex;
+        flex-wrap: wrap;
         margin: 12px 0px 0 -10px;
         padding: 0; }
         .services .services-list > div .middle ul li {
