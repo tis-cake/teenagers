@@ -263,6 +263,26 @@ $(document).ready(function() {
   //     });
   // }
 
+  // закрытие модального окна при клике вне элемента
+  $('body').click(function(e) {
+    if ($(e.target).is($('.modal'))) {
+      $('.modal').removeClass('show');
+    }
+  });
+
+  // модальное окно 1
+  // data-toggle="modal" data-modal-id="submit_your_application"
+  $('*[data-toggle="modal"]').on('click', function() {
+
+    let _this_modal = $(this).data('modal-id');
+    $('.modal').removeClass('show');
+    $('#' + _this_modal).addClass('show');
+
+  });
+  $('.close-modal').on('click', function() {
+    $(this).parents('.modal').removeClass('show');
+  });
+
   // маска на телефон
   $('.phoneNumber').mask('+7 999 999-99-99');
 

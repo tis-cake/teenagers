@@ -4,7 +4,6 @@ $('body').click(function(e) {
   }
 });
 
-
 // data-toggle="modal" data-modal-id="submit_your_application"
 $('*[data-toggle="modal"]').on('click', function() {
 
