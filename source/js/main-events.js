@@ -296,10 +296,26 @@ $(document).ready(function() {
     backFocus: false
   });
 
-  // делегируем вызов лайтбокса для отзыва с видео
-  $('.video-review .btn').on('click', function() {
-    $(this).closest('.video-review').find('.review-wideo-block').click();
-  })
+});
+
+// отзывы
+$(document).ready(function() {
+
+  let sizeOverflow = 115;
+
+  // если переполнение - полный текст переносим в модальное окно, затем обрезаем
+  $('.reviews-item:not(.photo-review):not(.video-review)').each(function (el) {
+    let currentTextBlock = $(this).find('.text');
+    let currentText = currentTextBlock.text().trim();
+    let currentTextSize = currentText.length;
+
+    if (currentTextSize >= sizeOverflow) {
+      $(this).addClass('detail-review');
+
+      $(this).find('.text-full').text(currentText);
+      currentTextBlock.text(currentText.slice(0, sizeOverflow) + ' ...');
+    }
+  });
 
   // модальное окно с детальным отзывом
   $('.detail-review .btn').on('click', function() {
@@ -307,6 +323,11 @@ $(document).ready(function() {
     let currentReview = this.closest('.detail-review');
     createReviewFragment(currentReview);
   });
+
+  // делегируем вызов лайтбокса для отзыва с видео
+  $('.video-review .btn').on('click', function() {
+    $(this).closest('.video-review').find('.review-wideo-block').click();
+  })
 
   // шаблон детального отзыва в модальном онке
   function createReviewFragment(currentReview) {
