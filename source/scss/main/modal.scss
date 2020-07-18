@@ -1,3 +1,48 @@
+#review-block {
+  &.modal {
+    // z-index: 99999;
+    // opacity: 1;
+    // visibility: visible;
+    .modal-content {
+      margin: 50px auto 0 auto;
+      padding: 70px 220px 60px 46px;
+      max-width: 1397px;
+      min-height: 0;
+    }
+    .text-right {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+}
+
+.modal-review-name {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.modal-review-info-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+
+  .reviews-bar {
+    padding-top: 0;
+  }
+}
+
+.modal-review-date {
+  margin-right: 12px;
+}
+
+.modal-review-text {
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .modal {
   top: 0;
   position: fixed; /* Stay in place */
@@ -21,6 +66,7 @@
     }
   }
   .modal-content {
+    position: relative;
     margin: -7050px auto 0 auto;
     max-width: 1163px;
     min-height: 487px;

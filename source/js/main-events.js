@@ -280,4 +280,38 @@ $(document).ready(function() {
   $('.video-review .btn').on('click', function() {
     $(this).closest('.video-review').find('.review-wideo-block').click();
   })
+
+  // модальное окно с детальным отзывом
+  $('.detail-review .btn').on('click', function() {
+    $('#review-block').addClass('show');
+    let currentReview = this.closest('.detail-review');
+    createReviewFragment(currentReview);
+  });
+
+  // шаблон детального отзыва в модальном онке
+  function createReviewFragment(currentReview) {
+
+    let reviewModal = document.querySelector('#review-block');
+    let reviewContainer = reviewModal.querySelector('.review-content');
+    reviewContainer.innerHTML = '';
+
+    let reviewName = currentReview.querySelector('.username').textContent.trim();
+    let reviewDate = currentReview.querySelector('.date').textContent.trim();
+    let reviewText = currentReview.querySelector('.text-full').textContent.trim();
+
+    let reviewTemplate = reviewModal.querySelector('#review-block-template').content;
+    let reviewTemplateContent = reviewTemplate.querySelector('.review-content');
+
+    let reviewTemplateName = reviewTemplateContent.querySelector('.modal-review-name');
+    let reviewTemplateDate = reviewTemplateContent.querySelector('.modal-review-date');
+    let reviewTemplateText = reviewTemplateContent.querySelector('.modal-review-text');
+
+    reviewTemplateName.textContent = reviewName;
+    reviewTemplateDate.textContent = reviewDate;
+    reviewTemplateText.textContent = reviewText;
+
+    let review = reviewTemplateContent.cloneNode(true);
+    reviewContainer.appendChild(review);
+  }
+
 });
