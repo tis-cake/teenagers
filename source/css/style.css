@@ -1670,18 +1670,20 @@ p {
 
 .rehabilitation_centers {
   padding: 165px 0 0 0; }
-  .rehabilitation_centers.p-180 {
-    padding: 180px 0 0 0; }
-  .rehabilitation_centers.p-155 {
-    padding: 155px 0 0 0; }
-  .rehabilitation_centers.p-195 {
-    padding: 195px 0 0 0; }
-  .rehabilitation_centers.p-240 {
-    padding: 240px 0 0 0; }
+  .rehabilitation_centers.p-60 {
+    padding: 60px 0 0 0; }
   .rehabilitation_centers.p-130 {
     padding: 130px 0 0 0; }
+  .rehabilitation_centers.p-155 {
+    padding: 155px 0 0 0; }
+  .rehabilitation_centers.p-180 {
+    padding: 180px 0 0 0; }
+  .rehabilitation_centers.p-195 {
+    padding: 195px 0 0 0; }
   .rehabilitation_centers.p-220 {
     padding: 220px 0 0 0; }
+  .rehabilitation_centers.p-240 {
+    padding: 240px 0 0 0; }
   .rehabilitation_centers .banner-card {
     margin: 18px 0 0 0; }
     .rehabilitation_centers .banner-card .content-bar {
@@ -2720,6 +2722,8 @@ footer {
 
 .our-specialists {
   margin: 155px 0 0 0; }
+  .our-specialists.m-180 {
+    margin: 180px 0 0 0; }
   .our-specialists.m-220 {
     margin: 220px 0 0 0; }
 
@@ -3748,7 +3752,7 @@ footer {
 .photo-list {
   display: flex;
   flex-wrap: wrap; }
-  .photo-list > div {
+  .photo-list .photo-list-item {
     width: calc(33% - 20px);
     height: 332.27px;
     box-shadow: 20px 40px 100px rgba(187, 201, 227, 0.7);
@@ -3758,9 +3762,9 @@ footer {
     overflow: hidden;
     margin-bottom: 40px;
     margin-right: 35px; }
-    .photo-list > div:nth-child(3n) {
+    .photo-list .photo-list-item:nth-child(3n) {
       margin-right: 0; }
-    .photo-list > div img {
+    .photo-list .photo-list-item img {
       -o-object-fit: cover;
          object-fit: cover;
       width: 100%;

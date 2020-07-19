@@ -46,47 +46,46 @@ $(document).ready(function() {
   });
   // form_musk ();
 
-  function photoGallery() {
+  // function photoGallery() {
 
-    let _obj = [{
-        src: "images/photogallery/image 40.png",
-        alt: "img-1"
-      },
-      {
-        src: "images/photogallery/image 39.png",
-        alt: "img-1"
-      },
-      {
-        src: "images/photogallery/image 41.png",
-        alt: "img-1"
-      },
-      {
-        src: "images/photogallery/image 40.png",
-        alt: "img-1"
-      },
-      {
-        src: "images/photogallery/image 41.png",
-        alt: "img-1"
-      },
-      {
-        src: "images/photogallery/image 39.png",
-        alt: "img-1"
-      },
-    ];
+  //   let _obj = [{
+  //       src: "images/photogallery/image 40.png",
+  //       alt: "img-1"
+  //     },
+  //     {
+  //       src: "images/photogallery/image 39.png",
+  //       alt: "img-1"
+  //     },
+  //     {
+  //       src: "images/photogallery/image 41.png",
+  //       alt: "img-1"
+  //     },
+  //     {
+  //       src: "images/photogallery/image 40.png",
+  //       alt: "img-1"
+  //     },
+  //     {
+  //       src: "images/photogallery/image 41.png",
+  //       alt: "img-1"
+  //     },
+  //     {
+  //       src: "images/photogallery/image 39.png",
+  //       alt: "img-1"
+  //     },
+  //   ];
 
 
 
-    let _more = '';
-    for (let i = 0; i < _obj.length; i++) {
-      let _item = _obj[i];
-      _more += ` <div>
-                        <img src="${_item.src}" alt="${_item.alt}"/>
-                    </div>`;
-    }
+  //   let _more = '';
+  //   for (let i = 0; i < _obj.length; i++) {
+  //     let _item = _obj[i];
+  //     _more += ` <div>
+  //                       <img src="${_item.src}" alt="${_item.alt}"/>
+  //                   </div>`;
+  //   }
 
-    return `<div class="photo-list" id="more-photo-list"> ${_more} </div>`;
-
-  }
+  //   return `<div class="photo-list" id="more-photo-list"> ${_more} </div>`;
+  // }
 
   // function webinars() {
   //   let obj = [{
@@ -155,82 +154,82 @@ $(document).ready(function() {
   //   return `<div class="webinars-list" id="more-webinars"> ${_more} <div>`;
   // }
 
-  function specialists() {
-    let obj = [{
-        name: 'Виктория Проказникова',
-        experience: 'стаж 5 лет',
-        image: 'images/specialists/image 32.png',
-        description: 'Клинический психолог',
-        licence: 'licence 1',
-      },
-      {
-        name: 'Виктория Проказникова',
-        experience: 'стаж 5 лет',
-        image: 'images/specialists/image 32.png',
-        licence: 'licence 1',
-        description: 'Клинический психолог'
-      },
-      {
-        name: 'Анастасия Куликова',
-        experience: 'стаж 5 лет',
-        image: 'images/specialists/image 32.png',
-        licence: 'licence 1',
-        description: 'Клинический психолог'
-      },
-      {
-        name: 'Виктория Проказникова',
-        experience: 'стаж 5 лет',
-        image: 'images/specialists/image 32.png',
-        licence: 'licence 1',
-        description: 'Клинический психолог, консультант, детский психолог'
-      },
-      {
-        name: 'Виктория Проказникова',
-        experience: 'стаж 5 лет',
-        image: 'images/specialists/image 32.png',
-        licence: 'licence 1',
-        description: 'Клинический психолог'
-      },
-      {
-        name: 'Виктория Проказникова',
-        experience: 'стаж 5 лет',
-        image: 'images/specialists/image 32.png',
-        licence: 'licence 1',
-        description: 'Клинический психолог'
-      },
-      {
-        name: 'Виктория Проказникова',
-        experience: 'стаж 5 лет',
-        image: 'images/specialists/image 32.png',
-        licence: 'licence 1',
-        description: 'Клинический психолог'
-      },
-    ];
+  // function specialists() {
+  //   let obj = [{
+  //       name: 'Виктория Проказникова',
+  //       experience: 'стаж 5 лет',
+  //       image: 'images/specialists/image 32.png',
+  //       description: 'Клинический психолог',
+  //       licence: 'licence 1',
+  //     },
+  //     {
+  //       name: 'Виктория Проказникова',
+  //       experience: 'стаж 5 лет',
+  //       image: 'images/specialists/image 32.png',
+  //       licence: 'licence 1',
+  //       description: 'Клинический психолог'
+  //     },
+  //     {
+  //       name: 'Анастасия Куликова',
+  //       experience: 'стаж 5 лет',
+  //       image: 'images/specialists/image 32.png',
+  //       licence: 'licence 1',
+  //       description: 'Клинический психолог'
+  //     },
+  //     {
+  //       name: 'Виктория Проказникова',
+  //       experience: 'стаж 5 лет',
+  //       image: 'images/specialists/image 32.png',
+  //       licence: 'licence 1',
+  //       description: 'Клинический психолог, консультант, детский психолог'
+  //     },
+  //     {
+  //       name: 'Виктория Проказникова',
+  //       experience: 'стаж 5 лет',
+  //       image: 'images/specialists/image 32.png',
+  //       licence: 'licence 1',
+  //       description: 'Клинический психолог'
+  //     },
+  //     {
+  //       name: 'Виктория Проказникова',
+  //       experience: 'стаж 5 лет',
+  //       image: 'images/specialists/image 32.png',
+  //       licence: 'licence 1',
+  //       description: 'Клинический психолог'
+  //     },
+  //     {
+  //       name: 'Виктория Проказникова',
+  //       experience: 'стаж 5 лет',
+  //       image: 'images/specialists/image 32.png',
+  //       licence: 'licence 1',
+  //       description: 'Клинический психолог'
+  //     },
+  //   ];
 
-    let _more = '';
-    for (let i = 0; i < obj.length; i++) {
-      let _item = obj[i];
-      _more += ` <div>
-                            <div class="top">
-                              <img src="${_item.image}" alt="specialist"/>
-                            </div>
-                            <div class="specialist-name">
-                            ${_item.name}
-                            </div>
-                            <div class="specialist-experience">
-                            ${_item.experience}
-                            </div>
-                            <div class="specialist-description">
-                            ${_item.description}
-                            </div>
-                            <div class="specialist-licence">
-                                 <div class="file-download" data-licence="${_item.licence}">Лицензия</div>
-                            </div>
-                      </div>`;
-    }
+  //   let _more = '';
+  //   for (let i = 0; i < obj.length; i++) {
+  //     let _item = obj[i];
+  //     _more += ` <div>
+  //                           <div class="top">
+  //                             <img src="${_item.image}" alt="specialist"/>
+  //                           </div>
+  //                           <div class="specialist-name">
+  //                           ${_item.name}
+  //                           </div>
+  //                           <div class="specialist-experience">
+  //                           ${_item.experience}
+  //                           </div>
+  //                           <div class="specialist-description">
+  //                           ${_item.description}
+  //                           </div>
+  //                           <div class="specialist-licence">
+  //                                <div class="file-download" data-licence="${_item.licence}">Лицензия</div>
+  //                           </div>
+  //                     </div>`;
+  //   }
 
-    return `<div class="specialists-list" id="more-specialists-list"> ${_more} <div>`;
-  }
+  //   return `<div class="specialists-list" id="more-specialists-list"> ${_more} <div>`;
+  // }
 
 
   // function form_musk () {
@@ -297,7 +296,7 @@ $(document).ready(function() {
     backFocus: false
   });
 
-  // лайтбокс для видео-обзора
+  // лайтбокс для онлайн-вебинаров
   $().fancybox({
     selector: '.webinar-video',
     loop: true,
@@ -305,6 +304,13 @@ $(document).ready(function() {
     buttons: ['fullScreen', 'close'],
     titleShow: true,
     backFocus: false
+  });
+
+  // лайтбокс для галереи центра
+  $().fancybox({
+    selector: '.photo-list-item',
+    loop: true,
+    blackFocus: false
   });
 
 });

@@ -2318,28 +2318,32 @@ main {}
   // padding: 150px 0 0 0;
   padding: 165px 0 0 0;
 
-  &.p-180 {
-    padding: 180px 0 0 0;
-  }
-
-  &.p-155 {
-    padding: 155px 0 0 0;
-  }
-
-  &.p-195 {
-    padding: 195px 0 0 0;
-  }
-
-  &.p-240 {
-    padding: 240px 0 0 0;
+  &.p-60 {
+    padding: 60px 0 0 0;
   }
 
   &.p-130 {
     padding: 130px 0 0 0;
   }
 
+  &.p-155 {
+    padding: 155px 0 0 0;
+  }
+
+  &.p-180 {
+    padding: 180px 0 0 0;
+  }
+
+  &.p-195 {
+    padding: 195px 0 0 0;
+  }
+
   &.p-220 {
     padding: 220px 0 0 0;
+  }
+
+  &.p-240 {
+    padding: 240px 0 0 0;
   }
 
 
@@ -3991,6 +3995,10 @@ footer {
 .our-specialists {
   margin: 155px 0 0 0;
 
+  &.m-180 {
+    margin: 180px 0 0 0;
+  }
+
   &.m-220 {
     margin: 220px 0 0 0;
   }
@@ -5480,7 +5488,7 @@ footer {
   // justify-content: space-between;
   flex-wrap: wrap;
 
-  &>div {
+  .photo-list-item {
     width: calc(33% - 20px);
     height: 332.27px;
     box-shadow: 20px 40px 100px rgba(187, 201, 227, 0.7);

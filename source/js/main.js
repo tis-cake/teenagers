@@ -13,9 +13,9 @@ class MainApp {
       this.contacts();
     }
 
-    if (document.getElementById('map') !== null) {
-      this.map();
-    }
+    // if (document.getElementById('map') !== null) {
+    //   this.map();
+    // }
     if (document.getElementById('map') !== null) {
       this.map();
     }
@@ -243,10 +243,10 @@ class MainApp {
       myMap.geoObjects
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
-      myMap.hint.open(myMap.getCenter(), "<div class='map-hint'><div class='map_hint_title' >Время первых</div><div class='map_hint_description'>Закрыто до завтра</div></div>", {
-        // Опция: задержка перед открытием.
-        openTimeout: 300
-      });
+      // myMap.hint.open(myMap.getCenter(), "<div class='map-hint'><div class='map_hint_title' >Время первых</div><div class='map_hint_description'>Закрыто до завтра</div></div>", {
+      //   // Опция: задержка перед открытием.
+      //   openTimeout: 300
+      // });
       // var placemark = new ymaps.Placemark(myMap.getCenter(), {
       //     // Зададим содержимое заголовка балуна.
       //     balloonContentHeader: '<p style="font-size: 22px;">Время первых</p>',
