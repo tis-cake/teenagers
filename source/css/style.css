@@ -1831,6 +1831,8 @@ p {
     padding: 210px 0 0 0; }
   .teenage_addiction.p-0 {
     padding: 0 0 160px 0; }
+  .teenage_addiction.p-t-85 {
+    padding: 85px 0 0 0; }
   .teenage_addiction.p-225 {
     padding: 225px 0 0 0; }
   .teenage_addiction .banner-side .title {
@@ -2280,12 +2282,9 @@ footer {
     margin-top: 35px; }
 
 .specialized_rehabilitation_centers {
-  padding: 100px 0 0 0; }
-  .specialized_rehabilitation_centers .banner-card {
-    margin: 150px 0 0 0; }
-    .specialized_rehabilitation_centers .banner-card .content-bar .inline-title .h1 {
-      padding: 50px 0 0 0;
-      width: 100%; }
+  padding: 95px 0 0 0; }
+  .specialized_rehabilitation_centers .banner-card .content-bar .inline-title .h1 {
+    width: 100%; }
 
 .reviews {
   padding: 150px 0 0 0; }
@@ -2728,7 +2727,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .specialists-list > div {
+  .specialists-list .specialists-list-item {
     position: relative;
     background: #E9EDF5;
     border-radius: 20px;
@@ -2739,9 +2738,10 @@ footer {
     vertical-align: top;
     margin-top: 125px;
     transition: all 0.4s ease; }
-    .specialists-list > div:hover {
+    .specialists-list .specialists-list-item:hover {
       transform: translateY(-20px);
-      background: #fff; }
+      box-shadow: 20px 40px 120px #B6BCD6;
+      background-color: #fff; }
   .specialists-list .title {
     padding: 0 0 10px 0; }
   .specialists-list .top {
@@ -3010,17 +3010,15 @@ footer {
 
 .banner-type-4 {
   width: 477px;
-  height: 181.95px;
   border-radius: 20px;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 84px;
   background: #fff;
   position: relative;
   border-bottom: 6px solid #E9EDF5;
   box-shadow: 20px 40px 90px #DBE1ED;
-  padding: 15px 20px 0 20px;
-  display: flex;
-  align-items: center; }
+  padding: 25px 20px 10px 20px;
+  display: flex; }
   .banner-type-4 .left_side {
     width: 269px; }
     .banner-type-4 .left_side .btn-gray {
@@ -3028,20 +3026,21 @@ footer {
     .banner-type-4 .left_side .text-black {
       color: #2D2C42; }
     .banner-type-4 .left_side .banner-title {
+      margin-bottom: 6px;
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
       line-height: 30px;
-      margin-bottom: 10px;
       color: #86859B; }
     .banner-type-4 .left_side p {
+      margin-bottom: 8px;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 25px;
-      margin-bottom: 12px;
       color: #3E3C56; }
   .banner-type-4 .right_side {
+    align-self: center;
     width: 309px;
     height: 309px;
     background: #F6F8FC;
@@ -3056,11 +3055,11 @@ footer {
 
 .banner-type-3 {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-between; }
   .banner-type-3 .left_side {
     padding: 55px 0 0 0; }
     .banner-type-3 .left_side .p-light {
+      margin-bottom: 5px;
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
@@ -3072,7 +3071,10 @@ footer {
       font-size: 40px;
       line-height: 59px;
       color: #2D2C42;
-      margin: 0 0 30px 0; }
+      margin: 0 0 25px 0; }
+    .banner-type-3 .left_side p:not(.p-title):not(.p-light) {
+      font-size: 18px;
+      line-height: 27px; }
   .banner-type-3 .right_side .m-20 {
     margin: 20px 0 0 0; }
 
@@ -3087,8 +3089,7 @@ footer {
     .details_and_documents .banner-type-3 .address-table.md td {
       padding: 4px 0; }
   .details_and_documents .banner-type-3 .left_side .p-title {
-    line-height: 2;
-    margin: 0; }
+    margin-bottom: 13px; }
 
 .oval-container {
   height: 74px;
@@ -3435,7 +3436,7 @@ footer {
     width: 45%;
     background: #e9edf5; }
     .main-type-3 .left_side .flex-card {
-      padding: 160px 0 20px 0; }
+      padding: 150px 0 20px 0; }
     .main-type-3 .left_side.p-20 {
       padding: 20px 0 0 0; }
     .main-type-3 .left_side.p-10 {
@@ -3484,8 +3485,9 @@ footer {
   .main-type-3 .p-70 {
     padding: 70px 0 0 0; }
   .main-type-3 .form-button {
-    margin-top: 30px; }
+    margin-top: 37px; }
   .main-type-3 table {
+    width: 410px;
     text-align: left; }
     .main-type-3 table th {
       width: 180px;
@@ -3501,7 +3503,7 @@ footer {
       font-size: 18px;
       line-height: 20px;
       color: #2D2C42;
-      padding: 20px 0 0 0; }
+      padding: 15px 0 0 0; }
 
 .main-type-2 {
   height: 623px;
@@ -3585,7 +3587,8 @@ footer {
   .when_is_detox_necessary .steps-list {
     margin: 75px 0 0 0; }
     .when_is_detox_necessary .steps-list.st-1 > div {
-      height: 240px; }
+      height: 240px;
+      min-height: 0; }
       .when_is_detox_necessary .steps-list.st-1 > div .description-single p {
         font-size: 25px;
         line-height: 30px; }
@@ -3614,6 +3617,7 @@ footer {
   height: 455px;
   display: inline-block;
   padding: 60px;
+  padding-left: 67px;
   background-image: url("../images/item-bg/Rectangle987564.png");
   background-size: cover;
   background-position: top 0 right 0;
@@ -3656,7 +3660,7 @@ footer {
     height: 100%; }
 
 .the_best_deal_in_your_area {
-  margin: 170px 0 0 0; }
+  margin: 180px 0 0 0; }
   .the_best_deal_in_your_area .banner-type-2 {
     margin: 70px 0 0 0; }
   .the_best_deal_in_your_area .title {
@@ -3671,7 +3675,7 @@ footer {
     font-size: 28px;
     line-height: 32px;
     color: #FFFFFF;
-    margin: 30px 0 10px 0; }
+    margin: 36px 0 6px 0; }
   .the_best_deal_in_your_area p {
     font-weight: normal;
     font-size: 18px;
@@ -3680,9 +3684,11 @@ footer {
 
 .preparations {
   margin: 190px 0 0 0; }
-  .preparations .goals-list .description {
-    margin: 0 auto;
-    width: 251px; }
+  .preparations .goals-list {
+    margin-bottom: 0; }
+    .preparations .goals-list .description {
+      margin: 0 auto;
+      width: 251px; }
 
 .diagnoses {
   margin: 160px 0 0 0; }
@@ -3693,7 +3699,7 @@ footer {
     margin: 0 0 20px 0; }
 
 .on_the_map {
-  margin: 205px 0 0 0; }
+  margin: 130px 0 0 0; }
   .on_the_map .map-contacts-bar .map-container {
     width: 685px; }
   .on_the_map .map-contacts-bar .text-purple {
@@ -3707,7 +3713,9 @@ footer {
     margin: 0 0 10px 0; }
   .on_the_map .map-contacts-bar .contacts {
     width: calc(100% - 703px);
-    padding: 65px 0 0 15px; }
+    padding: 53px 0 0 15px; }
+  .on_the_map .map-contacts-bar .h3-title {
+    margin-bottom: 12px; }
 
 .center_assessment {
   margin: 133px 0 0 0; }
@@ -3731,7 +3739,7 @@ footer {
       color: #2D2C42; }
 
 .photo_gallery {
-  margin: 200px 0 0 0; }
+  margin: 185px 0 0 0; }
   .photo_gallery .title {
     margin: 0 0 28px 0; }
   .photo_gallery .see-more-toggle {
@@ -3739,7 +3747,6 @@ footer {
 
 .photo-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap; }
   .photo-list > div {
     width: calc(33% - 20px);
@@ -3749,7 +3756,10 @@ footer {
     vertical-align: top;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    margin-right: 35px; }
+    .photo-list > div:nth-child(3n) {
+      margin-right: 0; }
     .photo-list > div img {
       -o-object-fit: cover;
          object-fit: cover;

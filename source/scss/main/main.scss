@@ -2604,6 +2604,10 @@ main {}
     padding: 0 0 160px 0;
   }
 
+  &.p-t-85 {
+    padding: 85px 0 0 0;
+  }
+
   &.p-225 {
     padding: 225px 0 0 0;
   }
@@ -3297,13 +3301,13 @@ footer {
 }
 
 .specialized_rehabilitation_centers {
-  padding: 100px 0 0 0;
+  padding: 95px 0 0 0;
 
   .banner-card {
-    margin: 150px 0 0 0;
+    // margin: 150px 0 0 0;
 
     .content-bar .inline-title .h1 {
-      padding: 50px 0 0 0;
+      // padding: 50px 0 0 0;
       width: 100%;
     }
   }
@@ -3998,7 +4002,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &>div {
+  .specialists-list-item {
     position: relative;
     background: #E9EDF5;
     border-radius: 20px;
@@ -4013,7 +4017,8 @@ footer {
 
     &:hover {
       transform: translateY(-20px);
-      background: #fff;
+      box-shadow: 20px 40px 120px #B6BCD6;
+      background-color: #fff;
     }
   }
 
@@ -4425,17 +4430,18 @@ footer {
 .banner-type-4 {
 
   width: 477px;
-  height: 181.95px;
+  // height: 181.95px;
   border-radius: 20px;
   overflow: hidden;
-  margin-top: 100px;
+  // margin-top: 100px;
+  margin-top: 84px;
   background: #fff;
   position: relative;
   border-bottom: 6px solid #E9EDF5;
   box-shadow: 20px 40px 90px #DBE1ED;
-  padding: 15px 20px 0 20px;
+  padding: 25px 20px 10px 20px;
   display: flex;
-  align-items: center;
+  // align-items: center;
 
   .left_side {
     width: 269px;
@@ -4449,25 +4455,27 @@ footer {
     }
 
     .banner-title {
+      // margin-bottom: 10px;
+      margin-bottom: 6px;
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
       line-height: 30px;
-      margin-bottom: 10px;
       color: #86859B;
     }
 
     p {
+      margin-bottom: 8px;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 25px;
-      margin-bottom: 12px;
       color: #3E3C56;
     }
   }
 
   .right_side {
+    align-self: center;
     width: 309px;
     height: 309px;
     background: #F6F8FC;
@@ -4488,12 +4496,13 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  align-items: center;
+  // align-items: center;
 
   .left_side {
     padding: 55px 0 0 0;
 
     .p-light {
+      margin-bottom: 5px;
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
@@ -4507,7 +4516,12 @@ footer {
       font-size: 40px;
       line-height: 59px;
       color: #2D2C42;
-      margin: 0 0 30px 0;
+      margin: 0 0 25px 0;
+    }
+
+    p:not(.p-title):not(.p-light) {
+      font-size: 18px;
+      line-height: 27px;
     }
   }
 
@@ -4540,8 +4554,9 @@ footer {
     }
 
     .left_side .p-title {
-      line-height: 2;
-      margin: 0;
+      // line-height: 2;
+      // margin: 0;
+      margin-bottom: 13px;
     }
   }
 }
@@ -4996,7 +5011,7 @@ footer {
     background: #e9edf5;
 
     .flex-card {
-      padding: 160px 0 20px 0;
+      padding: 150px 0 20px 0;
     }
 
     &.p-20 {
@@ -5073,10 +5088,11 @@ footer {
   }
 
   .form-button {
-    margin-top: 30px;
+    margin-top: 37px;
   }
 
   table {
+    width: 410px;
     text-align: left;
 
     th {
@@ -5095,7 +5111,7 @@ footer {
       font-size: 18px;
       line-height: 20px;
       color: #2D2C42;
-      padding: 20px 0 0 0;
+      padding: 15px 0 0 0;
     }
   }
 }
@@ -5228,6 +5244,7 @@ footer {
 
     &.st-1>div {
       height: 240px;
+      min-height: 0;
 
       .description-single {
         p {
@@ -5269,6 +5286,7 @@ footer {
     height: 455px;
     display: inline-block;
     padding: 60px;
+    padding-left: 67px;
     background-image: url("../images/item-bg/Rectangle987564.png");
     background-size: cover;
     background-position: top 0 right 0;
@@ -5325,7 +5343,7 @@ footer {
 }
 
 .the_best_deal_in_your_area {
-  margin: 170px 0 0 0;
+  margin: 180px 0 0 0;
 
   .banner-type-2 {
     margin: 70px 0 0 0;
@@ -5345,7 +5363,7 @@ footer {
     font-size: 28px;
     line-height: 32px;
     color: #FFFFFF;
-    margin: 30px 0 10px 0;
+    margin: 36px 0 6px 0;
   }
 
   p {
@@ -5361,6 +5379,7 @@ footer {
   margin: 190px 0 0 0;
 
   .goals-list {
+    margin-bottom: 0;
     .description {
       margin: 0 auto;
       width: 251px;
@@ -5382,7 +5401,7 @@ footer {
 }
 
 .on_the_map {
-  margin: 205px 0 0 0;
+  margin: 130px 0 0 0;
 
   .map-contacts-bar {
     .map-container {
@@ -5404,7 +5423,11 @@ footer {
 
     .contacts {
       width: calc(100% - 703px);
-      padding: 65px 0 0 15px;
+      padding: 53px 0 0 15px;
+    }
+
+    .h3-title {
+      margin-bottom: 12px;
     }
   }
 }
@@ -5440,7 +5463,7 @@ footer {
 }
 
 .photo_gallery {
-  margin: 200px 0 0 0;
+  margin: 185px 0 0 0;
 
   .title {
     margin: 0 0 28px 0;
@@ -5454,7 +5477,7 @@ footer {
 .photo-list {
 
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
 
   &>div {
@@ -5466,6 +5489,10 @@ footer {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 40px;
+    margin-right: 35px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
     img {
       object-fit: cover;
