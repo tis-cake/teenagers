@@ -3557,16 +3557,16 @@ footer {
       color: #2D2C42;
       padding: 15px 0 0 0; }
 
-.article .left_side {
-  width: 50%; }
+.breadcrumbs-path .path {
+  width: 700px; }
 
 .article .article-img-bg {
   transform: scaleX(-1);
   width: calc(50% + 320px);
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 15px;
-     object-position: 15px;
+  -o-object-position: right;
+     object-position: right;
   top: 0;
   right: 0;
   height: 100%; }

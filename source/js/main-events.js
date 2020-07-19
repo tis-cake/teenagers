@@ -39,11 +39,11 @@ $(document).ready(function() {
   //     $('.more-info[data-toggle="' + _toggle + '"]').html(_more);
   //   }, 100);
   // });
-  $('.see-more-services[data-toggle-id="services"]').on('click', function() {
-    let _services = new MainApp();
-    _services.services(2);
-    $(this).fadeOut();
-  });
+  // $('.see-more-services[data-toggle-id="services"]').on('click', function() {
+  //   let _services = new MainApp();
+  //   _services.services(2);
+  //   $(this).fadeOut();
+  // });
   // form_musk ();
 
   // function photoGallery() {
@@ -312,7 +312,6 @@ $(document).ready(function() {
     loop: true,
     blackFocus: false
   });
-
 });
 
 // отзывы

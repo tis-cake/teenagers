@@ -5203,17 +5203,22 @@ footer {
   }
 }
 
-.article {
+.breadcrumbs-path {
   .left_side {
-    width: 50%;
+    // width: 50%;
   }
+  .path {
+    width: 700px;
+  }
+}
 
+.article {
   .article-img-bg {
     transform: scaleX(-1);
     width: calc(50% + 320px);
     object-fit: cover;
-    // object-position: right;
-    object-position: 15px;
+    object-position: right;
+    // object-position: 15px;
     top: 0;
     right: 0;
     height: 100%;
