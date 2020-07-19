@@ -26,7 +26,14 @@ body {
 
 header {
   position: relative;
+  position: absolute;
   z-index: 8;
+  top: 15px;
+  width: 100%;
+}
+
+main {
+  padding-top: 126px;
 }
 
 .overflow-hidden {
@@ -1445,7 +1452,7 @@ main {}
   box-sizing: border-box;
   border-radius: 45px;
   // margin-top: 10px;
-  margin-top: 18px;
+  // margin-top: 18px;
 
   position: relative;
   max-width: 1400px;
@@ -4290,7 +4297,7 @@ footer {
     background: #E9EDF5;
     border-radius: 40px;
     //padding: 55px 48px 0 20px;
-    padding: 55px 10px 0 20px;
+    padding: 54px 35px 0 27px;
     position: relative;
     overflow: hidden;
     margin-right: 32px;
@@ -4299,6 +4306,8 @@ footer {
     }
 
     &--long {
+      padding-top: 33px;
+      padding-right: 10px;
       .img-bg-bottom {
         bottom: -40px;
       }
@@ -4324,6 +4333,12 @@ footer {
       .title-sm {
         font-size: 23px;
         line-height: 28px;
+      }
+    }
+
+    &--long {
+      .title {
+        margin-bottom: 11px;
       }
     }
 
@@ -4955,8 +4970,17 @@ footer {
   }
 }
 
+.expert-page,
 .specialists-data {
-  padding: 30px 0 0 0;
+  background-color: #E9EDF5;
+}
+
+.specialists-data {
+  padding: 30px 0 133px 0;
+
+  p {
+    color: #3E3C56;
+  }
 
   .specialist-banner {
     padding: 70px 0 0 0;
@@ -5029,7 +5053,8 @@ footer {
 }
 
 .verified_articles {
-  padding: 245px 0 0 0;
+  padding: 105px 0 0 0;
+  background-color: #f4f7ff;
 
   .h3 {
     font-style: normal;
@@ -5037,6 +5062,10 @@ footer {
     font-size: 30px;
     line-height: 44px;
     color: #2D2C42;
+  }
+
+  .item-list-1 {
+    margin-top: 37px;
   }
 }
 

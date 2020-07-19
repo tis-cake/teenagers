@@ -113,7 +113,13 @@ body {
 
 header {
   position: relative;
-  z-index: 8; }
+  position: absolute;
+  z-index: 8;
+  top: 15px;
+  width: 100%; }
+
+main {
+  padding-top: 126px; }
 
 .overflow-hidden {
   overflow: hidden; }
@@ -1086,7 +1092,6 @@ p {
   border: 5px solid #1C1B2C;
   box-sizing: border-box;
   border-radius: 45px;
-  margin-top: 18px;
   position: relative;
   max-width: 1400px;
   height: 108px;
@@ -2911,14 +2916,17 @@ footer {
     height: 443px;
     background: #E9EDF5;
     border-radius: 40px;
-    padding: 55px 10px 0 20px;
+    padding: 54px 35px 0 27px;
     position: relative;
     overflow: hidden;
     margin-right: 32px; }
     .steps-list-2 .steps-list-2-item:nth-child(4n) {
       margin-right: 0; }
-    .steps-list-2 .steps-list-2-item--long .img-bg-bottom {
-      bottom: -40px; }
+    .steps-list-2 .steps-list-2-item--long {
+      padding-top: 33px;
+      padding-right: 10px; }
+      .steps-list-2 .steps-list-2-item--long .img-bg-bottom {
+        bottom: -40px; }
     .steps-list-2 .steps-list-2-item .img-bg {
       position: absolute;
       width: 100%;
@@ -2936,6 +2944,8 @@ footer {
       .steps-list-2 .steps-list-2-item .title .title-sm {
         font-size: 23px;
         line-height: 28px; }
+    .steps-list-2 .steps-list-2-item--long .title {
+      margin-bottom: 11px; }
     .steps-list-2 .steps-list-2-item .description {
       z-index: 11;
       position: relative;
@@ -3392,8 +3402,14 @@ footer {
       .path ul li:last-child a span {
         color: inherit; }
 
+.expert-page,
 .specialists-data {
-  padding: 30px 0 0 0; }
+  background-color: #E9EDF5; }
+
+.specialists-data {
+  padding: 30px 0 133px 0; }
+  .specialists-data p {
+    color: #3E3C56; }
   .specialists-data .specialist-banner {
     padding: 70px 0 0 0; }
     .specialists-data .specialist-banner .right_side {
@@ -3444,13 +3460,16 @@ footer {
       display: inline-block; }
 
 .verified_articles {
-  padding: 245px 0 0 0; }
+  padding: 105px 0 0 0;
+  background-color: #f4f7ff; }
   .verified_articles .h3 {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 44px;
     color: #2D2C42; }
+  .verified_articles .item-list-1 {
+    margin-top: 37px; }
 
 .main-type-3 {
   position: relative;
