@@ -180,7 +180,6 @@ class MainApp {
     $('.item-list-2[data-id="' + _id + '"]').html(_block);
   }
 
-
   map() {
     ymaps.ready(function() {
       var myMap = new ymaps.Map('map', {
@@ -259,7 +258,6 @@ class MainApp {
       // // Откроем балун на метке.
       // placemark.balloon.open();
     });
-
   }
 
   contacts() {

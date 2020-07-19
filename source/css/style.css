@@ -2589,22 +2589,23 @@ footer {
   .psychologist_help .title {
     margin: 0 0 15px 0; }
 
-.online_webinars {
-  padding: 72px 0 0 0; }
-  .online_webinars.p-120 {
-    padding: 120px 0 0 0; }
-  .online_webinars.p-30 {
-    padding: 30px 0 0 0; }
-  .online_webinars .title {
-    margin: 0 0 15px 0; }
-  .online_webinars .banner-card {
-    margin: 150px 0 0 0; }
+.online_webinars.p-120 {
+  padding: 120px 0 0 0; }
+
+.online_webinars.p-30 {
+  padding: 30px 0 0 0; }
+
+.online_webinars .title {
+  margin: 0 0 15px 0; }
+
+.online_webinars .banner-card {
+  margin: 150px 0 0 0; }
 
 .webinars .webinars-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap; }
   .webinars .webinars-list > div {
+    position: relative;
     width: 443px;
     min-height: 342px;
     display: inline-block;
@@ -2614,21 +2615,28 @@ footer {
     border-bottom: 6px solid #E3E3F9;
     box-shadow: 20px 40px 100px rgba(187, 201, 227, 0.7);
     margin-bottom: 30px;
-    background: #fff; }
+    margin-right: 34px;
+    background: #fff;
+    flex-shrink: 0; }
+    .webinars .webinars-list > div:nth-child(3n) {
+      margin-right: 0; }
     .webinars .webinars-list > div .top {
+      display: block;
       height: 235px;
       overflow: hidden; }
       .webinars .webinars-list > div .top iframe {
         width: 100%;
         height: 100%;
-        border: none; }
+        border: none;
+        pointer-events: none; }
     .webinars .webinars-list > div .bottom {
       min-height: 122px;
-      padding: 25px 18px 0 18px;
+      padding: 20px 20px 0 20px;
       background: #FFFFFF;
       border-radius: 20px;
-      margin: -24px 0 0 0;
-      position: relative; }
+      position: absolute;
+      width: 100%;
+      bottom: 0; }
       .webinars .webinars-list > div .bottom p {
         font-style: normal;
         font-weight: bold;
@@ -2644,6 +2652,9 @@ footer {
         color: #1D1C2B;
         position: relative;
         bottom: 0; }
+
+.webinars .see-more-toggle {
+  margin-top: 0; }
 
 .file-download {
   padding: 0 0 0 25px;
@@ -2718,26 +2729,33 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between; }
   .specialists-list > div {
+    position: relative;
     background: #E9EDF5;
     border-radius: 20px;
-    padding: 25px 25px 30px 25px;
+    padding: 106px 25px 30px 25px;
     width: 323px;
     min-height: 272px;
     display: inline-block;
     vertical-align: top;
-    margin-top: 125px; }
+    margin-top: 125px;
+    transition: all 0.4s ease; }
+    .specialists-list > div:hover {
+      transform: translateY(-20px);
+      background: #fff; }
   .specialists-list .title {
     padding: 0 0 10px 0; }
   .specialists-list .top {
+    position: absolute;
+    top: -93px;
+    left: 23px;
     width: 176px;
     height: 170px;
     border-radius: 20px;
-    margin: -125px 0 0 0;
-    position: relative;
     overflow: hidden;
     padding: 10px; }
     .specialists-list .top img {
       width: 100%;
+      height: 100%;
       -o-object-fit: contain;
          object-fit: contain;
       position: relative;
@@ -2753,13 +2771,14 @@ footer {
       opacity: 0.75;
       box-shadow: 10px 10px 25px #98A7C4; }
   .specialists-list .specialist-name {
+    margin-bottom: 5px;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 30px;
-    color: #2D2C42;
-    margin: 30px 0 10px 0; }
+    color: #2D2C42; }
   .specialists-list .specialist-experience {
+    margin-bottom: 6px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -3503,9 +3522,6 @@ footer {
     .main-type-2 .img-bg-bottom.img2 {
       left: 0;
       height: 100%; }
-    .main-type-2 .img-bg-bottom.img1 {
-      left: 15%;
-      width: 70%; }
   .main-type-2 .title-label {
     font-weight: bold;
     font-size: 16px;

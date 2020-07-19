@@ -256,7 +256,7 @@
             </div>
             <div class="bottom st-1">
               <div class="bottom-icon">
-                <img src="images/icons/pencil1.svg" />
+                <img src="images/icons/pencil1.svg" alt="img icon" />
               </div>
               <div class="h6">
                 Специализированная реабилитация
@@ -277,7 +277,7 @@
             </div>
             <div class="bottom st-2">
               <div class="bottom-icon">
-                <img src="images/icons/professions-and-jobs1.svg" />
+                <img src="images/icons/professions-and-jobs1.svg" alt="img icon" />
               </div>
               <div class="h6">
                 Реабилитация в обычном центре
@@ -298,7 +298,7 @@
             </div>
             <div class="bottom st-3">
               <div class="bottom-icon">
-                <img src="images/icons/marriage1.svg" />
+                <img src="images/icons/marriage1.svg" alt="img icon" />
               </div>
               <div class="h6">
                 Семейная терапия с психологом
@@ -1446,6 +1446,7 @@
       </div>
     </div>
   </footer>
+
   <div id="submit_application" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
@@ -1481,6 +1482,41 @@
       </div>
     </div>
   </div>
+
+  <div id="review-block" class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="text-right">
+          <span class="close-modal"></span>
+        </div>
+        <div class="review-content"></div>
+      </div>
+    </div>
+
+    <template id="review-block-template">
+      <div class="review-content">
+        <p class="modal-review-name"></p>
+
+        <div class="modal-review-info-wrap">
+
+          <p class="modal-review-date"></p>
+
+          <div class="reviews-bar">
+            <ul class="stars">
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 5.png" alt="star"></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="modal-review-text"></p>
+      </div>
+    </template>
+  </div>
+
   <script type="text/javascript" src="js/libs/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="js/libs/jquery.maskedinput.min.js"></script>
   <script type="text/javascript" src="js/libs/jquery.fancybox.min.js"></script>

@@ -24,21 +24,21 @@ $(document).ready(function() {
     }
   });
 
-  $('.see-more-toggle').on('click', function() {
-    let _toggle = $(this).data('more-toggle');
-    let _more = '';
-    // if ($('.more-info').hasClass('visible')) {
-    //     $('.more-info').removeClass('visible');
-    //     $(this).html('Загрузить ещё');
-    // } else {
-    _more = eval(_toggle + '();');
-    $('.more-info').addClass('visible');
-    $(this).fadeOut();
-    // }
-    setTimeout(function() {
-      $('.more-info[data-toggle="' + _toggle + '"]').html(_more);
-    }, 100);
-  });
+  // $('.see-more-toggle').on('click', function() {
+  //   let _toggle = $(this).data('more-toggle');
+  //   let _more = '';
+  //   // if ($('.more-info').hasClass('visible')) {
+  //   //     $('.more-info').removeClass('visible');
+  //   //     $(this).html('Загрузить ещё');
+  //   // } else {
+  //   _more = eval(_toggle + '();');
+  //   $('.more-info').addClass('visible');
+  //   $(this).fadeOut();
+  //   // }
+  //   setTimeout(function() {
+  //     $('.more-info[data-toggle="' + _toggle + '"]').html(_more);
+  //   }, 100);
+  // });
   $('.see-more-services[data-toggle-id="services"]').on('click', function() {
     let _services = new MainApp();
     _services.services(2);
@@ -88,72 +88,72 @@ $(document).ready(function() {
 
   }
 
-  function webinars() {
-    let obj = [{
-        src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
-        description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
-        description: 'Как узнать зависимый ли мой ребенок?',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
-        description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/watch?v=f4Mc-NYPHaQ',
-        description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
-        description: 'Как узнать зависимый ли мой ребенок?',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
-        description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/watch?v=pMYCOYjIKrE',
-        description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
-        description: 'Как узнать зависимый ли мой ребенок?',
-        date: '06.07.20'
-      },
-      {
-        src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
-        description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
-        date: '06.07.20'
-      },
-    ];
+  // function webinars() {
+  //   let obj = [{
+  //       src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
+  //       description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
+  //       description: 'Как узнать зависимый ли мой ребенок?',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
+  //       description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/watch?v=f4Mc-NYPHaQ',
+  //       description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
+  //       description: 'Как узнать зависимый ли мой ребенок?',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
+  //       description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/watch?v=pMYCOYjIKrE',
+  //       description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
+  //       description: 'Как узнать зависимый ли мой ребенок?',
+  //       date: '06.07.20'
+  //     },
+  //     {
+  //       src: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0',
+  //       description: 'Основные ошибки, которые допускают родители при общении с подростком наркоманом',
+  //       date: '06.07.20'
+  //     },
+  //   ];
 
-    let _more = '';
-    for (let i = 0; i < obj.length; i++) {
-      let _item = obj[i];
-      _more += ` <div>
-                    <div class="top">
-                        <iframe
-                                src="${_item.src}">
-                        </iframe>
-                    </div>
-                    <div class="bottom">
-                        <p>${_item.description}</p>
-                        <label>${_item.date}</label>
-                    </div>
-                </div>`;
-    }
+  //   let _more = '';
+  //   for (let i = 0; i < obj.length; i++) {
+  //     let _item = obj[i];
+  //     _more += ` <div>
+  //                   <div class="top">
+  //                       <iframe
+  //                               src="${_item.src}">
+  //                       </iframe>
+  //                   </div>
+  //                   <div class="bottom">
+  //                       <p>${_item.description}</p>
+  //                       <label>${_item.date}</label>
+  //                   </div>
+  //               </div>`;
+  //   }
 
-    return `<div class="webinars-list" id="more-webinars"> ${_more} <div>`;
-  }
+  //   return `<div class="webinars-list" id="more-webinars"> ${_more} <div>`;
+  // }
 
   function specialists() {
     let obj = [{
@@ -272,7 +272,8 @@ $(document).ready(function() {
 
   // модальное окно 1
   // data-toggle="modal" data-modal-id="submit_your_application"
-  $('*[data-toggle="modal"]').on('click', function() {
+  $('*[data-toggle="modal"]').on('click', function(evt) {
+    evt.preventDefault();
 
     let _this_modal = $(this).data('modal-id');
     $('.modal').removeClass('show');
@@ -289,6 +290,16 @@ $(document).ready(function() {
   // лайтбокс для отзыва с видео
   $().fancybox({
     selector: '.review-wideo',
+    loop: true,
+    animationEffect: "zoom-in-out",
+    buttons: ['fullScreen', 'close'],
+    titleShow: true,
+    backFocus: false
+  });
+
+  // лайтбокс для видео-обзора
+  $().fancybox({
+    selector: '.webinar-video',
     loop: true,
     animationEffect: "zoom-in-out",
     buttons: ['fullScreen', 'close'],

@@ -254,7 +254,7 @@
                 <div>
                   <p>1 консультация бесплатно!</p>
                 </div>
-                <div><a class="btn-more" href="/" data-toggle="modal" data-modal-id="submit_your_application">Оставить заявку</a></div>
+                <div><a href="#" class="btn-more" data-toggle="modal" data-modal-id="submit_application">Оставить заявку</a></div>
               </div>
             </div>
           </div>
@@ -273,7 +273,7 @@
                 <div>
                   <p>1 консультация бесплатно!</p>
                 </div>
-                <div><a class="btn-more" data-toggle="modal" data-modal-id="submit_application">Оставить заявку</a></div>
+                <div><a href="#" class="btn-more" data-toggle="modal" data-modal-id="submit_application">Оставить заявку</a></div>
               </div>
             </div>
           </div>
@@ -340,8 +340,7 @@
               Помощь в выборе образовательного учреждения.
             </div>
           </div>
-        </div>
-        <div class="goals-list">
+
           <div>
             <div class="icon-bar">
               <div class="icon-round">
@@ -401,30 +400,27 @@
         <div class="webinars">
           <div class="webinars-list">
             <div>
-              <div class="top">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-                </iframe>
-              </div>
+              <a href="https://www.youtube.com/embed/QlF4rhAbwyc" class="top webinar-video" data-fancybox="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QlF4rhAbwyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </a>
               <div class="bottom">
                 <p>Основные ошибки, которые допускают родители при общении с подростком наркоманом</p>
                 <label>06.07.20</label>
               </div>
             </div>
             <div>
-              <div class="top">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-                </iframe>
-              </div>
+              <a href="https://www.youtube.com/embed/fJ9rUzIMcZQ" class="top webinar-video" data-fancybox="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </a>
               <div class="bottom">
                 <p>Как узнать зависимый ли мой ребенок?</p>
                 <label>06.07.20</label>
               </div>
             </div>
             <div>
-              <div class="top">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-                </iframe>
-              </div>
+              <a href="https://www.youtube.com/embed/fJ9rUzIMcZQ" class="top webinar-video" data-fancybox="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </a>
               <div class="bottom">
                 <p>Основные ошибки, которые допускают родители при общении с подростком наркоманом</p>
                 <label>06.07.20</label>
@@ -451,7 +447,7 @@
               <p> Солевая подростковая наркомания может привести к необратимым
                 последствиям всего за несколько месяцев.</p>
             </div>
-            <div class="form-button">
+            <form action="/" method="post" class="form-button">
               <div>
                 <button class="btn btn-cyan btn-md"><span>Мне нужна помощь!</span></button>
               </div>
@@ -463,7 +459,7 @@
                   </i>
                 </label>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -477,9 +473,9 @@
             </div>
           </div>
           <div class="button-right d-desktop">
-            <a href="/" class="btn btn-md btn-orange">
+            <button class="btn btn-md btn-orange" data-toggle="modal" data-modal-id="submit_application">
               <span>Заявка на лечение</span>
-            </a>
+            </button>
           </div>
         </div>
         <div class="specialists-list">
@@ -572,7 +568,7 @@
             <div class="icon-bar">
               <div class="icon-round">
                 <div class="icon bg-orange">
-                  <img alt="img icon" src="images/icons/ikt (4).png" />
+                  <img alt="img icon" src="images/icons/ikt(4).svg" />
                 </div>
               </div>
             </div>
@@ -590,7 +586,7 @@
             <div class="icon-bar">
               <div class="icon-round">
                 <div class="icon bg-purple">
-                  <img alt="img icon" src="images/icons/ikt (1).png" />
+                  <img alt="img icon" src="images/icons/ikt(1).svg" />
                 </div>
               </div>
             </div>
@@ -608,7 +604,7 @@
             <div class="icon-bar">
               <div class="icon-round">
                 <div class="icon bg-blue">
-                  <img alt="img icon" src="images/icons/ikt (2).png" />
+                  <img alt="img icon" src="images/icons/ikt(2).svg" />
                 </div>
               </div>
             </div>
@@ -626,7 +622,7 @@
             <div class="icon-bar">
               <div class="icon-round">
                 <div class="icon bg-green">
-                  <img alt="img icon" src="images/icons/ikt (3).png" />
+                  <img alt="img icon" src="images/icons/ikt(3).png" />
                 </div>
               </div>
             </div>
@@ -894,6 +890,7 @@
       </div>
     </div>
   </footer>
+
   <div id="submit_application" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
@@ -929,6 +926,41 @@
       </div>
     </div>
   </div>
+
+  <div id="review-block" class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="text-right">
+          <span class="close-modal"></span>
+        </div>
+        <div class="review-content"></div>
+      </div>
+    </div>
+
+    <template id="review-block-template">
+      <div class="review-content">
+        <p class="modal-review-name"></p>
+
+        <div class="modal-review-info-wrap">
+
+          <p class="modal-review-date"></p>
+
+          <div class="reviews-bar">
+            <ul class="stars">
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 4.png" alt="star"></li>
+              <li><img src="images/icons/Star 5.png" alt="star"></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="modal-review-text"></p>
+      </div>
+    </template>
+  </div>
+
   <script type="text/javascript" src="js/libs/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="js/libs/jquery.maskedinput.min.js"></script>
   <script type="text/javascript" src="js/libs/jquery.fancybox.min.js"></script>
