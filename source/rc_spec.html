@@ -207,18 +207,33 @@
         <div class="flex-parent">
           <div class="left_side">
             <div class="path">
-              <ul>
-                <li>
-                  <a href="/">Главная</a>
-                </li>
-                <li>
-                  <a href="/">Реабилитация</a>
-                </li>
-                <li>
-                  <a href="/">Время первых</a>
-                </li>
-              </ul>
-            </div>
+                <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="knowledge_base.html">
+                      <span itemprop="name">Публикации</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                      <span itemprop="name">Лечениет солевой зависмостии</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                      <span itemprop="name">Мефедроновая зависимость</span>
+                    </a>
+                    <meta itemprop="position" content="4">
+                  </li>
+                </ul>
+              </div>
             <div class="title">
               <div class="sub-title">Реабилитационный центр</div>
               <div class="h1">Решение, Москва</div>
@@ -630,9 +645,9 @@
         <p class="see-more-toggle" data-more-toggle="specialists">Загрузить ещё</p>
         <div class="more-info" data-toggle="specialists"></div>
         <div class="button-right d-mobile">
-          <a href="/" class="btn btn-lg btn-orange">
-            <span>Заявка на лечение </span>
-          </a>
+          <button class="btn btn-lg btn-orange" data-toggle="modal" data-modal-id="submit_application">
+            <span>Заявка на лечение</span>
+          </button>
         </div>
         <div class="banner-card m-185">
           <div class="image-bar">

@@ -19,166 +19,166 @@ class MainApp {
     if (document.getElementById('map') !== null) {
       this.map();
     }
-    if ($('.item-list-1[data-id="knowledge_base_list"]').length > 0) {
-      let _count = $('.item-list-1[data-id="knowledge_base_list"]').data('count');
-      _count = _count === undefined ? 'all' : parseInt(_count);
-      this.knowledge_base(_count);
-    }
-    if ($('.item-list-2').length > 0) {
-      this.listBanner();
-    }
+    // if ($('.item-list-1[data-id="knowledge_base_list"]').length > 0) {
+    //   let _count = $('.item-list-1[data-id="knowledge_base_list"]').data('count');
+    //   _count = _count === undefined ? 'all' : parseInt(_count);
+    //   this.knowledge_base(_count);
+    // }
+    // if ($('.item-list-2').length > 0) {
+    //   this.listBanner();
+    // }
 
   }
 
 
-  knowledge_base(_count) {
-    let _obj = [{
-        title: "Лечение от героиновой зависимости",
-        addiction: "Героиновая зависимость",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
-      },
-      {
-        title: "Лечение от мефедроно- вой зависимости",
-        addiction: "Солевая зависимость",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
-      },
-      {
-        title: "Лечение от мефедроновой зависимости",
-        addiction: "Солевая зависимость",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой ..."
-      },
-      {
-        title: "Как приготовить мет?",
-        addiction: "Другие виды наркотиков",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
-      },
-      {
-        title: "Лечение от героиновой зависимости",
-        addiction: "Героиновая зависимость",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
-      },
-      {
-        title: "Лечение от мефедроно- вой зависимости",
-        addiction: "Солевая зависимость",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
-      },
-      {
-        title: "Лечение от мефедроновой зависимости",
-        addiction: "Солевая зависимость",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой ..."
-      },
-      {
-        title: "Как приготовить мет?",
-        addiction: "Другие виды наркотиков",
-        date: "01.04.20",
-        description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
-      },
-    ];
-    let _contacts = ``;
+  // knowledge_base(_count) {
+  //   let _obj = [{
+  //       title: "Лечение от героиновой зависимости",
+  //       addiction: "Героиновая зависимость",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
+  //     },
+  //     {
+  //       title: "Лечение от мефедроно- вой зависимости",
+  //       addiction: "Солевая зависимость",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
+  //     },
+  //     {
+  //       title: "Лечение от мефедроновой зависимости",
+  //       addiction: "Солевая зависимость",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой ..."
+  //     },
+  //     {
+  //       title: "Как приготовить мет?",
+  //       addiction: "Другие виды наркотиков",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
+  //     },
+  //     {
+  //       title: "Лечение от героиновой зависимости",
+  //       addiction: "Героиновая зависимость",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
+  //     },
+  //     {
+  //       title: "Лечение от мефедроно- вой зависимости",
+  //       addiction: "Солевая зависимость",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
+  //     },
+  //     {
+  //       title: "Лечение от мефедроновой зависимости",
+  //       addiction: "Солевая зависимость",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой ..."
+  //     },
+  //     {
+  //       title: "Как приготовить мет?",
+  //       addiction: "Другие виды наркотиков",
+  //       date: "01.04.20",
+  //       description: "Спасибо за  такую качественную работу!Конеч. нам предстоит еще большой путьчтобы все вернулось на свои круги, но..."
+  //     },
+  //   ];
+  //   let _contacts = ``;
 
-    for (let prop in _obj) {
-      let item = _obj[prop];
+  //   for (let prop in _obj) {
+  //     let item = _obj[prop];
 
-      if (_count !== 'all') {
-        if (prop >= _count) {
-          break;
-        }
-      }
+  //     if (_count !== 'all') {
+  //       if (prop >= _count) {
+  //         break;
+  //       }
+  //     }
 
-      _contacts += `<div>
-                           <div class="title">${item.title}</div>
-                           <div class="addiction-bar">
-                           <span class="addiction">${item.addiction}</span>
-                           <span class="date">${item.date}</span>
-                           </div>
-                           <div class="description">
-                           ${item.description}
-                           </div>
-                          </div>`;
-    }
+  //     _contacts += `<div>
+  //                          <div class="title">${item.title}</div>
+  //                          <div class="addiction-bar">
+  //                          <span class="addiction">${item.addiction}</span>
+  //                          <span class="date">${item.date}</span>
+  //                          </div>
+  //                          <div class="description">
+  //                          ${item.description}
+  //                          </div>
+  //                         </div>`;
+  //   }
 
-    $('.item-list-1[data-id="knowledge_base_list"]').html(_contacts);
-  }
+  //   $('.item-list-1[data-id="knowledge_base_list"]').html(_contacts);
+  // }
 
-  listBanner() {
-    if ($('.item-list-2[data-id="1"]').length > 0) {
-      let _obj = [{
-          title: "Лечение игровой зависимости",
-          description: "Стабилищация физического состояния и психики.  Полное ограничение доступа к какому-либо виду игр.",
-          img: "images/Mask Group2342.png",
-        },
-        {
-          title: "Лечение игровой зависимости",
-          description: "Стабилищация физического состояния и психики.  Полное ограничение доступа к какому-либо виду игр.",
-          img: "images/Mask Group (2).png",
-        },
-        {
-          title: "Детоксикация в клинике!",
-          description: "Детоксикая поможет справиться с фищическими недомоганиями в кроткий срок!",
-          img: "images/Mask Group (1).png",
-        },
-        {
-          title: "Снятие ломки",
-          description: "Самостоятельное снятие ломки приводит к нарушениям нервной системы и заболеваниям психики.",
-          img: "images/Mask Group7898.png",
-        },
-      ];
-      this.list1(_obj, 1);
-    }
-    if ($('.item-list-2[data-id="2"]').length > 0) {
-      let _obj = [{
-          title: "Классическая интервенция",
-          description: "Поможем уговорить подростка на лечение. Возможность проведения экскурсии в РЦ.",
-          img: "images/Mask Group (4).png",
-        },
-        {
-          title: "<span class='title-sm'>Специализированные реабилитационные центры</span>",
-          description: `<ul class="list-ul sm-text">
-                                    <li>Проживание только несовершеннолетних</li>
-                                    <li>Образовательная программа</li>
-                                    <li>Спортивные площадки, профессиональные тренеры</li>
-                                    <li>Наличие детских психологов и терапевтов</li>
-                                    <li>Групповая и индивидуальная терапия</li>
-                                                                     </ul>`,
-          img: "images/Mask Group (1)798.png",
-        },
-        {
-          title: "Детоксикация в клинике!",
-          description: "Мы ответим на ваши вопросы онлайн, первая консультация бесплатно!",
-          img: "images/Mask Group (1)7982.png",
-        },
-        {
-          title: "Снятие ломки",
-          description: "Мы ответим на ваши вопросы онлайн, первая консультация бесплатно!",
-          img: "images/Mask Group (2)7982.png",
-        },
-      ];
-      this.list1(_obj, 2);
-    }
-  }
+  // listBanner() {
+  //   if ($('.item-list-2[data-id="1"]').length > 0) {
+  //     let _obj = [{
+  //         title: "Лечение игровой зависимости",
+  //         description: "Стабилищация физического состояния и психики.  Полное ограничение доступа к какому-либо виду игр.",
+  //         img: "images/Mask Group2342.png",
+  //       },
+  //       {
+  //         title: "Лечение игровой зависимости",
+  //         description: "Стабилищация физического состояния и психики.  Полное ограничение доступа к какому-либо виду игр.",
+  //         img: "images/Mask Group (2).png",
+  //       },
+  //       {
+  //         title: "Детоксикация в клинике!",
+  //         description: "Детоксикая поможет справиться с фищическими недомоганиями в кроткий срок!",
+  //         img: "images/Mask Group (1).png",
+  //       },
+  //       {
+  //         title: "Снятие ломки",
+  //         description: "Самостоятельное снятие ломки приводит к нарушениям нервной системы и заболеваниям психики.",
+  //         img: "images/Mask Group7898.png",
+  //       },
+  //     ];
+  //     this.list1(_obj, 1);
+  //   }
+  //   if ($('.item-list-2[data-id="2"]').length > 0) {
+  //     let _obj = [{
+  //         title: "Классическая интервенция",
+  //         description: "Поможем уговорить подростка на лечение. Возможность проведения экскурсии в РЦ.",
+  //         img: "images/Mask Group (4).png",
+  //       },
+  //       {
+  //         title: "<span class='title-sm'>Специализированные реабилитационные центры</span>",
+  //         description: `<ul class="list-ul sm-text">
+  //                                   <li>Проживание только несовершеннолетних</li>
+  //                                   <li>Образовательная программа</li>
+  //                                   <li>Спортивные площадки, профессиональные тренеры</li>
+  //                                   <li>Наличие детских психологов и терапевтов</li>
+  //                                   <li>Групповая и индивидуальная терапия</li>
+  //                                                                    </ul>`,
+  //         img: "images/Mask Group (1)798.png",
+  //       },
+  //       {
+  //         title: "Детоксикация в клинике!",
+  //         description: "Мы ответим на ваши вопросы онлайн, первая консультация бесплатно!",
+  //         img: "images/Mask Group (1)7982.png",
+  //       },
+  //       {
+  //         title: "Снятие ломки",
+  //         description: "Мы ответим на ваши вопросы онлайн, первая консультация бесплатно!",
+  //         img: "images/Mask Group (2)7982.png",
+  //       },
+  //     ];
+  //     this.list1(_obj, 2);
+  //   }
+  // }
 
-  list1(_obj, _id) {
-    let _inner_block = ``;
-    for (let prop in _obj) {
-      let item = _obj[prop];
-      _inner_block += `<div>
-                           <div class="title">${item.title}</div>
-                          <div class="description">
-                           ${item.description}
-                           </div>
-                           <img class="img-bg-bottom" src="${item.img}" alt="img3"/>
-                          </div>`;
-    }
-    let _block = `<div class="steps-list-2 mb-30">${_inner_block}</div>`;
-    $('.item-list-2[data-id="' + _id + '"]').html(_block);
-  }
+  // list1(_obj, _id) {
+  //   let _inner_block = ``;
+  //   for (let prop in _obj) {
+  //     let item = _obj[prop];
+  //     _inner_block += `<div>
+  //                          <div class="title">${item.title}</div>
+  //                         <div class="description">
+  //                          ${item.description}
+  //                          </div>
+  //                          <img class="img-bg-bottom" src="${item.img}" alt="img3"/>
+  //                         </div>`;
+  //   }
+  //   let _block = `<div class="steps-list-2 mb-30">${_inner_block}</div>`;
+  //   $('.item-list-2[data-id="' + _id + '"]').html(_block);
+  // }
 
   map() {
     ymaps.ready(function() {

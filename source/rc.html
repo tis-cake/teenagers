@@ -208,15 +208,30 @@
           <div class="left_side">
             <div class="flex-card">
               <div class="path">
-                <ul>
-                  <li>
-                    <a href="/">Главная</a>
+                <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
                   </li>
-                  <li>
-                    <a href="/">Реабилитация</a>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="knowledge_base.html">
+                      <span itemprop="name">Публикации</span>
+                    </a>
+                    <meta itemprop="position" content="2">
                   </li>
-                  <li>
-                    <a href="/">Время первых</a>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                      <span itemprop="name">Лечениет солевой зависмостии</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                      <span itemprop="name">Мефедроновая зависимость</span>
+                    </a>
+                    <meta itemprop="position" content="4">
                   </li>
                 </ul>
               </div>
@@ -504,7 +519,7 @@
                 Зависимость это не локальная проблема! Проблему необходимо решать всей семьей.
               </div>
               <div class="btn-bar">
-                <button class="btn btn-cyan btn-sm" data-toggle="modal" data-modal-id="submit_application"><span>Подробнее</span></button>
+                <a href="family_therapy.html" class="btn btn-cyan btn-sm"><span>Подробнее</span></a>
               </div>
               <img class="img-bg-bottom" src="images/Mask Group465.png" alt="img-bg" />
             </div>
@@ -624,9 +639,9 @@
             </div>
           </div>
           <div class="button-right d-desktop">
-            <a href="/" class="btn btn-lg btn-orange">
-              <span> Заявка на лечение</span>
-            </a>
+            <button class="btn btn-md btn-orange" data-toggle="modal" data-modal-id="submit_application">
+              <span>Заявка на лечение</span>
+            </button>
           </div>
         </div>
         <div class="specialists-list">
@@ -700,9 +715,9 @@
           </a>
         </div>
         <div class="button-right d-mobile">
-          <a href="/" class="btn btn-lg btn-orange">
-            <span> Заявка на лечение</span>
-          </a>
+          <button class="btn btn-lg btn-orange" data-toggle="modal" data-modal-id="submit_application">
+            <span>У меня есть вопрос</span>
+          </button>
         </div>
         <div class="more-info" data-toggle="specialists"></div>
         <p class="see-more-toggle" data-more-toggle="specialists">Загрузить ещё</p>
@@ -845,9 +860,9 @@
           </div>
         </div>
         <div class="button-right d-mobile">
-          <a href="/" class="btn btn-lg btn-orange">
-            <span> У меня есть вопрос </span>
-          </a>
+          <button class="btn btn-lg btn-orange" data-toggle="modal" data-modal-id="submit_application">
+            <span>У меня есть вопрос</span>
+          </button>
         </div>
       </div>
     </section>
@@ -989,7 +1004,7 @@
         </div>
         <div class="button-right d-mobile">
           <a href="catalog.html" class="btn btn-lg btn-orange">
-            <span> Все РЦ: 45 </span>
+            <span>Все РЦ: 45 </span>
           </a>
         </div>
         <div class="banner-card">

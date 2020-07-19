@@ -518,8 +518,7 @@ main {}
 
     li {
       display: table-cell;
-      padding: 0 5px;
-
+      // padding: 0 5px;
       .soc-icon {
         width: 33px;
         height: 33px;
@@ -551,6 +550,10 @@ main {}
             background: #5f94cd;
           }
         }
+      }
+      padding-right: 12px;
+      &:last-child {
+        padding-right: 0;
       }
     }
   }
@@ -1995,7 +1998,9 @@ main {}
     li {
       font-size: 16px;
       line-height: 17px;
-      padding: 0 0 18px 25px;
+      // padding: 0 0 18px 25px;
+      padding-left: 28px;
+      margin-bottom: 17px;
 
       &:before {
         width: 18px;
@@ -2013,7 +2018,8 @@ main {}
     font-size: 18px;
     line-height: 27px;
 
-    padding: 0 0 0 30px;
+    // padding: 0 0 0 30px;
+    padding-left: 30px;
     color: #2D2C42;
 
     position: relative;
@@ -2029,6 +2035,8 @@ main {}
       position: absolute;
       left: 0;
       top: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
@@ -4676,6 +4684,15 @@ footer {
 }
 
 .form-control-comments {
+  height: 100%;
+  input {
+    &:-moz-ui-invalid {
+      box-shadow: none;
+    }
+    &::placeholder {
+      line-height: 58px;
+    }
+  }
   .input-username {
     width: 246px;
     display: inline-block;
@@ -4761,7 +4778,7 @@ footer {
 
 .item-list-1 {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
   margin: 75px 0 35px 0;
 
@@ -4769,7 +4786,8 @@ footer {
     margin: 75px 0 10px 0;
   }
 
-  &>div {
+  .item-list-1-item {
+    flex-shrink: 0;
     display: inline-block;
     vertical-align: top;
     background: #E9EDF5;
@@ -4779,14 +4797,19 @@ footer {
     margin-bottom: 40px;
     padding: 40px 20px 0 20px;
     transition: all 0.4s ease;
+    border-bottom: 0px solid #D9D9F1;
+    margin-right: 36px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &:hover {
+      transform: translateY(-20px);
       background: #FFFFFF;
       border-bottom: 6px solid #D9D9F1;
       box-shadow: 20px 40px 120px #B6BCD6;
-      margin-top: -50px;
+      // margin-top: -50px;
     }
-
 
     .title {
       font-weight: bold;
@@ -4811,6 +4834,10 @@ footer {
       color: #89879c;
       border-left: 1px solid #89879c;
       padding-left: 10px;
+    }
+
+    .description {
+      color: #3E3C56;
     }
   }
 }
@@ -4897,6 +4924,10 @@ footer {
 
         a {
           color: #a09eac;
+          text-decoration: none;
+          span {
+            color: inherit;
+          }
         }
       }
     }
@@ -5066,20 +5097,10 @@ footer {
     }
   }
 
-  .article-img-bg {
-    transform: scaleX(-1);
-    width: calc(50% + 320px);
-    object-fit: cover;
-    object-position: right;
-    top: 0;
-    right: 0;
-    height: 100%;
-  }
-
   .title {
     &.w-628 {
       width: 628px;
-      padding: 60px 0 0 0;
+      padding: 57px 0 0 0;
     }
 
     .sub-title {
@@ -5092,7 +5113,7 @@ footer {
   }
 
   .p-70 {
-    padding: 70px 0 0 0;
+    padding: 65px 0 0 0;
   }
 
   .form-button {
@@ -5124,6 +5145,48 @@ footer {
   }
 }
 
+.article {
+  .left_side {
+    width: 50%;
+  }
+
+  .article-img-bg {
+    transform: scaleX(-1);
+    width: calc(50% + 320px);
+    object-fit: cover;
+    // object-position: right;
+    object-position: 15px;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+}
+
+.ya-share2__icon {
+  height: 3.2rem!important;
+  width: 3.2rem!important;
+  background-repeat: no-repeat;
+  background-size: inherit!important;
+}
+
+.ya-share2__item_service_facebook .ya-share2__badge,
+.ya-share2__item_service_vkontakte .ya-share2__badge {
+  border-radius: 50%;
+  // background-size: 3rem!important;
+  background-size: cover !important;
+  // background-color: #2C2C2C!important;
+  // border: 0.2rem solid #2C2C2C;
+}
+
+.ya-share2__item_service_vkontakte .ya-share2__badge {
+  // background-size: 2.8rem !important;
+  // background-position: center !important;
+}
+
+.ya-share2__item_service_facebook .ya-share2__icon {
+  // background-position: 0.2rem -0.2rem;
+  // background-size: 3rem!important;
+}
 
 .main-type-2 {
   height: 623px;
@@ -5189,7 +5252,7 @@ footer {
 }
 
 .teenage_addiction_how_to_fight {
-  padding: 80px 0 0 0;
+  padding: 75px 0 0 0;
 
   &.p-130 {
     padding: 132px 0 160px 0;
@@ -5672,7 +5735,7 @@ footer {
 }
 
 .map_container_section {
-  margin: 165px 0 0;
+  margin: 22px 0 0 0;
 
   .flex-parent {
     display: flex;
