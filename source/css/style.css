@@ -2735,6 +2735,8 @@ footer {
   margin: 155px 0 0 0; }
   .our-specialists.m-180 {
     margin: 180px 0 0 0; }
+  .our-specialists.m-195 {
+    margin: 195px 0 0 0; }
   .our-specialists.m-220 {
     margin: 220px 0 0 0; }
 
@@ -2956,14 +2958,14 @@ footer {
       color: #2D2C42; }
 
 .map-contacts {
-  padding: 70px 0 140px 0; }
+  padding: 65px 0 140px 0; }
   .map-contacts .addresses {
     padding: 0 0 130px 0; }
   .map-contacts .banner-card .content-bar .inline-title .h1 {
     width: 100%; }
 
 .addresses-list {
-  margin: 70px 0 0 0;
+  margin: 84px 0 0 0;
   display: flex;
   flex-wrap: wrap; }
   .addresses-list > div {
@@ -2979,7 +2981,7 @@ footer {
       color: #2D2C42; }
 
 .address-table {
-  margin: 30px 0 30px 0; }
+  margin: 12px 0 47px 0; }
   .address-table td {
     padding: 0; }
   .address-table .key {
@@ -3017,13 +3019,13 @@ footer {
   display: flex;
   justify-content: space-between; }
   .map-contacts-bar .map-container {
-    width: 703px;
-    height: 454px;
+    width: 685px;
+    height: 443px;
     border-radius: 40px;
     overflow: hidden; }
   .map-contacts-bar .contacts {
     width: calc(100% - 703px);
-    padding: 50px 0 0 30px; }
+    padding: 52px 0 0 16px; }
     .map-contacts-bar .contacts .h3 {
       font-style: normal;
       font-weight: bold;

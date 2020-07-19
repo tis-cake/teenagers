@@ -9,9 +9,9 @@ class MainApp {
     //         this.services(0, 3);
     //     }
     // }
-    if (document.getElementById('addresses-list') !== null) {
-      this.contacts();
-    }
+    // if (document.getElementById('addresses-list') !== null) {
+    //   this.contacts();
+    // }
 
     // if (document.getElementById('map') !== null) {
     //   this.map();
@@ -260,92 +260,92 @@ class MainApp {
     });
   }
 
-  contacts() {
-    let _obj = [{
-        city: "г. Казань",
-        index: "201000",
-        address: "Москва, Покровка, 21-23/25с1",
-        phone: "8 (800) 600-39-60",
-        email: "cv@nasrf.ru",
-      },
+  // contacts() {
+  //   let _obj = [{
+  //       city: "г. Казань",
+  //       index: "201000",
+  //       address: "Москва, Покровка, 21-23/25с1",
+  //       phone: "8 (800) 600-39-60",
+  //       email: "cv@nasrf.ru",
+  //     },
 
-      {
-        city: "г. Тюмень",
-        index: "201000",
-        address: "Москва, Покровка, 21-23/25с1",
-        phone: "8 (800) 600-39-60",
-        email: "cv@nasrf.ru",
-      },
+  //     {
+  //       city: "г. Тюмень",
+  //       index: "201000",
+  //       address: "Москва, Покровка, 21-23/25с1",
+  //       phone: "8 (800) 600-39-60",
+  //       email: "cv@nasrf.ru",
+  //     },
 
-      {
-        city: "г. Казань",
-        index: "201000",
-        address: "Москва, Покровка, 21-23/25с1",
-        phone: "8 (800) 600-39-60",
-        email: "cv@nasrf.ru",
-      },
+  //     {
+  //       city: "г. Казань",
+  //       index: "201000",
+  //       address: "Москва, Покровка, 21-23/25с1",
+  //       phone: "8 (800) 600-39-60",
+  //       email: "cv@nasrf.ru",
+  //     },
 
-      {
-        city: "г. Казань",
-        index: "201000",
-        address: "Москва, Покровка, 21-23/25с1",
-        phone: "8 (800) 600-39-60",
-        email: "cv@nasrf.ru",
-      },
+  //     {
+  //       city: "г. Казань",
+  //       index: "201000",
+  //       address: "Москва, Покровка, 21-23/25с1",
+  //       phone: "8 (800) 600-39-60",
+  //       email: "cv@nasrf.ru",
+  //     },
 
-      {
-        city: "г. Тюмень",
-        index: "201000",
-        address: "Москва, Покровка, 21-23/25с1",
-        phone: "8 (800) 600-39-60",
-        email: "cv@nasrf.ru",
-      },
+  //     {
+  //       city: "г. Тюмень",
+  //       index: "201000",
+  //       address: "Москва, Покровка, 21-23/25с1",
+  //       phone: "8 (800) 600-39-60",
+  //       email: "cv@nasrf.ru",
+  //     },
 
-      {
-        city: "г. Казань",
-        index: "201000",
-        address: "Москва, Покровка, 21-23/25с1",
-        phone: "8 (800) 600-39-60",
-        email: "cv@nasrf.ru",
-      },
+  //     {
+  //       city: "г. Казань",
+  //       index: "201000",
+  //       address: "Москва, Покровка, 21-23/25с1",
+  //       phone: "8 (800) 600-39-60",
+  //       email: "cv@nasrf.ru",
+  //     },
 
-    ];
+  //   ];
 
-    let _contacts = ``;
-    for (let prop in _obj) {
-      let item = _obj[prop];
-      _contacts += `<div>
-                           <div class="city">${item.city}</div>
-                           <table class="address-table">
-                                <tr>
-                                   <td class="key">
-                                        Индекс:
-                                    </td>
-                                    <td class="value">${item.index}</td>
-                                </tr>
-                                <tr>
-                                    <td class="key">
-                                        Адрес:
-                                    </td>
-                                    <td class="value">${item.address}</td>
-                                </tr>
-                                <tr>
-                                   <td class="key">
-                                        Телефон:
-                                    </td>
-                                    <td class="value">${item.phone}</td>
-                                </tr>
-                                <tr>
-                                    <td class="key">
-                                        Email:
-                                    </td>
-                                    <td class="value">${item.email}</td>
-                                </tr>
-                         </table>
-                        </div>`;
-    }
-    document.getElementById('addresses-list').innerHTML = _contacts;
-  }
+  //   let _contacts = ``;
+  //   for (let prop in _obj) {
+  //     let item = _obj[prop];
+  //     _contacts += `<div>
+  //                          <div class="city">${item.city}</div>
+  //                          <table class="address-table">
+  //                               <tr>
+  //                                  <td class="key">
+  //                                       Индекс:
+  //                                   </td>
+  //                                   <td class="value">${item.index}</td>
+  //                               </tr>
+  //                               <tr>
+  //                                   <td class="key">
+  //                                       Адрес:
+  //                                   </td>
+  //                                   <td class="value">${item.address}</td>
+  //                               </tr>
+  //                               <tr>
+  //                                  <td class="key">
+  //                                       Телефон:
+  //                                   </td>
+  //                                   <td class="value">${item.phone}</td>
+  //                               </tr>
+  //                               <tr>
+  //                                   <td class="key">
+  //                                       Email:
+  //                                   </td>
+  //                                   <td class="value">${item.email}</td>
+  //                               </tr>
+  //                        </table>
+  //                       </div>`;
+  //   }
+  //   document.getElementById('addresses-list').innerHTML = _contacts;
+  // }
 
   // services(_start = 0 , _length = undefined) {
   //     let _obj = [

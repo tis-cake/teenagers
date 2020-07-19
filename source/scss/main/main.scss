@@ -4015,6 +4015,10 @@ footer {
     margin: 180px 0 0 0;
   }
 
+  &.m-195 {
+    margin: 195px 0 0 0;
+  }
+
   &.m-220 {
     margin: 220px 0 0 0;
   }
@@ -4355,7 +4359,8 @@ footer {
 }
 
 .map-contacts {
-  padding: 70px 0 140px 0;
+  // padding: 70px 0 140px 0;
+  padding: 65px 0 140px 0;
 
   .addresses {
     padding: 0 0 130px 0;
@@ -4367,7 +4372,7 @@ footer {
 }
 
 .addresses-list {
-  margin: 70px 0 0 0;
+  margin: 84px 0 0 0;
   display: flex;
   flex-wrap: wrap;
 
@@ -4388,7 +4393,7 @@ footer {
 }
 
 .address-table {
-  margin: 30px 0 30px 0;
+  margin: 12px 0 47px 0;
 
   td {
     padding: 0;
@@ -4446,15 +4451,18 @@ footer {
   justify-content: space-between;
 
   .map-container {
-    width: 703px;
-    height: 454px;
+    // width: 703px;
+    width: 685px;
+    // height: 454px;
+    height: 443px;
     border-radius: 40px;
     overflow: hidden;
   }
 
   .contacts {
     width: calc(100% - 703px);
-    padding: 50px 0 0 30px;
+    // padding: 50px 0 0 30px;
+    padding: 52px 0 0 16px;
 
     .h3 {
       font-style: normal;
