@@ -1375,7 +1375,7 @@ p {
 
 .main-block {
   background-color: #E9EDF5;
-  margin: -118px 0 0 0;
+  margin: -130px 0 0 0;
   height: 616px;
   display: flex;
   align-items: flex-end;
@@ -1400,7 +1400,7 @@ p {
       -o-object-position: top;
          object-position: top; }
   .main-block .block-1 {
-    padding-bottom: 80px;
+    padding-bottom: 63px;
     height: 100%;
     align-items: flex-end;
     display: inline-flex;
@@ -1957,7 +1957,7 @@ p {
   position: relative; }
   .banner.p-55-15 {
     padding: 55px 15px 25px 25px; }
-  .banner.p-40-15-72-25 {
+  .banner--long, .banner.p-40-15-72-25 {
     padding: 40px 15px 72px 25px; }
   .banner > *:not(.img-bg-bottom) {
     position: relative;
@@ -2282,6 +2282,8 @@ footer {
 
 .rehabilitation_goals {
   padding: 150px 0 0 0; }
+  .rehabilitation_goals.p-180 {
+    padding: 180px 0 0 0; }
   .rehabilitation_goals .banner-card .content-bar .inline-title .h1 {
     padding: 35px 0 0 0;
     width: 480px; }
@@ -2301,14 +2303,16 @@ footer {
 
 .reviews {
   padding: 150px 0 0 0; }
-  .reviews.p-240 {
-    padding: 240px 0 0 0; }
-  .reviews.p-270 {
-    padding: 270px 0 0 0; }
   .reviews.p-170 {
     padding: 170px 0 0 0; }
   .reviews.p-25 {
     padding: 25px 0 0 0; }
+  .reviews.p-220 {
+    padding: 220px 0 0 0; }
+  .reviews.p-240 {
+    padding: 240px 0 0 0; }
+  .reviews.p-270 {
+    padding: 270px 0 0 0; }
   .reviews .reviews-list {
     margin: 25px 0 0 0;
     display: flex;
@@ -2866,23 +2870,25 @@ footer {
   margin: 120px 0 0 0; }
   .rehabilitation_help.m-230 {
     margin: 230px 0 0 0; }
+  .rehabilitation_help.m-80 {
+    margin: 82px 0 0 0; }
   .rehabilitation_help .banner-card {
     margin: 120px 0 0 0; }
 
 .ways_to_expose_addiction {
-  padding: 185px 0 0 0; }
+  padding: 192px 0 0 0; }
   .ways_to_expose_addiction .ways {
     text-align: center;
     margin: 0 0 20px 0; }
   .ways_to_expose_addiction .about-ways {
     display: flex;
     justify-content: space-between;
-    margin: 220px 0 190px 0; }
+    margin: 206px 0 190px 0; }
     .ways_to_expose_addiction .about-ways > div {
-      width: 50%; }
+      width: 49%; }
     .ways_to_expose_addiction .about-ways .h3-title {
       padding: 30px 80px 50px 0; }
-    .ways_to_expose_addiction .about-ways p {
+    .ways_to_expose_addiction .about-ways p:not(.text-purple) {
       font-style: normal;
       font-weight: normal;
       font-size: 20px;
@@ -2897,7 +2903,7 @@ footer {
       margin: 30px 0 0 0; }
   .ways_to_expose_addiction .btn-form {
     text-align: center;
-    padding: 15px 0 40px 0; }
+    padding: 24px 0 48px 0; }
     .ways_to_expose_addiction .btn-form .btn1 {
       display: inline-block; }
   .ways_to_expose_addiction .banner-card .content-bar .inline-title .h1 {
@@ -3473,10 +3479,75 @@ footer {
   .verified_articles .item-list-1 {
     margin-top: 37px; }
 
+.breadcrumbs-path .path {
+  width: 700px; }
+
+.article .article-img-bg {
+  transform: scaleX(-1);
+  width: calc(50% + 320px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  top: 0;
+  right: 0;
+  height: 100%; }
+
+.ya-share2__icon {
+  height: 3.2rem !important;
+  width: 3.2rem !important;
+  background-repeat: no-repeat;
+  background-size: inherit !important; }
+
+.ya-share2__item_service_facebook .ya-share2__badge,
+.ya-share2__item_service_vkontakte .ya-share2__badge {
+  border-radius: 50%;
+  background-size: cover !important; }
+
+.main-type-2 {
+  position: relative;
+  height: 623px;
+  margin: -130px 0 0 0;
+  overflow: hidden;
+  background: #E9EDF5; }
+  .main-type-2.h-618 {
+    height: 618px; }
+  .main-type-2 .img-bg-bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom; }
+    .main-type-2 .img-bg-bottom.img2 {
+      left: 0;
+      height: 100%; }
+  .main-type-2 .title-label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3E3C56; }
+  .main-type-2 .h1 {
+    text-align: center; }
+  .main-type-2 .form-button {
+    position: relative;
+    bottom: 0;
+    justify-content: center; }
+    .main-type-2 .form-button.p-265 {
+      padding: 265px 0 0 0; }
+    .main-type-2 .form-button.p-258 {
+      padding: 258px 0 0 0; }
+  .main-type-2 .content {
+    position: relative;
+    z-index: 2;
+    padding: 173px 0 0 0; }
+
 .main-type-3 {
   position: relative;
   height: 623px;
-  margin: -118px 0 0 0;
+  margin: -130px 0 0 0;
   overflow: hidden;
   background: #E9EDF5; }
   .main-type-3 .img-bg {
@@ -3498,7 +3569,7 @@ footer {
     width: 45%;
     background: #e9edf5; }
     .main-type-3 .left_side .flex-card {
-      padding: 150px 0 20px 0; }
+      padding: 162px 0 20px 0; }
     .main-type-3 .left_side.p-20 {
       padding: 20px 0 0 0; }
     .main-type-3 .left_side.p-10 {
@@ -3556,71 +3627,6 @@ footer {
       line-height: 20px;
       color: #2D2C42;
       padding: 15px 0 0 0; }
-
-.breadcrumbs-path .path {
-  width: 700px; }
-
-.article .article-img-bg {
-  transform: scaleX(-1);
-  width: calc(50% + 320px);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
-  top: 0;
-  right: 0;
-  height: 100%; }
-
-.ya-share2__icon {
-  height: 3.2rem !important;
-  width: 3.2rem !important;
-  background-repeat: no-repeat;
-  background-size: inherit !important; }
-
-.ya-share2__item_service_facebook .ya-share2__badge,
-.ya-share2__item_service_vkontakte .ya-share2__badge {
-  border-radius: 50%;
-  background-size: cover !important; }
-
-.main-type-2 {
-  height: 623px;
-  background: #E9EDF5;
-  position: relative;
-  margin: -118px 0 0 0;
-  overflow: hidden; }
-  .main-type-2.h-618 {
-    height: 618px; }
-  .main-type-2 .img-bg-bottom {
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: bottom;
-       object-position: bottom; }
-    .main-type-2 .img-bg-bottom.img2 {
-      left: 0;
-      height: 100%; }
-  .main-type-2 .title-label {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #3E3C56; }
-  .main-type-2 .h1 {
-    text-align: center; }
-  .main-type-2 .form-button {
-    position: relative;
-    bottom: 0;
-    justify-content: center; }
-    .main-type-2 .form-button.p-265 {
-      padding: 265px 0 0 0; }
-    .main-type-2 .form-button.p-258 {
-      padding: 258px 0 0 0; }
-  .main-type-2 .content {
-    position: relative;
-    z-index: 2;
-    padding: 165px 0 0 0; }
 
 .teenage_addiction_how_to_fight {
   padding: 75px 0 0 0; }
@@ -3845,6 +3851,8 @@ footer {
 
 .about-center {
   margin: 165px 0 0 0; }
+  .about-center .h3-title {
+    margin-bottom: 35px; }
 
 .schedule_day p {
   font-style: normal;

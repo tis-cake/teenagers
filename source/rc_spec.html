@@ -205,7 +205,8 @@
       <div class="wrapper">
         <div class="flex-parent">
           <div class="left_side">
-            <div class="path">
+            <div class="flex-card">
+              <div class="path">
                 <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
                   <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
                     <a itemprop="item" href="index.html">
@@ -233,43 +234,44 @@
                   </li>
                 </ul>
               </div>
-            <div class="title">
-              <div class="sub-title">Реабилитационный центр</div>
-              <div class="h1">Решение, Москва</div>
+              <div class="title">
+                <div class="sub-title">Реабилитационный центр</div>
+                <div class="h1">Решение, Москва</div>
+              </div>
+              <div class="dec"></div>
+              <table>
+                <thead>
+                  <tr>
+                    <th> Адрес:</th>
+                    <th> Цена:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>г. Москва,<br>ул. Дубнинская 4 к 2,</td>
+                    <td>85 000 руб.<br>
+                      месяц
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <form action="/" method="post" class="form-button">
+                <div>
+                  <button class="btn btn-lg btn-cyan"><span>Заявка на лечение</span></button>
+                </div>
+                <div>
+                  <label class=" input-mask-group">
+                    <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
+                    <i class="btn-icon">
+                      <img src="images/icons/email-svg.svg" alt="Email" />
+                    </i>
+                  </label>
+                </div>
+              </form>
             </div>
-            <div class="dec"></div>
-            <table>
-              <thead>
-                <tr>
-                  <th> Адрес:</th>
-                  <th> Цена:</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>г. Москва,<br>ул. Дубнинская 4 к 2,</td>
-                  <td>85 000 руб.<br>
-                    месяц
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <form action="/" method="post" class="form-button">
-              <div>
-                <button class="btn btn-lg btn-cyan"><span>Заявка на лечение</span></button>
-              </div>
-              <div>
-                <label class=" input-mask-group">
-                  <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
-                  <i class="btn-icon">
-                    <img src="images/icons/email-svg.svg" alt="Email" />
-                  </i>
-                </label>
-              </div>
-            </form>
           </div>
           <div class="right_side">
-            <img class="img-bg rc-bg-img" src="images/98566.png" alt="img-bg" />
+            <img class="img-bg rc-bg-img" src="images/image 38.png" alt="img-bg" />
           </div>
         </div>
       </div>
@@ -445,28 +447,36 @@
         </div>
         <div class="photo_gallery_bar">
           <div class="photo-list">
-            <div>
-              <img src="images/photogallery/image 41.png" alt="img-1" />
-            </div>
-            <div><img src="images/photogallery/image 40.png" alt="img-1" /></div>
-            <div><img src="images/photogallery/image 39.png" alt="img-1" /></div>
+            <a href="images/photogallery/image41.png" data-fancybox="images" class="photo-list-item">
+              <img src="images/photogallery/image41.png" alt="img-1" />
+            </a>
+            <a href="images/photogallery/image40.png" data-fancybox="images" class="photo-list-item">
+              <img src="images/photogallery/image40.png" alt="img-1" />
+            </a>
+            <a href="images/photogallery/image39.png" data-fancybox="images" class="photo-list-item">
+              <img src="images/photogallery/image39.png" alt="img-1" />
+            </a>
           </div>
           <div class="more-info" data-toggle="photoGallery"></div>
           <p class="see-more-toggle" data-more-toggle="photoGallery">Загрузить ещё</p>
         </div>
-        <div class="banner-card m-190">
+      </div>
+    </section>
+    <section class="rehabilitation_goals p-180">
+      <div class="wrapper">
+        <div class="banner-card">
           <div class="image-bar">
-            <img src="images/group banner.png" alt="img1" />
+            <img src="images/IMG_EFF612E830E3-1 1.png" alt="img1" />
           </div>
-          <div class="content-bar p-70-10">
+          <div class="content-bar p-65-0-50">
             <p class="p-bold">Полноценная образовательная программа на время реабилитации</p>
             <div class="dec"></div>
             <div class="inline-title">
-              <div class="h1 p-30">
+              <div class="h1">
                 Образование во время реабилитации
               </div>
             </div>
-            <div class="text-light w-571">
+            <div class="text-light">
               <p>
                 Поступая в центр, воспитанники продолжают обучение в соответствии со школьной программы в
                 рамке системы «семейного образования». При поступлении в Центр уровень образования ребенка
@@ -474,7 +484,7 @@
                 репетиторы. Учителя приезжают в центр во второй половине дня. Штат учителей – 11 человек
               </p>
             </div>
-            <p class="p-title-1">
+            <p class="p-title">
               Дополнительные секции:
             </p>
             <div class="list-ul-parent">
@@ -490,14 +500,19 @@
                 <li>Прикладное творчество</li>
               </ul>
             </div>
-            <div class="form-button m-45">
+            <form action="/" method="post" class="form-button">
               <div>
-                <a href="/" class="btn btn-lg btn-cyan"><span>Заявка на лечение</span></a>
+                <button class="btn btn-lg btn-cyan"><span>Заявка на лечение</span></button>
               </div>
               <div>
-                <a href="/" class="btn btn-md btn-default"><span>Что такое созависмость?</span></a>
+                <label class=" input-mask-group">
+                  <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
+                  <i class="btn-icon">
+                    <img src="images/icons/email-svg.svg" alt="Email" />
+                  </i>
+                </label>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -538,7 +553,7 @@
               Это на мелкие расходы, деньги снимаются не постоянно, а по мере необходимости.</p>
           </div>
           <div class="banner-side">
-            <div class="banner">
+            <a href="service.html" class="banner banner--long">
               <div class="title">
                 <span class="title-sm">Специализированные реабилитационные центры</span>
               </div>
@@ -552,7 +567,7 @@
                 </ul>
               </div>
               <img class="img-bg-bottom" src="images/Mask Group (1)798.png" alt="img" />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -566,13 +581,13 @@
             </div>
           </div>
           <div class="button-right d-desktop">
-            <a href="/" class="btn btn-lg btn-orange">
-              <span>Заявка на лечение </span>
-            </a>
+            <button class="btn btn-md btn-orange" data-toggle="modal" data-modal-id="submit_application">
+              <span>Заявка на лечение</span>
+            </button>
           </div>
         </div>
         <div class="specialists-list">
-          <div>
+          <a href="expert.html" class="specialists-list-item">
             <div class="top">
               <img src="images/specialists/image 32.png" alt="img1" />
             </div>
@@ -588,8 +603,8 @@
             <div class="specialist-licence">
               <div class="file-download">Лицензия</div>
             </div>
-          </div>
-          <div>
+          </a>
+          <a href="expert.html" class="specialists-list-item">
             <div class="top">
               <img src="images/specialists/image 32.png" alt="img1" />
             </div>
@@ -605,8 +620,8 @@
             <div class="specialist-licence">
               <div class="file-download">Лицензия</div>
             </div>
-          </div>
-          <div>
+          </a>
+          <a href="expert.html" class="specialists-list-item">
             <div class="top">
               <img src="images/specialists/image 32.png" alt="img1" />
             </div>
@@ -622,8 +637,8 @@
             <div class="specialist-licence">
               <div class="file-download">Лицензия</div>
             </div>
-          </div>
-          <div>
+          </a>
+          <a href="expert.html" class="specialists-list-item">
             <div class="top">
               <img src="images/specialists/image 32.png" alt="img1" />
             </div>
@@ -639,45 +654,44 @@
             <div class="specialist-licence">
               <div class="file-download">Лицензия</div>
             </div>
-          </div>
+          </a>
         </div>
-        <p class="see-more-toggle" data-more-toggle="specialists">Загрузить ещё</p>
-        <div class="more-info" data-toggle="specialists"></div>
         <div class="button-right d-mobile">
           <button class="btn btn-lg btn-orange" data-toggle="modal" data-modal-id="submit_application">
-            <span>Заявка на лечение</span>
+            <span>У меня есть вопрос</span>
           </button>
         </div>
-        <div class="banner-card m-185">
+        <div class="more-info" data-toggle="specialists"></div>
+        <p class="see-more-toggle" data-more-toggle="specialists">Загрузить ещё</p>
+
+        <div class="banner-card m-210">
           <div class="image-bar">
-            <img src="images/Mask Group55.png" alt="img1" />
+            <img src="images/group21 (1).png" alt="img1">
           </div>
-          <div class="content-bar p-60-10">
-            <p class="p-bold">Поможем избавиться от созависимости!</p>
+          <div class="content-bar">
+            <p class="p-bold">Обратитесь к специалистам немедленно!</p>
             <div class="dec"></div>
             <div class="inline-title">
-              <div class="h1">
-                Работа с семьей
+              <div class="h1 w-100">
+                <div>Работа с семьей</div>
               </div>
             </div>
-            <p class="p-light st-2">Систематически в режиме «скайп» психолог проводит тематические занятие с
-              родителями. Два раза в неделю родители и психолог имеют возможность работать в онлайн режиме:
-              «вопрос-ответ». В этот период для желающих предлагаются групповые семейные интенсивы по
-              различным по психолого-педагогическим направлениям, семейные лагерные смены для восстановления
-              детско-родительских отношений, индивидуальные семейные сессии.</p>
-            <div class="form-button m-30">
+            <div class="text-light">
+              <p>Систематически в режиме «скайп» психолог проводит тематические занятие с родителями. Два раза в неделю родители и психолог имеют возможность работать в онлайн режиме: «вопрос-ответ». В этот период для желающих предлагаются групповые семейные интенсивы по различным по психолого-педагогическим направлениям, семейные лагерные смены для восстановления детско-родительских отношений, индивидуальные семейные сессии.</p>
+            </div>
+            <form action="/" method="post" class="form-button">
               <div>
                 <button class="btn btn-cyan btn-md"><span>Мне нужна помощь!</span></button>
               </div>
               <div>
                 <label class=" input-mask-group">
-                  <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required />
+                  <input class="phoneNumber" name="TEL" type="tel" placeholder="+7 ____ ____ - ___ -___" required="">
                   <i class="btn-icon">
-                    <img src="images/icons/email-svg.svg" alt="Email" />
+                    <img src="images/icons/email-svg.svg" alt="Email">
                   </i>
                 </label>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -738,7 +752,7 @@
                 Зависимость это не локальная проблема! Проблему необходимо решать всей семьей.
               </div>
               <div class="btn-bar">
-                <a class="btn btn-sm btn-cyan" href="/"><span>Подробнее</span></a>
+                <a class="btn btn-sm btn-cyan" href="family_therapy.html"><span>Подробнее</span></a>
               </div>
               <img class="img-bg-bottom" src="images/Mask Group465.png" alt="img-bg" />
             </div>
@@ -746,18 +760,22 @@
         </div>
       </div>
     </section>
-    <section class="reviews p-270">
+    <section class="reviews p-170">
       <div class="wrapper">
         <div class="title">
           <div class="h3">Отзывы о лечении</div>
         </div>
         <div class="reviews-list">
-          <div>
+          <div class="reviews-item">
             <div class="username">Виктория</div>
-            <div class="date">Мать зависимого | 01.04.20</div>
-            <div class="review">Спасибо за такую качественную работу!Конеч. нам предстоит еще большой путьчтобы
-              все вернулось на свои круги, но...
+            <div class="info-top-wrap">
+              <div class="about">Мать зависимого</div>
+              <div class="date">01.04.20</div>
             </div>
+            <p class="text">
+              Здравствуйте, проходила реабилитацию в Нижнем Новгороде 5 лет назад. Бывали и тяжёлые моменты и срывы. Сейчас я трезвая счастливая жена и Мама ) Благодарность выражаю всем сотрудникам за такой не легкий труд!! Проходила реабилитацию в Нижнем Новгороде 5 лет назад. Бывали и тяжёлые моменты и срывы. Сейчас я трезвая счастливая жена и Мама ) Благодарность выражаю всем сотрудникам за такой не легкий труд!!!
+            </p>
+            <p class="text-full"></p>
             <div class="reviews-bar">
               <div class="left">
                 <ul class="stars">
@@ -769,14 +787,18 @@
                 </ul>
               </div>
               <div class="right">
-                <a href="/" class="btn btn-sm btn-cyan"><span>Подробнее</span></a>
+                <button class="btn btn-sm btn-cyan"><span>Подробнее</span></button>
               </div>
             </div>
           </div>
-          <div>
+          <div class="reviews-item">
             <div class="username">Виктория</div>
-            <div class="date">01.04.20</div>
-            <div class="review">Спасибо за такую качественную работу!</div>
+            <div class="info-top-wrap">
+              <!-- <div class="about">Мать зависимого</div> -->
+              <div class="date">01.04.20</div>
+            </div>
+            <p class="text">Спасибо за такую качественную работу!</p>
+            <p class="text-full"></p>
             <div class="reviews-bar">
               <div class="left">
                 <ul class="stars">
@@ -787,23 +809,21 @@
                   <li><img src="images/icons/Star 5.png" alt="star"></li>
                 </ul>
               </div>
+              <div class="right">
+                <button class="btn btn-sm btn-cyan"><span>Подробнее</span></button>
+              </div>
             </div>
           </div>
-          <div class="video-review">
-            <div class="video-actions">
-              <div class="user_image">
-                <img src="images/review/Rectangle 17 (1).png" alt="review" />
-              </div>
-              <div class="video-player">
-                <div class="label">
-                  <img src="images/icons/Rectangle 22.png" alt="video player" class="video-player" />
-                  Видео-отзыв
-                </div>
-              </div>
+          <div class="reviews-item detail-review photo-review">
+            <div class="user_image">
+              <img src="images/review/Rectangle 17 (1).png" alt="review" />
             </div>
             <div class="username">Александр</div>
             <div class="date">01.04.20</div>
-            <div class="review">Героиновый нанаркоман</div>
+            <div class="about">Героиновый нанаркоман</div>
+            <p class="text-full">
+              Систематически в режиме «скайп» психолог проводит тематические занятие с родителями. Два раза в неделю родители и психолог имеют возможность работать в онлайн режиме: «вопрос-ответ». В этот период для желающих предлагаются групповые семейные интенсивы по различным по психолого-педагогическим направлениям, семейные лагерные смены для восстановления детско-родительских отношений, индивидуальные семейные сессии.
+            </p>
             <div class="reviews-bar">
               <div class="left">
                 <ul class="stars">
@@ -815,16 +835,16 @@
                 </ul>
               </div>
               <div class="right">
-                <a href="/" class="btn btn-sm btn-default"><span>Подробнее</span></a>
+                <button class="btn btn-sm btn-cyan"><span>Подробнее</span></button>
               </div>
             </div>
           </div>
-          <div>
-            <div class="username">Виктория</div>
-            <div class="date">01.04.20</div>
-            <div class="review">Спасибо за такую качественную работу!Конеч. нам предстоит еще большой путьчтобы
-              все вернулось на свои круги, но...
-            </div>
+          <div class="reviews-item video-review">
+            <a href="https://www.youtube.com/embed/sOY5TfmfO5Q" data-fancybox="video" class="review-wideo-block">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sOY5TfmfO5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+            <div class="username">Александр</div>
+            <div class="about">Героиновый нанаркоман</div>
             <div class="reviews-bar">
               <div class="left">
                 <ul class="stars">
@@ -836,7 +856,7 @@
                 </ul>
               </div>
               <div class="right">
-                <a href="/" class="btn btn-sm btn-default"><span>Подробнее</span></a>
+                <button class="btn btn-sm btn-cyan"><span>Подробнее</span></button>
               </div>
             </div>
           </div>
