@@ -312,6 +312,13 @@ $(document).ready(function() {
     loop: true,
     blackFocus: false
   });
+
+  // кнопка "показать ещё" у услуг
+  $('.see-more-services').on('click', function() {
+    $('#services').addClass('show');
+    $(this).addClass('hidden');
+  })
+
 });
 
 // отзывы
@@ -370,5 +377,4 @@ $(document).ready(function() {
     let review = reviewTemplateContent.cloneNode(true);
     reviewContainer.appendChild(review);
   }
-
 });

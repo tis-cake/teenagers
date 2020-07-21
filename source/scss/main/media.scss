@@ -1244,9 +1244,39 @@
 //   }
 // }
 
-@media only screen and (max-width: 1010px) {
+// 1010px
+@media only screen and (max-width: 48em) {
+
+  .h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .h6-title-sm {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .text-purple {
+    // font-size: 16px;
+    // line-height: 20px;
+  }
+
   .wrapper {
     max-width: 100%;
+  }
+
+  .list-ul {
+    li {
+      padding-left: 20px;
+      font-size: 15px;
+      line-height: 22px;
+      &::before {
+        top: 10px;
+        width: 18px;
+        height: 13px;
+      }
+    }
   }
 
   .pagination {
@@ -1316,6 +1346,15 @@
       padding: 80px 0 0 0;
     }
 
+  }
+
+  .main-block {
+    .block-1 .w-70 {
+      width: auto;
+    }
+    .block-1 .label {
+      margin-top: 1.4rem;
+    }
   }
 
   .main-block .main-img.pos-left img {
@@ -1469,8 +1508,6 @@
         height: 100%;
         object-fit: cover;
       }
-
-
     }
   }
 
@@ -1486,6 +1523,25 @@
             padding: 10px 0 0 0;
             width: 100%;
           }
+        }
+      }
+    }
+  }
+
+  .what_i_do_now {
+    margin: 120px 0 0 0;
+    .text-purple {
+      margin-bottom: 12px;
+    }
+    .steps-list {
+      flex-wrap: wrap;
+
+      &>div {
+        margin-bottom: 87px;
+        padding-left: 1.9rem;
+        padding-bottom: 1rem;
+        .title {
+          margin-bottom: 1.1rem;
         }
       }
     }
@@ -1520,7 +1576,7 @@
   }
 
   .rehabilitation_centers {
-    padding: 120px 0 0 0;
+    padding: 126px 0 0 0;
 
     &.p-155 {
       padding: 125px 0 0 0;
@@ -1602,7 +1658,8 @@
 
     .banner-side {
       width: 100%;
-      display: flex;
+      display: none;
+      // display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
 
@@ -1763,28 +1820,37 @@
           }
         }
       }
+
+      .f-menu-last {
+        text-align: center;
+      }
     }
   }
 }
-
-@media only screen and (max-width: 767px) {
+// 767px
+@media only screen and (max-width: 48em) {
   .wrapper {
     max-width: 100%;
     padding: 0 25px;
   }
 
   .ul-path ul {
-    display: table;
+    // display: table;
+    display: flex;
     margin: 0;
     padding: 0;
     width: 100%;
     table-layout: fixed;
 
     li {
+      display: block;
+      padding-right: 2.8rem;
+      &:last-child {
+        padding-right: 0;
+      }
       &:not(:last-child):after {
         right: 10%;
       }
-
       a {
         font-size: 16px;
         line-height: 24px;
@@ -1803,8 +1869,6 @@
       line-height: 1.3;
     }
   }
-
-  .consultation-1 {}
 
   .reviews.p-170 {
     padding: 45px 0 0 0;
@@ -1897,9 +1961,7 @@
       }
     }
 
-
-
-    &:after {
+    &::after {
       content: "";
       background-image: url("../images/item-bg/krugi-1.png");
       background-size: contain;
@@ -1965,10 +2027,11 @@
     .p-light {
       width: 100% !important;
     }
+  }
 
-    .inline-title .h1:not(.w-100) {
-      width: 100% !important;
-      padding: 50px 0 0 0;
+  .reviews-bar {
+    .stars {
+      margin-bottom: 0;
     }
   }
 
@@ -2059,23 +2122,31 @@
   }
 
   .rehabilitation_list_items {
+    padding-top: 12rem;
     &>div {
-      border-bottom: 6px solid #D9D9F1;
-      box-shadow: 20px 40px 120px #B6BCD6;
       width: 100%;
       max-width: 360px;
       min-height: 230px;
       margin: 0 0 120px 0;
+      padding: 15px 0.8rem 15px 1.7rem;
+      border-bottom: 6px solid #D9D9F1;
+      box-shadow: 20px 40px 120px #B6BCD6;
 
       .image-bar {
-        width: 170px;
-        height: 150px;
+        top: -8.9rem;
+        width: 164px;
+        height: 151px;
         background: #FFFFFF;
         border: 4px solid #D9D9F1;
         box-sizing: border-box;
         border-radius: 20px;
         overflow: hidden;
-        margin: -95px 0 0 0;
+        // margin: -95px 0 0 0;
+      }
+
+      .item-title {
+        margin-top: 2.1rem;
+        margin-bottom: 0.5rem;
       }
 
       .reviews-bar {
@@ -2113,11 +2184,15 @@
         display: flex;
         justify-content: space-between;
 
+        .right {
+          margin-left: auto;
+        }
+
         .btn.btn-md {
           font-size: 14px !important;
           padding: 12px 11px !important;
           min-width: 106px;
-          margin: 17px 0 0 0;
+          margin: 0;
         }
       }
 
@@ -2127,8 +2202,18 @@
     }
   }
 
+  .rehabilitation_centers {
+    .btn.btn-lg {
+      margin-top: 7px;
+      margin-bottom: 0;
+    }
+    .banner-card {
+      margin-top: 145px;
+    }
+  }
+
   .rehabilitation_centers .banner-card .form-button {
-    margin: 15px -5px 0 -5px;
+    margin: 10px -5px 0 -5px;
   }
 
   .main-type-3 {
@@ -2180,33 +2265,102 @@
       .flex-card {
         position: relative;
         z-index: 8;
-        padding: 35px 0 0 0;
+        padding: 32px 0 0 0;
         max-width: 380px;
       }
     }
   }
 
+  .list-bottom-bg.w-3>div,
+  .list-bottom-bg.w-2>div {
+    max-width: 100%;
+    width: 100%;
+
+    // .top {
+    //   height: 215px;
+    // }
+
+    // .h6 {
+    //   padding: 50px 0 10px 2px;
+    //   font-size: 18px;
+    //   width: calc(100% - 80px);
+    // }
+  }
+
+  //   .list-bottom-bg {
+  //   &.w-3 {
+  //     & > div {
+  //       .top {
+  //         height: 22.7rem;
+  //       }
+  //     }
+  //   }
+  // }
+
   .list-bottom-bg {
+
+    &>div {
+      .bottom {
+        min-height: 206px;
+        padding-top: 27px;
+        margin-top: -7.2rem;
+      }
+    }
+
+    &.w-3 {
+      &>div {
+        .top {
+          height: 22.7rem;
+        }
+
+        .bottom {
+          .bottom-icon {
+            position: absolute;
+            top: 12px;
+            left: 14px;
+          }
+        }
+      }
+    }
 
     &.w-3,
     &.w-2 {
       &>div {
         margin: 0 0 25px 0;
-
-        min-height: unset;
+        // min-height: unset;
 
         .bottom {
           .bottom-content {
-            padding: 5px 0 15px 0;
+            // padding: 0;
+            // padding: 5px 0 15px 0;
+          }
+
+          .bottom-icon {
+            width: 79px;
+            height: 79px;
+            img {
+              width: 47px;
+              height: 47px;
+            }
           }
         }
 
         .h6 {
-          padding: 55px 0 25px 14px;
-          width: calc(100% - 80px);
+          // padding: 55px 0 25px 14px;
+          padding: 0;
+          margin-top: 32px;
+          margin-left: 80px;
+          margin-bottom: 18px;
+          width: auto;
+          font-size: 25px;
+          line-height: 32px;
         }
       }
     }
+  }
+
+  .treatment_methods {
+    padding-top: 8.7rem;
   }
 
   .treatment_methods .banner-card {
@@ -2221,9 +2375,7 @@
     flex-direction: column-reverse;
     max-width: 360px;
     margin-right: auto !important;
-    ;
     margin-left: auto !important;
-    ;
 
     &.m-185,
     &.m-222,
@@ -2238,6 +2390,11 @@
       margin: 60px 0 0 0 !important;
     }
 
+    .h1 {
+      margin-bottom: 1.9rem;
+      font-size: 27px;
+      line-height: 35px;
+    }
 
     .content-bar,
     .content-bar.p-100-115-0-10,
@@ -2254,9 +2411,12 @@
 
     .btn {
       &.btn-md {
-        font-size: 13px !important;
-        padding: 11px 18px !important;
+        font-size: 14px !important;
+        padding: 11px 15px !important;
         min-width: 143px;
+        &.btn-default {
+          padding: 11px 20px !important;
+        }
       }
     }
 
@@ -2268,15 +2428,31 @@
     }
 
     .inline-title {
+      padding-bottom: 0;
+      margin-bottom: 1.9rem;
       .h1 {
+        margin-bottom: 0;
         padding: 50px 0 0 0;
+        // font-size: 27px;
+        // line-height: 35px;
 
         &:not(.w-100) {
           width: 100%;
-          padding: 35px 0 0 0;
+          padding: 29px 0 0 0;
         }
       }
     }
+
+     // .inline-title {
+      // .h1 {
+      //   font-size: 27px;
+      //   line-height: 35px;
+      // }
+      // .h1:not(.w-100) {
+      //   width: 100% !important;
+      //   padding: 50px 0 0 0;
+      // }
+    // }
 
     .image-bar {
       width: 100%;
@@ -2305,15 +2481,18 @@
     }
 
     .form-button {
-      margin-top: 15px;
+      justify-content: space-between;
+      margin-top: 10px;
       max-width: 338px;
 
       &>div {
+        margin-right: 0;
         padding: 15px 0 15px 0;
 
         &:not(:last-child) {
-
           width: auto;
+          margin-right: 0;
+          margin-bottom: 6px;
           text-align: left;
         }
       }
@@ -2326,20 +2505,54 @@
           top: -2px;
         }
       }
+
+      .btn-lg {
+        padding: 10px 12px !important;
+      }
+
+      .input-mask-group {
+        width: auto;
+        padding-right: 5px;
+        padding-left: 6px;
+        input {
+        // border: 1px solid red;
+          width: 120px;
+          padding: 6px 0 10px 8px;
+        }
+        .btn-icon {
+          width: 37px;
+          height: 37px;
+          img {
+            top: 40%;
+          }
+        }
+      }
     }
 
     flex-wrap: wrap;
   }
 
+  .consultation-1 {
+    .image-bar {
+      margin-top: -20px;
+    }
+  }
+
   .input-mask-group {
-    display: block;
-    width: 170px;
+    // display: block;
+    display: flex;
+    align-items: center;
+    width: 179px;
     position: relative;
 
     .btn-icon {
-      width: 35px;
-      height: 35px;
-      margin: -1px 0 0 -6px;
+      display: inline-flex;
+      flex-shrink: 0;
+      width: 39px;
+      height: 39px;
+      // margin: -1px 0 0 -6px;
+      margin: 0;
+      margin-left: 3px;
 
       img {
         width: 20px;
@@ -2348,8 +2561,9 @@
     }
 
     input {
-      width: calc(100% - 42px);
-      padding: 8px 0 7px 5px;
+      // width: calc(100% - 42px);
+      width: 130px;
+      padding: 11px 0 10px 13px;
       font-size: 14px;
       line-height: 22px;
     }
@@ -2427,7 +2641,7 @@
   }
 
   main {
-    margin-top: 70px;
+    padding-top: 70px;
   }
 
   .goals-list>div {
@@ -2435,9 +2649,120 @@
     min-height: 30vw;
   }
 
+  .services {
+    margin-top: 10.7rem;
+    .services-list-wrap {
+      position: relative;
+    }
+    .services-list {
+      max-height: 1180px;
+      overflow: hidden;
+      transition-property: max-height;
+      transition-duration: 2s;
+
+      & > div {
+        position: relative;
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-right: 25px;
+        margin-right: 0;
+        margin-bottom: 2.3rem;
+        transition: 2s;
+        &:not(:nth-child(4n)) {
+          margin-right: 0;
+        }
+        .top .description {
+          .h6-title {
+            margin-bottom: 4px;
+            font-size: 25px;
+            line-height: 30px;
+          }
+          margin: 0;
+          margin-left: 20px;
+          margin-right: 10px;
+        }
+        .reviews-bar {
+          padding: 1.5rem 0 0 0;
+        }
+      }
+
+      & > div:nth-child(4) {
+        box-shadow: none;
+        &::after {
+          position: absolute;
+          content: '';
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(180deg, rgba(244, 247, 255, 0) 0%, #F4F7FF 63.53%);
+        }
+      }
+
+      & > div:nth-last-child(1),
+      & > div:nth-last-child(2),
+      & > div:nth-last-child(3),
+      & > div:nth-last-child(4) {
+        // display: none;
+      }
+
+      &.show {
+        // max-height: 4680px;
+        max-height: 2500px;
+      }
+
+      &.show > div {
+        // display: block;
+        box-shadow: 10px 20px 25px #EDF0FA;
+        &:nth-child(4) {}
+        &::after {
+          content: none;
+        }
+      }
+
+      .icon {
+        width: 8.3rem;
+        height: 8.3rem;
+      }
+    }
+
+    .see-more-services-parent {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 50px;
+    }
+
+    .see-more-services {
+      margin-top: 0;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      &.hidden {
+        display: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .form-button {
+      margin-top: 20px;
+    }
+
+    .banner-card {
+      margin-top: 6.6rem;
+    }
+
+    .image-bar {
+      margin: -32px 0 0 0;
+    }
+  }
+
   .list-bottom-bg,
   .services .services-list {
-    justify-content: center;
+    // justify-content: center;
+    flex-wrap: wrap;
   }
 
   .rehabilitation_stages_items {
@@ -2463,7 +2788,7 @@
   .btn {
     &.btn-lg {
       font-size: 14px !important;
-      padding: 8px 6px !important;
+      padding: 13px 14px !important;
       min-width: 130px;
 
       &:before {
@@ -2480,6 +2805,10 @@
         height: calc(100% + 3px);
       }
     }
+    &.btn-orange {
+      padding: 10px 14px !important;
+      min-width: 140px;
+    }
   }
 
   .form-button {
@@ -2492,7 +2821,7 @@
 
     &>div {
       &:not(:last-child) {
-        margin-right: 5px;
+        margin-right: 20px;
       }
     }
 
@@ -2563,7 +2892,8 @@
     height: auto;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    margin: 50px 0 0 0;
+    // margin: 50px 0 0 0;
+    margin: 0;
     align-items: center;
 
     .title.w-628 {
@@ -2655,8 +2985,8 @@
     padding: 180px 0 0 0;
   }
 }
-
-@media only screen and (max-width: 692px) {
+// 692 px
+@media only screen and (max-width: 48em) {
 
   .p-bold,
   .p-main,
@@ -2683,8 +3013,36 @@
   }
 
   .teenage_addiction {
+    padding-top: 4rem;
     &.p-225 {
       padding: 35px 0 0 0;
+    }
+
+    .text-gray {
+      margin-bottom: 34px;
+    }
+
+    .title {
+      margin-bottom: 3.4rem;
+    }
+  }
+
+  .banner {
+    overflow: hidden;
+    width: 100%;
+    min-height: 39.3rem;
+    margin-top: 46px;
+    margin-bottom: 4.6rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 4.2rem;
+    .title {
+      margin-bottom: 0.9rem;
+      font-size: 22px;
+      line-height: 30px;
+    }
+    .description {
+      padding: 0;
     }
   }
 
@@ -2784,14 +3142,14 @@
       }
 
       .title {
-        margin: 50px 0 0 0;
+        margin: 46px 0 0 0;
       }
     }
 
     .main-img,
     &.h-618 .main-img,
     .main-img {
-      height: 270px;
+      height: 262px;
     }
   }
 
@@ -2800,12 +3158,13 @@
   }
 
   .dec {
-    height: 16px;
-    margin: 12px 0 0 0;
+    height: 18px;
+    margin: 14px 0 0 0;
   }
 
   .text-light {
-    margin: 0 0 18px 0;
+    // margin: 0 0 18px 0;
+    margin-bottom: 0;
   }
 
   .banner-type-3 .right_side .banner-center {
@@ -2815,8 +3174,47 @@
     padding: 30px 10px;
   }
 
-  .solutions_possible_problems .solutions-list>div:nth-child(2n):after {
-    transform: skewY(3deg) skewX(0);
+  .solutions_possible_problems {
+    padding-top: 13.2rem;
+
+    .title {
+      margin-top: 14px;
+    }
+
+    .title-left {
+      .text-purple {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .solutions-list {
+      flex-wrap: wrap;
+      padding-top: 9rem;
+      &>div:nth-child(2n):after {
+        transform: skewY(3deg) skewX(0);
+      }
+    }
+
+    .btn.btn-orange {
+      margin: 0;
+      margin-bottom: 120px;
+    }
+
+    .banner-card {
+      .h1 {
+        margin-top: 43px;
+        padding-top: 0;
+      }
+      .image-bar {
+        margin-top: -34px;
+      }
+
+      .form-button {
+        margin: 10px -5px 0 -5px;
+      }
+    }
+
   }
 
   .solutions_possible_problems .solutions-list>div {
@@ -2824,25 +3222,41 @@
     max-width: 360px;
     height: auto;
     min-height: 270px;
-    margin: 0 0 85px 0;
+    margin: 0 0 95px 0;
+    padding-top: 5.1rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+
+    &:last-child {
+      margin-bottom: 78px;
+    }
 
     .text-purple-sm {
+      margin-bottom: 1rem;
       font-size: 14px;
-      line-height: 35px;
+      line-height: 20px;
+    }
+
+    .title {
+      margin-bottom: 1.1rem;
     }
 
     .solutions li {
       font-size: 14px;
       line-height: 1.4;
       padding: 0;
+      &::after {
+        top: 0.8rem;
+      }
     }
 
     .image-bar {
       height: 70px;
+      top: -9rem;
 
       img {
         width: 160px;
-        bottom: 5px;
+        height: 160px;
       }
     }
 
@@ -2913,26 +3327,26 @@
     border-radius: 107px;
   }
 }
+// 410px
+// @media only screen and (max-width: 410px) {
+//   .banner-card .form-button>div:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
 
-@media only screen and (max-width: 410px) {
-  .banner-card .form-button>div:not(:last-child) {
-    margin-bottom: 30px;
-  }
+//   .list-bottom-bg.w-3>div,
+//   .list-bottom-bg.w-2>div {
+//     max-width: 100%;
+//     width: 100%;
 
-  .list-bottom-bg.w-3>div,
-  .list-bottom-bg.w-2>div {
-    max-width: 100%;
-    width: 100%;
-
-    .top {
-      height: 215px;
-    }
+//     .top {
+//       height: 215px;
+//     }
 
 
-    .h6 {
-      padding: 50px 0 10px 2px;
-      font-size: 18px;
-      width: calc(100% - 80px);
-    }
-  }
-}
+//     .h6 {
+//       padding: 50px 0 10px 2px;
+//       font-size: 18px;
+//       width: calc(100% - 80px);
+//     }
+//   }
+// }
