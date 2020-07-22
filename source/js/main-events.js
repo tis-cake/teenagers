@@ -1,3 +1,5 @@
+const width = $(window).width();
+
 $(document).ready(function() {
 
   $(document).on('click', '.file-download', function() {
@@ -12,7 +14,7 @@ $(document).ready(function() {
     a.download = filename;
     a.click();
   }
-  $("#burger").on('change', function() {
+  $("#burger").on('click', function() {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
       $('.m-menu').removeClass('active');
@@ -47,6 +49,16 @@ $(document).ready(function() {
 
   // маска на телефон
   $('.phoneNumber').mask('+7 999 999-99-99');
+
+  // выпадающее подменю на мобильном
+  if (width <= 756) {
+    $('.sub-menu-toggle').click(function(evt) {
+      evt.preventDefault();
+      let currentParrent = $(this).closest('.dropdown-toggle');
+      $('.dropdown-toggle').not(currentParrent).removeClass('show');
+      currentParrent.toggleClass('show');
+    });
+  }
 
   // лайтбокс для отзыва с видео
   $().fancybox({

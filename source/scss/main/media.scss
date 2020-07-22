@@ -1406,20 +1406,133 @@
           margin: 0;
           padding: 0;
         }
+
+        button {
+          width: 3.9rem;
+          height: 3.2rem;
+          display: inline-block;
+          position: relative;
+          border: none;
+          background-color: transparent;
+          &:focus {
+            outline: none;
+          }
+
+          span {
+            position: absolute;
+            width: 100%;
+            height: 0.2rem;
+            top: 50%;
+            margin-top: -0.1rem;
+            left: 0;
+            display: block;
+            background: white;
+            transition: .5s;
+          }
+
+          span:first-child {
+            top: 0.3rem;
+          }
+
+          span:last-child {
+            bottom: 0.3rem;
+            top: auto;
+          }
+
+          &.active {
+            span {
+              opacity: 0;
+            }
+
+            span:first-child {
+              opacity: 1;
+              top: 1.6rem;
+              transform: rotate(405deg);
+            }
+
+            span:last-child {
+              opacity: 1;
+              bottom: 1.5rem;
+              transform: rotate(-405deg);
+            }
+          }
+        }
+
+        // input: ;[type=checkbox] {
+        //   display: none;
+
+        //   &+label {
+        //     width: 3.9rem;
+        //     height: 3.2rem;
+        //     display: inline-block;
+        //     position: relative;
+
+        //     span {
+        //       position: absolute;
+        //       width: 100%;
+        //       height: 0.2rem;
+        //       top: 50%;
+        //       margin-top: -0.1rem;
+        //       left: 0;
+        //       display: block;
+        //       background: white;
+        //       transition: .5s;
+        //     }
+
+        //     span:first-child {
+        //       top: 0.3rem;
+        //     }
+
+        //     span:last-child {
+        //       bottom: 0.3rem;
+        //       top: auto;
+        //     }
+        //   }
+
+        //   &:checked+label {
+        //     span {
+        //       opacity: 0;
+        //     }
+
+        //     span:first-child {
+        //       opacity: 1;
+        //       top: 1.6rem;
+        //       transform: rotate(405deg);
+        //     }
+
+        //     span:last-child {
+        //       opacity: 1;
+        //       bottom: 1.5rem;
+        //       transform: rotate(-405deg);
+        //     }
+        //   }
+        // }
+      }
+
+      a {
+        width: 100px;
+        margin-left: 0;
+        span {
+          width: auto;
+          padding-left: 0;
+          font-size: 21px;
+          line-height: 23px;
+        }
       }
     }
 
     .m-menu {
       position: fixed;
       z-index: 9999;
-      height: calc(100% - 71px);
-      width: 100%;
       left: 0;
       top: 71px;
-      transition: .3s;
       transform: translateX(-120%);
-      overflow-y: auto;
+      width: 100%;
+      height: calc(100% - 71px);
+      margin-top: 0;
       padding-top: 38px;
+      transition: .3s;
+      overflow-y: auto;
       border-radius: 0;
       background: #2D2C42;
 
@@ -1433,33 +1546,64 @@
 
       .menu-ul>li {
         display: block;
+        margin-bottom: 26px;
         text-align: left;
         line-height: initial;
 
-        &:not(:last-child) {
-          a {
-            line-height: 35px;
-          }
+        // &:not(:last-child) {
+        //   a {
+        //     line-height: 35px;
+        //   }
+        // }
+
+        .plus-minus::before {
+          font-weight: 400;
         }
 
         a.menu-a {
-          font-size: 18px;
           width: 100%;
           margin-right: 0;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 27px;
+          &::before {
+            bottom: -4px;
+          }
         }
 
         .sub-dropdown {
-          padding-top: 10px;
+          margin: 0;
+          padding: 0;
+          padding-left: 16px;
           position: static;
           background: transparent;
           width: 100%;
 
           li {
-            margin-bottom: 15px;
-
+            margin-bottom: 20px;
             a {
               font-size: 16px;
             }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        &.show {
+          .plus-minus::before {
+            content: '-';
+          }
+          a::before {
+            width: 100%;
+            visibility: visible;
+            opacity: 1;
+          }
+          .sub-dropdown {
+            opacity: 1;
+            max-height: 70rem;
+            padding-top: 24px;
+            // padding-left: 16px;
           }
         }
       }
@@ -2585,7 +2729,65 @@
     .m-contacts-1 {
       width: 140px;
       height: 65px;
+      .flex-contact {
+        margin: 0;
+        .purple-icon-wrap {
+          display: none;
+        }
+        &::before {
+          content: none;
+        }
+
+        .icon-wrap {
+          position: relative;
+          box-shadow: none;
+          .c-icon {
+            border: 0;
+            background-image: none;
+            &.purple-icon,
+            &.orange-icon,
+            &.telegram-icon {
+              border: 0;
+              background: none;
+            }
+          }
+          &::before {
+            top: -9px;
+            left: -4px;
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+
+        .orange-icon-wrap {
+          &::before {
+            background-image: url('../images/icons/icon-orange-bg4.png');
+          }
+        }
+        .blue-icon-wrap {
+          &::before {
+            background-image: url('../images/icons/icon-blue-bg4.png');
+          }
+        }
+      }
     }
+    // .c-icon {
+    //   a {
+    //     position: relative;
+    //     background-repeat: no-repeat;
+    //     background-position: 14px 8px;
+    //   }
+    // }
+    // .orange-icon {
+    //   a {
+    //     background-image: url('../images/icons/icon-tel.svg');
+    //   }
+    // }
   }
 
   .menu .m-logo .logo-shadow {
