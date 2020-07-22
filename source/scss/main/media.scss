@@ -1745,6 +1745,7 @@
     }
   }
 
+  .treatment_program,
   .rehabilitation_stages {
     .rehabilitation_stages_items {
       max-height: 1105px;
@@ -2048,27 +2049,6 @@
     }
   }
 
-  .banner-type-3 {
-    flex-wrap: wrap;
-
-    .left_side {
-      width: 100%;
-      padding: 0 0 0 0;
-    }
-
-    .right_side {
-      width: 100%;
-      padding: 0 0 0 0;
-
-      .banner-center {
-        //width: 50vw;
-        //height: 320px;
-        //border-radius: 40px;
-        //padding: 35px 50px;
-      }
-    }
-  }
-
   footer {
     .f-content {
       display: flex;
@@ -2166,16 +2146,40 @@
 
   .when_is_detox_necessary {
     margin: 65px 0 0 0;
+    .text-purple {
+      margin-bottom: 2rem;
+    }
+    .steps-list.st-1 {
+      &>div {
+        height: auto;
+        min-height: 20rem;
+      }
+    }
   }
 
   .main-type-2 {
     .img-bg-bottom.img1 {
       left: 0;
       width: 100%;
+      // height: 75%;
     }
 
     .content {
-      padding: 65px 0 20px 0;
+      // padding: 65px 0 20px 0;
+      padding: 83px 0 20px 0;
+    }
+
+    .title-label {
+      margin-bottom: 4px;
+    }
+
+    .form-button.p-265 {
+      margin-top: 5px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 0;
+      padding-bottom: 425px;
+      // padding: 65px 0 130px 0;
     }
   }
 
@@ -2197,8 +2201,11 @@
     // bottom: -150px;
   }
 
-  .the_best_deal_in_your_area .banner-type-2 {
-    margin: 36px 0 0 0;
+  .the_best_deal_in_your_area {
+    margin-top: 10rem;
+    .banner-type-2 {
+      margin: 32px 0 0 0;
+    }
   }
 
   .main-block {
@@ -2219,65 +2226,52 @@
     // max-width: 360px;
   }
 
-  .banner-type-2 {
-    text-align: center;
+  // .banner-type-2 {
+    // text-align: center;
 
-    .left_side {
-      text-align: left;
-      max-width: 414px;
-      width: 100%;
-      height: auto;
-      background-image: url("../images/item-bg/mobile-bg-1 (2).png");
-      background-size: 100% 100%;
-      background-position: top 0 left 0;
-      padding: 40px 40px 110px 40px;
-      position: relative;
+    // .left_side {
+    //   // text-align: left;
+    //   // max-width: 414px;
+    //   // width: 100%;
+    //   // height: auto;
+    //   // background-image: url("../images/item-bg/mobile-bg-1 (2).png");
+    //   // background-size: 100% 100%;
+    //   // background-position: top 0 left 0;
+    //   // padding: 40px 33px 110px 33px;
+    //   // position: relative;
 
-      .btn-form {
-        margin: 10px 0 0 0;
+    //   .btn-form {
+    //     margin: 10px 0 0 0;
 
-        .btn1.btn-simple {
-          padding: 13px 17px;
-        }
-      }
-    }
+    //     .btn1.btn-simple {
+    //       padding: 13px 17px;
+    //     }
+    //   }
+    // }
 
-    &::after {
-      content: "";
-      background-image: url("../images/item-bg/krugi-1.png");
-      background-size: contain;
-      background-position: top 0 right 0;
-      background-repeat: no-repeat;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
+    // .price_icon {
+    //   width: 96px;
+    //   height: 96px;
+    //   background: #2D2C42;
+    //   box-shadow: 5px 10px 30px rgba(0, 38, 111, 0.56);
+    //   border-radius: 20px;
+    //   margin: 0 auto 20px auto;
+    //   text-align: center;
+    //   padding: 30px 0 0 0;
+    //   position: absolute;
+    //   bottom: -50px;
+    //   left: 50%;
+    //   transform: translate(-50%, 0);
+    // }
 
-    .price_icon {
-      width: 96px;
-      height: 96px;
-      background: #2D2C42;
-      box-shadow: 5px 10px 30px rgba(0, 38, 111, 0.56);
-      border-radius: 20px;
-      margin: 0 auto 20px auto;
-      text-align: center;
-      padding: 30px 0 0 0;
-      position: absolute;
-      bottom: -50px;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-
-    .right_side {
-      height: 360px;
-      width: 100%;
-      max-width: 414px;
-      margin: -30px 0 0 0;
-      background-image: url("../images/item-bg/mobile-bg-1 (1).png");
-    }
-  }
+    // .right_side {
+    //   height: 360px;
+    //   width: 100%;
+    //   max-width: 414px;
+    //   margin: -30px 0 0 0;
+    //   background-image: url("../images/item-bg/mobile-bg-1 (1).png");
+    // }
+  // }
 
   .button-right.d-mobile {
     text-align: center;
@@ -2341,10 +2335,18 @@
   }
 
   .the_best_deal_in_your_area {
+    .title {
+      font-size: 30px;
+    }
+
     .sub-title {
-      font-size: 24px;
-      line-height: 1;
-      margin: 25px 0 10px 0;
+      font-size: 22px;
+      margin: 20px 0 7px 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 25px;
     }
   }
 
@@ -2868,6 +2870,19 @@
     // padding: 20px 0 20px 0;
   }
 
+  .steps_12_codependent {
+    .text-gray {
+      margin-bottom: 2rem;
+      display: block;
+    }
+  }
+
+  .signs_addiction {
+    .banner-card {
+      margin-top: 90px;
+    }
+  }
+
   .content-main .text-side {
     width: auto;
   }
@@ -2959,17 +2974,30 @@
     .left_side {
       width: 100%;
       padding: 0 0 20px 0;
+
+      .p-title {
+        margin-bottom: 1.8rem;
+        font-size: 30px;
+        line-height: 1.4;
+      }
     }
 
     .right_side {
       width: 100%;
       padding: 0 0 0 0;
+      border-radius: 40px;
+      overflow: hidden;
 
       .banner-center {
         width: 100%;
-        height: calc(70vw - 30px);
+        // height: calc(70vw - 30px);
+        // height: 100vw;
+        height: auto;
+        min-height: 443px;
         border-radius: 40px;
-        padding: 35px 50px;
+        // padding: 35px 50px;
+        // padding: 30px 10px;
+        padding: 48px 10px 20px;
       }
     }
   }
@@ -3499,11 +3527,28 @@
   .banner-type-2 {
     text-align: center;
 
-    .right_side {
-      width: 100%;
-      height: 80vw;
-      margin: 15px 0 0 0;
+    // .right_side {
+    //   width: 100%;
+    //   height: 80vw;
+    //   // margin: 15px 0 0 0;
 
+    //   height: 360px;
+    //   max-width: none;
+    //   margin: -34px 0 0 0;
+    //   background-image: url("../images/item-bg/mobile-bg-1 (1).png");
+    // }
+
+    &::after {
+      content: "";
+      background-image: url("../images/item-bg/krugi-1.png");
+      background-size: contain;
+      background-position: top 0 right 0;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
     }
 
     .left_side {
@@ -3514,7 +3559,8 @@
       background-image: url("../images/item-bg/mobile-bg-1 (2).png");
       background-size: 100% 100%;
       background-position: top 0 left 0;
-      padding: 40px 40px 90px 40px;
+      // padding: 40px 40px 90px 40px;
+      padding: 40px 33px 110px 33px;
       position: relative;
 
       .btn-form {
@@ -3526,7 +3572,6 @@
       }
     }
 
-
     .price_icon {
       width: 96px;
       height: 96px;
@@ -3537,7 +3582,7 @@
       text-align: center;
       padding: 30px 0 0 0;
       position: absolute;
-      bottom: -50px;
+      bottom: -38px;
       left: 50%;
       transform: translate(-50%, 0);
     }
@@ -3546,8 +3591,19 @@
       height: 290px;
       width: 100%;
       max-width: 370px;
-      margin: -30px 0 0 0;
+      margin: -34px 0 0 0;
       background-image: url("../images/item-bg/mobile-bg-1 (1).png");
+    }
+  }
+
+  .preparations {
+    margin-top: 15rem;
+  }
+
+  .diagnoses {
+    margin-top: 10.6rem;
+    .left_side {
+      margin-bottom: 86px;
     }
   }
 
@@ -3576,9 +3632,9 @@
   .main-type-3 {
     background: #e9edf5;
 
-    .form-button.p-265 {
-      padding: 65px 0 130px 0;
-    }
+    // .form-button.p-265 {
+      // padding: 65px 0 130px 0;
+    // }
 
     .block-1,
     .left_side {
@@ -3615,13 +3671,6 @@
   .text-light {
     // margin: 0 0 18px 0;
     margin-bottom: 0;
-  }
-
-  .banner-type-3 .right_side .banner-center {
-    width: 100%;
-    height: 100vw;
-    border-radius: 40px;
-    padding: 30px 10px;
   }
 
   .solutions_possible_problems {

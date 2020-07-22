@@ -4253,13 +4253,16 @@ footer {
       padding: 30px 0 0 0; }
     .rehabilitation_centers .banner-card .content-bar {
       padding: 40px 10px 40px 10px; }
+  .treatment_program .rehabilitation_stages_items,
   .rehabilitation_stages .rehabilitation_stages_items {
     max-height: 1105px;
     overflow: hidden;
     transition-property: max-height;
     transition-duration: 2s; }
+    .treatment_program .rehabilitation_stages_items.show,
     .rehabilitation_stages .rehabilitation_stages_items.show {
       max-height: 2500px; }
+      .treatment_program .rehabilitation_stages_items.show > div:nth-child(3)::after,
       .rehabilitation_stages .rehabilitation_stages_items.show > div:nth-child(3)::after {
         content: "";
         width: 100%;
@@ -4271,13 +4274,17 @@ footer {
         border-radius: 2rem;
         border-bottom: 0.7rem solid #E3E3F9;
         transform: skewY(4deg) skewX(0) !important; }
+      .treatment_program .rehabilitation_stages_items.show > div:nth-child(3) .solutions-light::after,
       .rehabilitation_stages .rehabilitation_stages_items.show > div:nth-child(3) .solutions-light::after {
         content: none; }
+  .treatment_program .btn.btn-orange,
   .rehabilitation_stages .btn.btn-orange {
     margin-top: 0;
     margin-bottom: 66px; }
+  .treatment_program .banner-card .inline-title,
   .rehabilitation_stages .banner-card .inline-title {
     padding: 0 0 1.5rem 0; }
+  .treatment_program .banner-card .image-bar,
   .rehabilitation_stages .banner-card .image-bar {
     margin: -32px 0 0 0; }
   .rehabilitation_stages_items-wrapper {
@@ -4417,14 +4424,6 @@ footer {
     min-height: 20vw; }
     .goals-list > div:first-child {
       margin-top: 70px; }
-  .banner-type-3 {
-    flex-wrap: wrap; }
-    .banner-type-3 .left_side {
-      width: 100%;
-      padding: 0 0 0 0; }
-    .banner-type-3 .right_side {
-      width: 100%;
-      padding: 0 0 0 0; }
   footer .f-content {
     display: flex;
     flex-wrap: wrap;
@@ -4484,11 +4483,24 @@ footer {
       margin: 70px 0 0 0; }
   .when_is_detox_necessary {
     margin: 65px 0 0 0; }
+    .when_is_detox_necessary .text-purple {
+      margin-bottom: 2rem; }
+    .when_is_detox_necessary .steps-list.st-1 > div {
+      height: auto;
+      min-height: 20rem; }
   .main-type-2 .img-bg-bottom.img1 {
     left: 0;
     width: 100%; }
   .main-type-2 .content {
-    padding: 65px 0 20px 0; }
+    padding: 83px 0 20px 0; }
+  .main-type-2 .title-label {
+    margin-bottom: 4px; }
+  .main-type-2 .form-button.p-265 {
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 425px; }
   .main-block .block-1.f-m:before,
   .main-block .left_side.f-m:before,
   .main-type-3 .block-1.f-m:before,
@@ -4502,8 +4514,10 @@ footer {
     transform: rotate(-102deg);
     height: 490px;
     top: 265px; }
-  .the_best_deal_in_your_area .banner-type-2 {
-    margin: 36px 0 0 0; }
+  .the_best_deal_in_your_area {
+    margin-top: 10rem; }
+    .the_best_deal_in_your_area .banner-type-2 {
+      margin: 32px 0 0 0; }
   .main-block .main-img.pos-left img {
     -o-object-position: center;
        object-position: center;
@@ -4514,52 +4528,6 @@ footer {
   .main-type-2 .block-1.w-480px,
   .main-type-3 .block-1.w-480px {
     width: 100%; }
-  .banner-type-2 {
-    text-align: center; }
-    .banner-type-2 .left_side {
-      text-align: left;
-      max-width: 414px;
-      width: 100%;
-      height: auto;
-      background-image: url("../images/item-bg/mobile-bg-1 (2).png");
-      background-size: 100% 100%;
-      background-position: top 0 left 0;
-      padding: 40px 40px 110px 40px;
-      position: relative; }
-      .banner-type-2 .left_side .btn-form {
-        margin: 10px 0 0 0; }
-        .banner-type-2 .left_side .btn-form .btn1.btn-simple {
-          padding: 13px 17px; }
-    .banner-type-2::after {
-      content: "";
-      background-image: url("../images/item-bg/krugi-1.png");
-      background-size: contain;
-      background-position: top 0 right 0;
-      background-repeat: no-repeat;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      height: 100%; }
-    .banner-type-2 .price_icon {
-      width: 96px;
-      height: 96px;
-      background: #2D2C42;
-      box-shadow: 5px 10px 30px rgba(0, 38, 111, 0.56);
-      border-radius: 20px;
-      margin: 0 auto 20px auto;
-      text-align: center;
-      padding: 30px 0 0 0;
-      position: absolute;
-      bottom: -50px;
-      left: 50%;
-      transform: translate(-50%, 0); }
-    .banner-type-2 .right_side {
-      height: 360px;
-      width: 100%;
-      max-width: 414px;
-      margin: -30px 0 0 0;
-      background-image: url("../images/item-bg/mobile-bg-1 (1).png"); }
   .button-right.d-mobile {
     text-align: center; }
   .photo_gallery {
@@ -4585,10 +4553,14 @@ footer {
       margin-right: 0; }
       .how_to_prevent_addiction .prevent_list > div:not(:last-child) {
         margin-bottom: 70px; }
+  .the_best_deal_in_your_area .title {
+    font-size: 30px; }
   .the_best_deal_in_your_area .sub-title {
-    font-size: 24px;
-    line-height: 1;
-    margin: 25px 0 10px 0; }
+    font-size: 22px;
+    margin: 20px 0 7px 0; }
+  .the_best_deal_in_your_area p {
+    font-size: 16px;
+    line-height: 25px; }
   .see-more-services-parent {
     text-align: center; }
   .banner-type-4 .left_side p {
@@ -4895,6 +4867,11 @@ footer {
       width: calc(100% + 0px);
       height: calc(100% + 4px);
       border: 2px solid #CFD4E2; }
+  .steps_12_codependent .text-gray {
+    margin-bottom: 2rem;
+    display: block; }
+  .signs_addiction .banner-card {
+    margin-top: 90px; }
   .content-main .text-side {
     width: auto; }
   .menu .m-contacts-1 {
@@ -4944,14 +4921,21 @@ footer {
     .banner-type-3 .left_side {
       width: 100%;
       padding: 0 0 20px 0; }
+      .banner-type-3 .left_side .p-title {
+        margin-bottom: 1.8rem;
+        font-size: 30px;
+        line-height: 1.4; }
     .banner-type-3 .right_side {
       width: 100%;
-      padding: 0 0 0 0; }
+      padding: 0 0 0 0;
+      border-radius: 40px;
+      overflow: hidden; }
       .banner-type-3 .right_side .banner-center {
         width: 100%;
-        height: calc(70vw - 30px);
+        height: auto;
+        min-height: 443px;
         border-radius: 40px;
-        padding: 35px 50px; }
+        padding: 48px 10px 20px; }
   .mobile-hidden {
     display: none !important; }
   header {
@@ -5295,10 +5279,17 @@ footer {
       padding: 0; }
   .banner-type-2 {
     text-align: center; }
-    .banner-type-2 .right_side {
+    .banner-type-2::after {
+      content: "";
+      background-image: url("../images/item-bg/krugi-1.png");
+      background-size: contain;
+      background-position: top 0 right 0;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
       width: 100%;
-      height: 80vw;
-      margin: 15px 0 0 0; }
+      height: 100%; }
     .banner-type-2 .left_side {
       text-align: left;
       max-width: 370px;
@@ -5307,7 +5298,7 @@ footer {
       background-image: url("../images/item-bg/mobile-bg-1 (2).png");
       background-size: 100% 100%;
       background-position: top 0 left 0;
-      padding: 40px 40px 90px 40px;
+      padding: 40px 33px 110px 33px;
       position: relative; }
       .banner-type-2 .left_side .btn-form {
         margin: 10px 0 0 0; }
@@ -5323,15 +5314,21 @@ footer {
       text-align: center;
       padding: 30px 0 0 0;
       position: absolute;
-      bottom: -50px;
+      bottom: -38px;
       left: 50%;
       transform: translate(-50%, 0); }
     .banner-type-2 .right_side {
       height: 290px;
       width: 100%;
       max-width: 370px;
-      margin: -30px 0 0 0;
+      margin: -34px 0 0 0;
       background-image: url("../images/item-bg/mobile-bg-1 (1).png"); }
+  .preparations {
+    margin-top: 15rem; }
+  .diagnoses {
+    margin-top: 10.6rem; }
+    .diagnoses .left_side {
+      margin-bottom: 86px; }
   .specialists-data .specialist-banner .left_side {
     width: 100%;
     display: flex;
@@ -5346,10 +5343,6 @@ footer {
   .main-type-2,
   .main-type-3 {
     background: #e9edf5; }
-    .main-block .form-button.p-265,
-    .main-type-2 .form-button.p-265,
-    .main-type-3 .form-button.p-265 {
-      padding: 65px 0 130px 0; }
     .main-block .block-1:before,
     .main-block .left_side:before,
     .main-type-2 .block-1:before,
@@ -5386,11 +5379,6 @@ footer {
     margin: 14px 0 0 0; }
   .text-light {
     margin-bottom: 0; }
-  .banner-type-3 .right_side .banner-center {
-    width: 100%;
-    height: 100vw;
-    border-radius: 40px;
-    padding: 30px 10px; }
   .solutions_possible_problems {
     padding-top: 13.2rem; }
     .solutions_possible_problems .title {

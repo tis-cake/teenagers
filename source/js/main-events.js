@@ -93,8 +93,14 @@ $(document).ready(function() {
     $(this).addClass('hidden');
   })
 
-  // кнопка "показать ещё" у этапов
+  // кнопка "показать ещё" у этапов 1
   $('.rehabilitation_stages .see-more-services').on('click', function() {
+    $(this).closest('.rehabilitation_stages_items-wrapper').find('.rehabilitation_stages_items').addClass('show');;
+    $(this).addClass('hidden');
+  })
+
+  // кнопка "показать ещё" у этапов 2
+  $('.treatment_program .see-more-services').on('click', function() {
     $(this).closest('.rehabilitation_stages_items-wrapper').find('.rehabilitation_stages_items').addClass('show');;
     $(this).addClass('hidden');
   })
