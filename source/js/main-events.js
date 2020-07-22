@@ -88,8 +88,14 @@ $(document).ready(function() {
   });
 
   // кнопка "показать ещё" у услуг
-  $('.see-more-services').on('click', function() {
+  $('.services .see-more-services').on('click', function() {
     $('#services').addClass('show');
+    $(this).addClass('hidden');
+  })
+
+  // кнопка "показать ещё" у этапов
+  $('.rehabilitation_stages .see-more-services').on('click', function() {
+    $(this).closest('.rehabilitation_stages_items-wrapper').find('.rehabilitation_stages_items').addClass('show');;
     $(this).addClass('hidden');
   })
 

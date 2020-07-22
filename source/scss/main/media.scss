@@ -1340,12 +1340,22 @@
   }
 
   .rehabilitation_stages {
+    .text-purple {
+      margin-bottom: 13px;
+      font-size: 16px;
+      line-height: 24px;
+    }
 
+    &.p-160 {
+      padding-top: 9.5rem;
+    }
+    &.p-170 {
+      padding: 70px 0 0 0;
+    }
     &.p-225,
     &.p-180 {
       padding: 80px 0 0 0;
     }
-
   }
 
   .main-block {
@@ -1735,25 +1745,149 @@
     }
   }
 
+  .rehabilitation_stages {
+    .rehabilitation_stages_items {
+      max-height: 1105px;
+      overflow: hidden;
+      transition-property: max-height;
+      transition-duration: 2s;
+
+      &.show {
+        // overflow: initial;
+        max-height: 2500px;
+        // max-height: 2500px;
+
+        &>div:nth-child(3) {
+          // box-shadow: none;
+          &::after {
+            content: "";
+            width: 100%;
+            height: calc(50% + 8rem);
+            position: absolute;
+            top: calc(50% - 8.6rem);
+            left: 0;
+            background: #FFFFFF;
+            border-radius: 2rem;
+            border-bottom: 0.7rem solid #E3E3F9;
+            transform: skewY(4deg) skewX(0)!important;
+          }
+
+          .solutions-light::after {
+            content: none;
+          }
+        }
+      }
+
+
+      // &.show > div {
+      //   // display: block;
+      //   box-shadow: 10px 20px 25px #EDF0FA;
+      //   &:nth-child(4) {}
+      //   &::after {
+      //     content: none;
+      //   }
+      // }
+    }
+
+    .btn.btn-orange {
+      margin-top: 0;
+      margin-bottom: 66px;
+    }
+
+    .banner-card {
+      .inline-title {
+        padding: 0 0 1.5rem 0;
+      }
+      .image-bar {
+        margin: -32px 0 0 0;
+      }
+    }
+  }
+
+  .rehabilitation_stages_items-wrapper {
+    position: relative;
+    .see-more-services-parent {
+      margin-top: 49px;
+      margin-bottom: 56px;
+    }
+  }
+
   .rehabilitation_stages_items {
+
+    justify-content: center;
+    align-items: center;
+    // padding: 160px 0 10px 0;
+    padding-top: 90px;
+    padding-bottom: 0;
 
     &>div {
       width: 362px;
-      min-height: 289px;
-      padding: 0 25px;
-      margin: 0 0 0 0;
+      height: auto;
+      min-height: 280px;
+      margin: 0;
+      margin-bottom: 95px;
+      padding: 65px 25px 10px 25px;
 
-      &:not(:last-child) {
-
-        margin-bottom: 150px;
+      &:last-child {
+        // margin-bottom: 0;
+        margin-bottom: 20px;
       }
 
       .image-bar {
-        height: 60px;
-
+        text-align: center;
+        height: 70px;
+        top: -9rem;
+        // height: 60px;
         img {
-          width: 159px;
+          // width: 159px;
+          width: 160px;
+          height: 160px;
         }
+      }
+
+      &.long {
+        img {
+          width: 230px;
+        }
+      }
+    }
+
+    &>div:nth-child(3) {
+      box-shadow: none;
+      &::after {
+        z-index: 1;
+        top: auto;
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(244, 247, 255, 0) 0%, #F4F7FF 63.53%);
+        border: 0;
+        transform: initial !important;
+      }
+
+      .solutions-light::after {
+        z-index: 1;
+        top: auto;
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(244, 247, 255, 0) 0%, #F4F7FF 100%);
+      }
+    }
+
+    .title-bar {
+      margin-bottom: 1.6rem;
+    }
+
+    .solutions-light {
+      li {
+        margin-bottom: 1.8rem;
       }
     }
   }
@@ -2071,15 +2205,11 @@
     width: 100%;
   }
 
-  .rehabilitation_stages.p-170 {
-    padding: 70px 0 0 0;
-  }
-
   .main-block .block-1.w-480px,
   .main-type-2 .block-1.w-480px,
   .main-type-3 .block-1.w-480px {
     width: 100%;
-    max-width: 360px;
+    // max-width: 360px;
   }
 
   .banner-type-2 {
@@ -2158,12 +2288,21 @@
   }
 
   .m-p-0 {
-    padding: 0 !important;
+    // padding: 0 !important;
   }
 
   .second_choice {
     &.p-170 {
       padding: 40px 0 0 0;
+    }
+
+    .form-button {
+      margin: 10px -5px 0 -5px;
+    }
+
+    .banner-card {
+      margin-bottom: 87px;
+      // margin-top: -40px;
     }
   }
 
@@ -2602,7 +2741,7 @@
       width: 100%;
       height: 300px;
       overflow: hidden;
-      margin: -115px 0 0 0; // must by under buttons in main
+      margin: -20px 0 0 0; // must by under buttons in main
 
       img {
         width: 100%;
@@ -2722,7 +2861,11 @@
   }
 
   .measures {
-    padding: 20px 0 20px 0;
+    // padding: 20px 0 20px 0;
+  }
+
+  .content-main .text-side {
+    width: auto;
   }
 
   .menu {
@@ -2851,6 +2994,20 @@
     min-height: 30vw;
   }
 
+  .see-more-services {
+    margin-top: 0;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    &.hidden {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+
   .services {
     margin-top: 10.7rem;
     .services-list-wrap {
@@ -2935,18 +3092,18 @@
       bottom: 50px;
     }
 
-    .see-more-services {
-      margin-top: 0;
-      font-size: 20px;
-      border: none;
-      background-color: transparent;
-      &.hidden {
-        display: none;
-      }
-      &:focus {
-        outline: none;
-      }
-    }
+    // .see-more-services {
+    //   margin-top: 0;
+    //   font-size: 20px;
+    //   border: none;
+    //   background-color: transparent;
+    //   &.hidden {
+    //     display: none;
+    //   }
+    //   &:focus {
+    //     outline: none;
+    //   }
+    // }
 
     .form-button {
       margin-top: 20px;
@@ -2965,13 +3122,6 @@
   .services .services-list {
     // justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .rehabilitation_stages_items {
-    justify-content: center;
-    align-items: center;
-    padding: 160px 0 10px 0; // child element on title
-
   }
 
   .addresses-list {
@@ -3167,26 +3317,73 @@
   }
 
   .reviews {
+    padding-top: 7rem;
+    &.p-25 {
+      padding-top: 9rem;
+    }
+    &.p-270 {
+      padding: 70px 0 0 0;
+    }
+    .h3 {
+      font-size: 40px;
+    }
     .reviews-list {
-      &>div {
+      margin-top: 3rem;
+      .reviews-item {
         width: 100%;
-        max-width: 323px;
-        max-height: 65vw;
+        height: auto;
+        min-height: 24.5rem;
+        // max-width: 323px;
+        // max-height: 65vw;
+        margin-bottom: 40px;
+        padding: 28px 25px 8px 20px;
         border-radius: 20px;
-        padding: 28px 25px 0 20px;
-        margin-bottom: 30px;
+
+        .username {
+          margin-bottom: 0.5rem;
+          font-size: 22px;
+        }
+      }
+
+      .photo-review {
+        height: auto;
+        min-height: 20.5rem;
+        .user_image {
+          position: absolute;
+        }
+        .username {
+          padding-top: 4px;
+        }
+        .username,
+        .date,
+        .about {
+          margin-left: 112px;
+        }
       }
     }
 
-    &.p-270 {
-      padding: 70px 0 0 0;
+    .form-button {
+      margin: 10px -5px 0 -5px;
+    }
+
+    .banner-card {
+      .image-bar {
+        margin-top: -30px;
+      }
     }
   }
 
   .form-button.p-265 {
     padding: 180px 0 0 0;
   }
+
+  .second_choice .banner-card .content-bar .inline-title .h1,
+  .signs_addiction .banner-card .content-bar .inline-title .h1 {
+    width: auto;
+  }
+
 }
+
 // 692 px
 @media only screen and (max-width: 48em) {
 
@@ -3207,7 +3404,7 @@
   .h3,
   .h3-title {
     font-size: 30px;
-    LINE-HEIGHT: 1.3;
+    line-height: 1.3;
   }
 
   .goals-list {
@@ -3499,20 +3696,36 @@
     transform: skewY(-3deg) skewX(0);
   }
 
-  .steps-list>div {
-    width: 100%;
-    max-width: 360px;
-    min-height: 200px;
+  .help_right_now {
+    padding-top: 11.7rem;
+    .text-purple {
+      margin-bottom: 22px;
+      padding-right: 45px;
+    }
   }
 
-  .steps-list>div .icon-bar {
-    height: 100px;
+  .steps-list {
+    flex-wrap: wrap;
+    &>div {
+      width: 100%;
+      max-width: 360px;
+      min-height: 200px;
+      margin-bottom: 83px;
+      padding-bottom: 1.9rem;
+
+      .icon-bar {
+        height: 100px;
+      }
+    }
+  }
+
+  .rehabilitation_goals {
+    padding-top: 7rem;
   }
 
   .icon-round {
     width: 90px;
     height: 90px;
-
   }
 
   .solutions_possible_problems .banner-card .content-bar .text-light {
