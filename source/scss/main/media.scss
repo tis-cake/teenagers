@@ -1625,12 +1625,12 @@
     }
   }
 
-  .list-bottom-bg.w-3 {
-    &>div {
-      max-width: 364px;
-      width: 100%;
-    }
-  }
+  // .list-bottom-bg.w-3 {
+  //   &>div {
+  //     max-width: 364px;
+  //     width: 100%;
+  //   }
+  // }
 
   .details_and_documents {
     margin: 80px 0 0 0;
@@ -2190,6 +2190,13 @@
     top: 21%;
   }
 
+  .main-block-family .block-1.f-m::before {
+    transform: rotate(-102deg);
+    height: 490px;
+    top: 265px;
+    // bottom: -150px;
+  }
+
   .the_best_deal_in_your_area .banner-type-2 {
     margin: 36px 0 0 0;
   }
@@ -2402,6 +2409,7 @@
         padding: 15px 0 15px 0;
       }
     }
+    margin: 10px -5px 0 -5px;
   }
 
   .rehabilitation_list_items {
@@ -2556,29 +2564,10 @@
 
   .list-bottom-bg.w-3>div,
   .list-bottom-bg.w-2>div {
-    max-width: 100%;
+    // max-width: 364px;
+    max-width: none;
     width: 100%;
-
-    // .top {
-    //   height: 215px;
-    // }
-
-    // .h6 {
-    //   padding: 50px 0 10px 2px;
-    //   font-size: 18px;
-    //   width: calc(100% - 80px);
-    // }
   }
-
-  //   .list-bottom-bg {
-  //   &.w-3 {
-  //     & > div {
-  //       .top {
-  //         height: 22.7rem;
-  //       }
-  //     }
-  //   }
-  // }
 
   .list-bottom-bg {
 
@@ -2587,20 +2576,36 @@
         min-height: 206px;
         padding-top: 27px;
         margin-top: -7.2rem;
+
+        .bottom-icon label {
+          span {
+            font-size: 2rem;
+          }
+          small {
+            font-size: 1.6rem;
+          }
+        }
       }
     }
 
-    &.w-3 {
+    &.w-2 {
       &>div {
-        .top {
-          height: 22.7rem;
-        }
-
+        min-height: 0;
         .bottom {
-          .bottom-icon {
-            position: absolute;
-            top: 12px;
-            left: 14px;
+          height: auto;
+          .h6 {
+            width: auto;
+            margin-top: 45px;
+            padding: 0;
+          }
+          .bottom-content {
+            div:last-child {
+              flex-shrink: 0;
+            }
+            .btn-more {
+              padding: 1.2rem 2rem;
+              font-size: 1.2rem;
+            }
           }
         }
       }
@@ -2610,15 +2615,14 @@
     &.w-2 {
       &>div {
         margin: 0 0 25px 0;
-        // min-height: unset;
-
+        .top {
+          height: 22.7rem;
+        }
         .bottom {
-          .bottom-content {
-            // padding: 0;
-            // padding: 5px 0 15px 0;
-          }
-
           .bottom-icon {
+            position: absolute;
+            top: 12px;
+            left: 14px;
             width: 79px;
             height: 79px;
             img {
@@ -3007,9 +3011,58 @@
     }
   }
 
+  .online_webinars {
+    .title {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  .webinars {
+    .webinars-list {
+      &> div {
+        width: 100%;
+        .bottom {
+          top: 212px;
+          padding-left: 1.6rem;
+          padding-right: 1.6rem;
+          p {
+            margin-bottom: 0.3rem;
+            font-size: 16px;
+            line-height: 20px;
+          }
+          label {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .our-specialists {
+    .see-more-toggle {
+      margin-top: 50px;
+      margin-bottom: 11px;
+    }
+  }
+
+  .specialists-list {
+    margin-top: 17px;
+    .specialists-list-item {
+      width: 100%;
+      min-height: 0;
+      margin-top: 12.5rem;
+      padding-top: 9.6rem;
+      padding-bottom: 2.6rem;
+    }
+    .specialist-description {
+      height: auto;
+      margin-bottom: 26px;
+    }
+  }
 
   .services {
     margin-top: 10.7rem;
+    padding-top: 9.7rem;
     .services-list-wrap {
       position: relative;
     }
@@ -3306,8 +3359,7 @@
   .steps-list-2,
   .signs_addiction_list,
   .rehabilitation_list_items,
-  .reviews-list,
-  .specialists-list {
+  .reviews-list {
     justify-content: center !important;
   }
 
@@ -3381,7 +3433,6 @@
   .signs_addiction .banner-card .content-bar .inline-title .h1 {
     width: auto;
   }
-
 }
 
 // 692 px

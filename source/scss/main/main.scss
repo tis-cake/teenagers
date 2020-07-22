@@ -1698,20 +1698,22 @@ main {}
             content: "+";
           }
         }
+      }
+    }
+  }
 
-        &:hover {
-          .sub-dropdown {
-            max-height: 70rem;
-            transition: all 0.4s ease;
-            opacity: 1;
-            overflow: hidden;
-          }
+  @media (min-width: 48em) {
+    .m-menu .menu-ul li:hover {
+      .sub-dropdown {
+        max-height: 70rem;
+        transition: all 0.4s ease;
+        opacity: 1;
+        overflow: hidden;
+      }
 
-          .plus-minus {
-            &:before {
-              content: "-";
-            }
-          }
+      .plus-minus {
+        &:before {
+          content: "-";
         }
       }
     }
