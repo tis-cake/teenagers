@@ -1637,6 +1637,7 @@
   }
 
   .banner-card {
+    position: relative;
     .content-bar {
       width: calc(60% - 5px);
       display: inline-block;
@@ -2071,11 +2072,11 @@
           margin: 45px 0 0 0;
           text-align: center;
 
-          .input-mask-group {
-            display: inline-block;
-            position: relative;
-            max-width: 200px;
-          }
+          // .input-mask-group {
+          //   display: inline-block;
+          //   position: relative;
+          //   max-width: 200px;
+          // }
         }
       }
 
@@ -2411,7 +2412,8 @@
         padding: 15px 0 15px 0;
       }
     }
-    margin: 10px -5px 0 -5px;
+    // margin: 10px -5px 0 -5px;
+    margin: 10px 0 0 -5px;
   }
 
   .rehabilitation_list_items {
@@ -2506,7 +2508,7 @@
   }
 
   .rehabilitation_centers .banner-card .form-button {
-    margin: 10px -5px 0 -5px;
+    // margin: 10px -5px 0 -5px;
   }
 
   .main-type-3 {
@@ -2650,11 +2652,14 @@
 
   .treatment_methods {
     padding-top: 8.7rem;
+    .banner-card {
+      margin: 85px 0 0 0;
+      .image-bar {
+        margin-top: -117px;
+      }
+    }
   }
-
-  .treatment_methods .banner-card {
-    margin: 85px 0 0 0;
-  }
+  .treatment_methods
 
   .for-mob-break {
     display: block;
@@ -2702,6 +2707,7 @@
       &.btn-md {
         font-size: 14px !important;
         padding: 11px 15px !important;
+        padding-left: 18px !important;
         min-width: 143px;
         &.btn-default {
           padding: 11px 20px !important;
@@ -2797,6 +2803,7 @@
 
       .btn-lg {
         padding: 10px 12px !important;
+        padding-left: 20px !important;
       }
 
       .input-mask-group {
@@ -2824,45 +2831,6 @@
   .consultation-1 {
     .image-bar {
       margin-top: -20px;
-    }
-  }
-
-  .input-mask-group {
-    // display: block;
-    display: flex;
-    align-items: center;
-    width: 179px;
-    position: relative;
-
-    .btn-icon {
-      display: inline-flex;
-      flex-shrink: 0;
-      width: 39px;
-      height: 39px;
-      // margin: -1px 0 0 -6px;
-      margin: 0;
-      margin-left: 3px;
-
-      img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    input {
-      // width: calc(100% - 42px);
-      width: 130px;
-      padding: 11px 0 10px 13px;
-      font-size: 14px;
-      line-height: 22px;
-    }
-
-    &:before {
-      top: -5px;
-      left: -15px;
-      width: calc(100% + 0px);
-      height: calc(100% + 4px);
-      border: 2px solid #CFD4E2;
     }
   }
 
@@ -3089,7 +3057,8 @@
   }
 
   .services {
-    margin-top: 10.7rem;
+    // margin-top: 10.7rem;
+    margin-top: 1.3rem;
     padding-top: 9.7rem;
     .services-list-wrap {
       position: relative;
@@ -3218,29 +3187,361 @@
     margin-top: 20px;
   }
 
-  .btn {
-    &.btn-lg {
-      font-size: 14px !important;
-      padding: 13px 14px !important;
-      min-width: 130px;
+  .input-mask-group {
+    display: flex;
+    align-items: center;
+    width: 179px;
+    position: relative;
 
-      &:before {
-        top: 0;
-        left: -8px;
-        width: calc(100% + 1px);
-        height: 100%;
-      }
+    .btn-icon {
+      display: inline-flex;
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      // margin: -1px 0 0 -6px;
+      margin: 0;
+      margin-left: 0;
 
-      &:after {
-        top: -1px;
-        left: -9px;
-        width: calc(100% + 3px);
-        height: calc(100% + 3px);
+      img {
+        // top: 45%;
+        // width: 20px;
+        // height: 20px;
       }
     }
+
+    input {
+      // width: calc(100% - 42px);
+      width: 130px;
+      padding: 11px 0 10px 18px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &::before {
+      // top: -5px;
+      // left: -15px;
+      // width: calc(100% + 0px);
+      // height: calc(100% + 4px);
+      // border: 2px solid #CFD4E2;
+
+      border: 0;
+      transform: none;
+      top: -6px;
+      left: 2px;
+      width: 176px;
+      height: 54px;
+      background-color: initial;
+      background-image: url('../images/btn/gray.svg');
+      background-repeat: no-repeat;
+      // background-size: cover;
+      background-size: contain;
+    }
+
+    &:hover::before {
+      box-shadow: none;
+    }
+
+    &::after {
+      top: 0px;
+      right: -7px;
+
+      // width: 48px;
+      // height: 48px;
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .btn {
+    &.btn-cyan {
+      // background-image: url('../images/btn-bg/btn1.svg');
+      // background-size: cover;
+    }
+
+    &.btn-cyan::after {
+      background-image: none;
+      transform: none;
+      border: 0;
+
+      transform: perspective(50rem) rotateY(-12deg);
+      border-radius: 180px;
+
+      box-shadow: 0px 14.628px 29.256px rgba(90, 147, 255, 0.5);
+    }
+
+    &.btn-orange::before,
+    &.btn-default::before,
+    &.btn-cyan::before {
+      background-size: contain;
+      background-image: none;
+      background-repeat: no-repeat;
+      transform: none;
+      border: 0;
+    }
+
+    &.btn-cyan::before {
+      top: -3px;
+      left: 8px;
+      width: 140px;
+      height: 55px;
+
+      background-image: url('../images/btn/blue.svg');
+    }
+
+    &.btn-orange::after {
+      background-image: none;
+      transform: none;
+      border: 0;
+
+      transform: perspective(50rem) rotateY(-12deg);
+      border-radius: 180px;
+
+      box-shadow: 0px 13.2861px 26.5723px rgba(253, 148, 95, 0.53);
+    }
+
+    &.btn-orange::before {
+      top: -3px;
+      left: -4px;
+      width: 140px;
+      height: 55px;
+
+      background-image: url('../images/btn/orange.svg');
+    }
+
+    &.btn-orange[data-toggle]
+    {
+      &::before {
+        left: 0;
+        width: 150px;
+        background-image: url('../images/btn/orange2.svg');
+      }
+      &::after {
+        box-shadow: 0px 9.16185px 18.3237px rgba(253, 148, 95, 0.53);
+      }
+  }
+
+    &.btn-sm {
+      padding-left: 1.8rem!important;
+    }
+
+    &.btn-cyan.btn-sm::before {
+      top: -0.5rem;
+      left: -0.4rem;
+      width: 10.9rem;
+      height: 4.3rem;
+
+      background-image: url('../images/btn/blue-short.svg');
+      background-repeat: no-repeat;
+    }
+
+    &.btn-cyan.btn-sm::after {
+      top: 0;
+      left: -0.6rem;
+      width: 96%;
+      height: 98%;
+    }
+
+    &.btn-default::before {
+      background-color: initial;
+      background-repeat: no-repeat;
+      // background-size: cover;
+      transform: none !important;
+    }
+
+    &.btn-lg {
+      font-size: 14px !important;
+      // padding: 13px 14px !important;
+      padding: 15px 8px 13px 20px !important;
+      min-width: 130px;
+    }
+
+    // &.btn-lg::before {
+    //   top: 0;
+    //   left: -8px;
+    //   width: calc(100% + 1px);
+    //   height: 100%;
+    // }
+
+    &.btn-lg::after {
+      top: 0;
+      left: 0;
+      width: 98%;
+      width: 90%;
+      height: 100%;
+    }
+
     &.btn-orange {
       padding: 10px 14px !important;
       min-width: 140px;
+    }
+
+    &:hover::before {
+      box-shadow: none!important;
+    }
+  }
+
+  .banner-card .form-button.form-button-2 {
+    position: relative;
+    margin-left: -12px;
+
+    .input-mask-group {
+      position: absolute;
+      top: 22px;
+      right: -6px;
+      .btn-icon {
+        margin-left: 4px;
+      }
+      input {
+        padding: 11px 0 10px 10px;
+      }
+      &::before {
+        width: 176px;
+      }
+      &::after {
+        top: 2px;
+        right: -2px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .form-button-2 {
+    .btn.btn-md,
+    .btn.btn-lg {
+      padding: 15px 8px 13px 20px !important;
+    }
+
+    .btn.btn-cyan::before {
+      top: -4px;
+      left: 2px;
+      width: 164px;
+      height: 65px;
+
+      background-image: url('../images/btn/blue-big.svg');
+      // background-repeat: no-repeat;
+    }
+
+    .btn.btn-cyan::after {
+      top: 0;
+      left: 0;
+      width: 98%;
+      height: 100%;
+    }
+
+    .input-mask-group {
+      // width: 179px;
+      .btn-icon {
+        width: 38px;
+        height: 38px;
+        margin: 0;
+        margin-left: 10px;
+      }
+
+      input {
+        width: 130px;
+        padding: 11px 0 10px 18px;
+      }
+
+      &::before {
+        top: -6px;
+        left: 2px;
+        width: 186px;
+        height: 54px;
+        background-image: url('../images/btn/gray.svg');
+      }
+
+      &::after {
+        top: 0px;
+        right: -7px;
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  .form-button-articles {
+    .btn.btn-cyan::after {
+      top: 0;
+      left: -12px;
+      width: 96%;
+      height: 100%;
+    }
+    .btn.btn-cyan::before {
+      top: -8px;
+      left: 4px;
+      width: 200px;
+      height: 60px;
+
+      background-image: url('../images/btn/blue-long.svg');
+    }
+    .btn.btn-default.btn-default {
+      padding: 10px 20px !important;
+      // padding-top: 10px!important;
+      padding-left: 26px!important;
+      // padding-right: 28px!important;
+    }
+    .btn.btn-default::after {
+      content: none;
+    }
+    .btn.btn-default::before {
+      top: -8px;
+      left: 4px;
+      // width: 206px;
+      width: 202px;
+      height: 60px;
+      background-image: url('../images/btn/gray-long.svg');
+    }
+  }
+
+  .modal {
+    .btn.btn-lg {
+      &::after {
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+      }
+      &::before {
+        top: -3px;
+        left: -6px;
+        width: 160px;
+        height: 60px;
+      }
+    }
+  }
+
+  footer {
+    .input-mask-group {
+      // width: 179px;
+      margin-left: auto;
+      margin-right: auto;
+      .btn-icon {
+        width: 38px;
+        height: 38px;
+        margin: 0;
+        margin-left: 10px;
+      }
+
+      input {
+        width: 130px;
+        padding: 11px 0 10px 18px;
+      }
+
+      &::before {
+        top: -6px;
+        left: 2px;
+        width: 186px;
+        height: 54px;
+        background-image: url('../images/btn/gray.svg');
+      }
+
+      &::after {
+        top: 0px;
+        right: -7px;
+        width: 48px;
+        height: 48px;
+      }
     }
   }
 
@@ -3640,7 +3941,7 @@
     .left_side {
       &:before {
         left: 0;
-        transform: rotate(-105deg);
+        transform: rotate(-115deg);
         width: 100%;
         height: 110vw;
         bottom: -65vw;
@@ -3710,7 +4011,7 @@
       }
 
       .form-button {
-        margin: 10px -5px 0 -5px;
+        // margin: 10px -5px 0 -5px;
       }
     }
 
