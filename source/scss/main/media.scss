@@ -1749,18 +1749,30 @@
   .treatment_program,
   .rehabilitation_stages {
     .rehabilitation_stages_items {
-      max-height: 1105px;
-      overflow: hidden;
-      transition-property: max-height;
-      transition-duration: 2s;
+      // max-height: 1105px;
+      // overflow: hidden;
+      // transition-property: max-height;
+      // transition-duration: 2s;
+
+      &>div:nth-child(4n),
+      &>div:nth-child(5n),
+      &>div:nth-child(6n) {
+        display: none;
+      }
 
       &.show {
+        &>div:nth-child(4n),
+        &>div:nth-child(5n),
+        &>div:nth-child(6n) {
+          display: block;
+        }
         // overflow: initial;
-        max-height: 2500px;
+        // max-height: 2500px;
         // max-height: 2500px;
 
         &>div:nth-child(3) {
           // box-shadow: none;
+          box-shadow: 10.7934px 26.9836px 64.7605px #C7CCE0;
           &::after {
             content: "";
             width: 100%;
@@ -1779,7 +1791,6 @@
           }
         }
       }
-
 
       // &.show > div {
       //   // display: block;
@@ -1809,7 +1820,7 @@
   .rehabilitation_stages_items-wrapper {
     position: relative;
     .see-more-services-parent {
-      margin-top: 49px;
+      margin-top: 0;
       margin-bottom: 56px;
     }
   }
@@ -2195,11 +2206,28 @@
     top: 21%;
   }
 
-  .main-block-family .block-1.f-m::before {
-    transform: rotate(-102deg);
-    height: 490px;
-    top: 265px;
-    // bottom: -150px;
+  .main-block-family {
+   .block-1.f-m::before {
+      // transform: rotate(-102deg);
+      // height: 490px;
+      // top: 265px;
+      // bottom: -150px;
+      content: none;
+    }
+
+    .main-img.pos-left {
+      height: 315px;
+    }
+
+    .form-button {
+      position: absolute;
+      div:first-child {
+        margin-right: 30px;
+      }
+      .btn.btn-cyan::before {
+        left: -4px;
+      }
+    }
   }
 
   .the_best_deal_in_your_area {
@@ -3458,6 +3486,11 @@
         height: 48px;
       }
     }
+
+    .d-mobile .btn {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   .form-button-articles {
@@ -3663,6 +3696,40 @@
       position: relative;
       z-index: 5;
       width: 100%;
+    }
+  }
+
+  .main-block.main-block-co-depend {
+    .block-1::before {
+      transform: rotate(-101deg);
+      height: 105vw;
+      bottom: -70vw;
+    }
+    .form-button {
+      position: absolute;
+    }
+  }
+
+  .main-block-spec {
+    .block-1 {
+      padding-bottom: 0;
+    }
+    .block-1::before {
+      content: none;
+    }
+    .form-button {
+      // position: absolute;
+    }
+  }
+
+  .main-type-detox {
+    .form-button {
+      div:first-child {
+        margin-right: 30px;
+      }
+      .btn.btn-cyan::before {
+        left: -4px;
+      }
     }
   }
 
