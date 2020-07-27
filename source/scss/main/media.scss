@@ -2651,6 +2651,12 @@
           height: 22.7rem;
         }
         .bottom {
+          &.st-1 .bottom-icon {
+            img {
+              width: 47px;
+              height: 47px;
+            }
+          }
           .bottom-icon {
             position: absolute;
             top: 12px;
@@ -2658,8 +2664,10 @@
             width: 79px;
             height: 79px;
             img {
-              width: 47px;
-              height: 47px;
+              // width: 47px;
+              // height: 47px;
+              width: 61px;
+              height: 61px;
             }
           }
         }
@@ -2680,6 +2688,19 @@
 
   .treatment_methods {
     padding-top: 8.7rem;
+    .bottom.st-1 {
+      .bottom-icon img {
+        width: 4.7rem;
+        height: 4.7rem;
+      }
+    }
+    // .bottom.st-2,
+    // .bottom.st-3 {
+    //   .bottom-icon img {
+    //     width: 6.1rem;
+    //     height: 6.1rem;
+    //   }
+    // }
     .banner-card {
       margin: 85px 0 0 0;
       .image-bar {
@@ -2687,7 +2708,6 @@
       }
     }
   }
-  .treatment_methods
 
   .for-mob-break {
     display: block;
@@ -2889,6 +2909,7 @@
       height: 65px;
       .flex-contact {
         margin: 0;
+        justify-content: space-evenly;
         .purple-icon-wrap {
           display: none;
         }
@@ -2896,29 +2917,33 @@
           content: none;
         }
 
+        .text-wrap {
+          display: none;
+        }
+
         .icon-wrap {
           position: relative;
           box-shadow: none;
-          .c-icon {
-            border: 0;
-            background-image: none;
-            &.purple-icon,
-            &.orange-icon,
-            &.telegram-icon {
-              border: 0;
-              background: none;
-            }
-          }
+          // .c-icon {
+          //   border: 0;
+          //   background-image: none;
+          //   &.purple-icon,
+          //   &.orange-icon,
+          //   &.telegram-icon {
+          //     border: 0;
+          //     background: none;
+          //   }
+          // }
           &::before {
+            // content: '';
+            // position: absolute;
             top: -9px;
             left: -4px;
-            content: '';
-            position: absolute;
             width: 80px;
             height: 80px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // background-size: cover;
           }
         }
 
@@ -2929,7 +2954,7 @@
         }
         .blue-icon-wrap {
           &::before {
-            background-image: url('../images/icons/icon-blue-bg4.png');
+            // background-image: url('../images/icons/icon-blue-bg4.png');
           }
         }
       }
@@ -3768,6 +3793,9 @@
     padding-top: 7rem;
     &.p-25 {
       padding-top: 9rem;
+    }
+    &.p-240 {
+      padding-top: 85px;
     }
     &.p-270 {
       padding: 70px 0 0 0;
