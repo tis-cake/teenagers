@@ -5177,13 +5177,14 @@ footer {
         color: #3E3C56;
       }
 
-      &:not(:first-child) {
-        padding-left: 3rem;
+      &:not(:last-child) {
+        padding-right: 3rem;
 
         &:before {
           position: absolute;
           top: 1.2rem;
-          left: 0.8rem;
+          // left: 0.8rem;
+          right: 0.6rem;
           width: 1.4rem;
           height: 1.4rem;
           content: ">";
@@ -6129,4 +6130,8 @@ footer {
     font-size: 1.8rem;
     font-weight: 700;
   }
+}
+
+html .f-mobile {
+  display: none;
 }
