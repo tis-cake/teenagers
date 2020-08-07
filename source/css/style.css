@@ -1425,6 +1425,8 @@ p {
       width: 62.8rem; }
     .main-block .block-1 .w-555 {
       width: 55.5rem; }
+    .main-block .block-1 .w-340 {
+      width: 34rem; }
     .main-block .block-1 .title {
       margin-top: 4.4rem; }
     .main-block .block-1 .flex-card {
@@ -1437,9 +1439,13 @@ p {
       .main-block .block-1 .label p {
         line-height: 1.5; }
 
+.main-block-type-service .block-1::before,
 .main-block-database .block-1::before,
 .main-block-any-age .block-1::before {
   content: none; }
+
+.main-block-type-service {
+  margin-bottom: 21.2rem; }
 
 .our_mission {
   margin: 20.5rem 0 0 0; }
@@ -1850,6 +1856,8 @@ p {
     padding: 8.5rem 0 0 0; }
   .teenage_addiction.p-225 {
     padding: 22.5rem 0 0 0; }
+  .teenage_addiction.pb0 {
+    padding-bottom: 0; }
   .teenage_addiction .banner-side .title {
     margin: 0 0 1.6rem 0; }
   .teenage_addiction .title {
@@ -1999,6 +2007,12 @@ p {
     padding: 0 0 9rem 0; }
     .banner .description.p-25-90 {
       padding: 2.5rem 0 9rem 0; }
+
+.banner-call {
+  padding: 5.5rem 0.5rem 0 3.4rem; }
+  .banner-call .title {
+    margin-bottom: 1.4rem;
+    font-size: 2.4rem; }
 
 footer {
   background: #E9EDF5;
@@ -4002,6 +4016,51 @@ footer {
   .banners-section .flex-parent {
     display: flex;
     justify-content: space-between; }
+
+.price .banner-card {
+  margin-top: 17.5rem; }
+
+.price-title {
+  margin-bottom: 4.4rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1; }
+
+.price-columnw-wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.price-columnw-left {
+  width: 96.7rem; }
+
+.price-block {
+  display: flex;
+  padding-top: 2.1rem;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  padding-bottom: 1.2rem;
+  border-top: 0.1rem solid #D9E0ED; }
+  .price-block p {
+    width: 76%;
+    font-size: 2rem;
+    color: #3E3C56; }
+  .price-block span {
+    font-weight: 700; }
+
+.banner-cards {
+  min-height: 17.5rem;
+  padding-top: 12.7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: #E9EDF5;
+  background-image: url("../images/cards.png");
+  background-size: cover;
+  border-radius: 4rem; }
+  .banner-cards p {
+    font-size: 1.8rem;
+    font-weight: 700; }
 
 .d-mobile {
   display: none !important; }
