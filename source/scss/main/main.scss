@@ -1404,7 +1404,7 @@ main {}
     }
 
     &:after {
-      background-image: linear-gradient(to bottom, #ffc956, #fd985e);
+      // background-image: linear-gradient(to bottom, #ffc956, #fd985e);
       top: 0.2rem;
       left: calc(-10% - 0);
       width: calc(100% + 0.3rem);
@@ -2368,7 +2368,7 @@ main {}
 
 .rehabilitation_list_items {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 16rem 0 0 0;
   flex-wrap: wrap;
 
@@ -2380,8 +2380,11 @@ main {}
     border-radius: 2rem;
     transition: all 0.3s ease;
     padding: 7.4rem 2rem 0 2rem;
-    margin: 0 0 14rem 0;
+    margin: 0 3.6rem 14rem 0;
     box-shadow: 1rem 2rem 2.5rem #EDF0FA;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     .item-title {
       // margin: 2.3rem 0 0.5rem 0;
@@ -3408,7 +3411,7 @@ footer {
 
 .steps-list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   margin: 7.5rem 0 0 0;
 
   &.st-1 {
@@ -3420,12 +3423,16 @@ footer {
   &>div {
     width: 32.3rem;
     min-height: 27.2rem;
+    margin-right: 3.6rem;
     // padding: 0 4rem 0 2rem;
     padding: 0 2rem 0.4rem 2.4rem;
     background: #FFFFFF;
     border-radius: 2rem;
     border-bottom: 0.6rem solid #D9D9F1;
     box-shadow: 2rem 4rem 12rem #B6BCD6;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     .icon-bar {
       height: 13.5rem;
@@ -3467,7 +3474,7 @@ footer {
 
 .goals-list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
   margin: 7rem 0 7rem 0;
 
@@ -3477,7 +3484,10 @@ footer {
     padding: 0 2.5rem 2.2rem 2rem;
     background: #E9EDF5;
     border-radius: 2rem;
-    margin: 0 0 7.5rem 0;
+    margin: 0 3.6rem 7.5rem 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   .description {
@@ -3587,7 +3597,7 @@ footer {
   .reviews-list {
     margin: 2.5rem 0 0 0;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -3601,7 +3611,10 @@ footer {
     border-bottom: 0.6rem solid #E9EDF5;
     border-radius: 2rem;
     padding: 2.8rem 2rem 2rem 2rem;
-    margin: 0 0 4rem 0;
+    margin: 0 3.6rem 4rem 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     .user_image {
       margin-bottom: 1rem;
@@ -4254,7 +4267,7 @@ footer {
 .specialists-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   .specialists-list-item {
     position: relative;
@@ -4267,7 +4280,11 @@ footer {
     display: inline-block;
     vertical-align: top;
     margin-top: 12.5rem;
+    margin-right: 3.6rem;
     transition: all 0.4s ease;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &:hover {
       transform: translateY(-2rem);

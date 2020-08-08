@@ -1035,7 +1035,6 @@ p {
       width: calc(100% + 0.1rem);
       height: 100%; }
     .btn.btn-orange:after {
-      background-image: linear-gradient(to bottom, #ffc956, #fd985e);
       top: 0.2rem;
       left: calc(-10% - 0);
       width: calc(100% + 0.3rem);
@@ -1632,7 +1631,6 @@ p {
 
 .rehabilitation_list_items {
   display: flex;
-  justify-content: space-between;
   padding: 16rem 0 0 0;
   flex-wrap: wrap; }
   .rehabilitation_list_items > div {
@@ -1643,9 +1641,11 @@ p {
     border-radius: 2rem;
     transition: all 0.3s ease;
     padding: 7.4rem 2rem 0 2rem;
-    margin: 0 0 14rem 0;
+    margin: 0 3.6rem 14rem 0;
     box-shadow: 1rem 2rem 2.5rem #EDF0FA;
     border-bottom: 0 solid #D9D9F1; }
+    .rehabilitation_list_items > div:nth-child(4n) {
+      margin-right: 0; }
     .rehabilitation_list_items > div .item-title {
       margin: 1.5rem 0 0.7rem 0; }
     .rehabilitation_list_items > div .image-bar {
@@ -2243,18 +2243,20 @@ footer {
 
 .steps-list {
   display: flex;
-  justify-content: space-between;
   margin: 7.5rem 0 0 0; }
   .steps-list.st-1 > div {
     height: 20rem; }
   .steps-list > div {
     width: 32.3rem;
     min-height: 27.2rem;
+    margin-right: 3.6rem;
     padding: 0 2rem 0.4rem 2.4rem;
     background: #FFFFFF;
     border-radius: 2rem;
     border-bottom: 0.6rem solid #D9D9F1;
     box-shadow: 2rem 4rem 12rem #B6BCD6; }
+    .steps-list > div:nth-child(4n) {
+      margin-right: 0; }
     .steps-list > div .icon-bar {
       height: 13.5rem; }
     .steps-list > div .title {
@@ -2279,7 +2281,6 @@ footer {
 
 .goals-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 7rem 0 7rem 0; }
   .goals-list > div {
@@ -2288,7 +2289,9 @@ footer {
     padding: 0 2.5rem 2.2rem 2rem;
     background: #E9EDF5;
     border-radius: 2rem;
-    margin: 0 0 7.5rem 0; }
+    margin: 0 3.6rem 7.5rem 0; }
+    .goals-list > div:nth-child(4n) {
+      margin-right: 0; }
   .goals-list .description {
     font-style: normal;
     font-weight: bold;
@@ -2352,7 +2355,6 @@ footer {
   .reviews .reviews-list {
     margin: 2.5rem 0 0 0;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap; }
   .reviews .reviews-item {
     display: flex;
@@ -2364,7 +2366,9 @@ footer {
     border-bottom: 0.6rem solid #E9EDF5;
     border-radius: 2rem;
     padding: 2.8rem 2rem 2rem 2rem;
-    margin: 0 0 4rem 0; }
+    margin: 0 3.6rem 4rem 0; }
+    .reviews .reviews-item:nth-child(4n) {
+      margin-right: 0; }
     .reviews .reviews-item .user_image {
       margin-bottom: 1rem; }
     .reviews .reviews-item .right {
@@ -2780,8 +2784,7 @@ footer {
 
 .specialists-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  flex-wrap: wrap; }
   .specialists-list .specialists-list-item {
     position: relative;
     background: #E9EDF5;
@@ -2792,7 +2795,10 @@ footer {
     display: inline-block;
     vertical-align: top;
     margin-top: 12.5rem;
+    margin-right: 3.6rem;
     transition: all 0.4s ease; }
+    .specialists-list .specialists-list-item:nth-child(4n) {
+      margin-right: 0; }
     .specialists-list .specialists-list-item:hover {
       transform: translateY(-2rem);
       box-shadow: 2rem 4rem 12rem #B6BCD6;
@@ -4125,6 +4131,8 @@ html .f-mobile {
     padding: 70px 0 0 0; }
   .rehabilitation_stages.p-225, .rehabilitation_stages.p-180 {
     padding: 80px 0 0 0; }
+  .rehabilitation_stages .goals-list > div {
+    height: auto; }
   .main-block .block-1 .w-70 {
     width: auto; }
   .main-block .block-1 .label {
@@ -4336,16 +4344,27 @@ html .f-mobile {
     width: 200px; }
   .form-control-comments .input-comment {
     width: 420px; }
+  .title-group .button-left-m {
+    float: initial; }
   .rehabilitation_centers {
     padding: 126px 0 0 0; }
     .rehabilitation_centers.p-155 {
-      padding: 125px 0 0 0; }
+      padding: 65px 0 0 0; }
+      .rehabilitation_centers.p-155 .text-purple {
+        margin-bottom: 11px; }
+      .rehabilitation_centers.p-155 .btn.btn-lg {
+        margin-top: 25px;
+        margin-bottom: 20px; }
     .rehabilitation_centers.p-130 {
       padding: 30px 0 0 0; }
     .rehabilitation_centers.p-240 {
       padding-bottom: 8rem; }
     .rehabilitation_centers .banner-card .content-bar {
       padding: 40px 10px 40px 10px; }
+    .rehabilitation_centers.aside-check-1 .text-purple {
+      margin-bottom: 28px; }
+    .rehabilitation_centers.aside-check-1 .h3 {
+      margin-bottom: 34px; }
   .treatment_program .rehabilitation_stages_items > div:nth-child(4n),
   .treatment_program .rehabilitation_stages_items > div:nth-child(5n),
   .treatment_program .rehabilitation_stages_items > div:nth-child(6n),
@@ -4794,6 +4813,9 @@ html .f-mobile {
           padding: 12px 11px !important;
           min-width: 106px;
           margin: 0; }
+      .rehabilitation_list_items > div .h6-title-sm {
+        font-size: 24px;
+        line-height: 30px; }
       .rehabilitation_list_items > div:last-child {
         margin: 0 0 40px 0; }
   .rehabilitation_centers .btn.btn-lg {
@@ -5089,6 +5111,7 @@ html .f-mobile {
       width: 100%;
       min-height: 0;
       margin-top: 12.5rem;
+      margin-right: 0;
       padding-top: 9.6rem;
       padding-bottom: 2.6rem; }
     .specialists-list .specialist-description {
@@ -5231,6 +5254,9 @@ html .f-mobile {
     width: 140px;
     height: 55px;
     background-image: url("../images/btn/orange.svg"); }
+  .btn.btn-orange--long::before {
+    width: 180px;
+    background-image: url("../images/btn/orange-long.svg"); }
   .btn.btn-orange[data-toggle]::before {
     left: 0;
     width: 150px;
@@ -5403,11 +5429,23 @@ html .f-mobile {
     vertical-align: top;
     margin: 40px 0 40px 0; }
   .banner-3 {
-    width: 100%;
     display: flex;
-    padding: 0 10px; }
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 70px;
+    padding-bottom: 12px; }
+    .banner-3 .banner-label {
+      line-height: 1;
+      text-align: left; }
     .banner-3 .banner-icon {
-      margin-right: 0px; }
+      width: 36px;
+      height: 40px;
+      margin-right: 12px; }
+    .banner-3 .right-abs {
+      right: -23rem; }
   .title-group .banner-right {
     float: none;
     margin: 0 auto;
@@ -5497,6 +5535,22 @@ html .f-mobile {
     content: none; }
   .main-type-rc .right_side {
     height: 26rem; }
+  .main-type-catalog {
+    min-height: 685px; }
+    .main-type-catalog .content {
+      padding-top: 87px; }
+    .main-type-catalog .title-label {
+      margin-bottom: 10px; }
+    .main-type-catalog .h1 {
+      font-size: 29px;
+      line-height: 1; }
+    .main-type-catalog .img-bg-bottom.img2 {
+      bottom: 0;
+      width: auto;
+      height: auto; }
+    .main-type-catalog .form-button.p-258 {
+      margin-top: 10px;
+      padding-top: 0; }
   footer .f-content .f-menu {
     width: 50%; }
     footer .f-content .f-menu:last-child {
@@ -5534,6 +5588,7 @@ html .f-mobile {
         height: auto;
         min-height: 24.5rem;
         margin-bottom: 40px;
+        margin-right: 0;
         padding: 28px 25px 8px 20px;
         border-radius: 20px; }
         .reviews .reviews-list .reviews-item .username {
@@ -5574,8 +5629,6 @@ html .f-mobile {
   .h3-title {
     font-size: 30px;
     line-height: 1.3; }
-  .goals-list {
-    margin: 30px 0 30px 0; }
   .teenage_addiction {
     padding-top: 4rem; }
     .teenage_addiction.p-225 {
@@ -5645,31 +5698,34 @@ html .f-mobile {
       max-width: 370px;
       margin: -34px 0 0 0;
       background-image: url("../images/item-bg/mobile-bg-1 (1).png"); }
-  .goals-list > div {
-    width: 100%;
-    min-height: 30vw; }
-  .goals-list-checked {
-    justify-content: space-between !important;
-    margin-top: 7.2rem; }
-    .goals-list-checked > div {
-      width: 48%;
-      min-height: 225px;
-      padding-left: 15px;
-      padding-right: 10px; }
-      .goals-list-checked > div .title {
-        margin-top: 11px;
-        margin-bottom: 7px; }
-      .goals-list-checked > div .title,
-      .goals-list-checked > div .description {
-        text-align: inherit !important; }
-      .goals-list-checked > div:first-child {
-        margin-top: 0; }
-  .goals-list .icon-round {
-    width: 8.5rem;
-    height: 8.5rem; }
-    .goals-list .icon-round::before {
-      width: 7.4rem;
-      height: 7.4rem; }
+  .goals-list {
+    margin: 30px 0 30px 0; }
+    .goals-list > div {
+      width: 100%;
+      min-height: 30vw;
+      margin-right: 0; }
+    .goals-list-checked {
+      justify-content: space-between !important;
+      margin-top: 7.2rem; }
+      .goals-list-checked > div {
+        width: 48%;
+        min-height: 225px;
+        padding-left: 15px;
+        padding-right: 10px; }
+        .goals-list-checked > div .title {
+          margin-top: 11px;
+          margin-bottom: 7px; }
+        .goals-list-checked > div .title,
+        .goals-list-checked > div .description {
+          text-align: inherit !important; }
+        .goals-list-checked > div:first-child {
+          margin-top: 0; }
+    .goals-list .icon-round {
+      width: 8.5rem;
+      height: 8.5rem; }
+      .goals-list .icon-round::before {
+        width: 7.4rem;
+        height: 7.4rem; }
   .preparations {
     margin-top: 15rem; }
   .diagnoses {
@@ -5812,6 +5868,7 @@ html .f-mobile {
       width: 100%;
       max-width: 360px;
       min-height: 200px;
+      margin-right: 0;
       margin-bottom: 83px;
       padding-bottom: 1.9rem; }
       .steps-list > div .icon-bar {
