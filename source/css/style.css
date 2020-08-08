@@ -3289,35 +3289,27 @@ footer {
     display: inline-block; }
 
 .oval-form-button {
+  cursor: pointer;
   width: 4.8rem;
   height: 4.7rem;
-  border-radius: 100%;
-  border-top: 0.1rem solid #fff;
+  border-radius: 50%;
+  border: 0;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: -0.6rem 0 0 0; }
+  margin-left: 10px;
+  background-color: transparent; }
   .oval-form-button:after {
-    background: linear-gradient(180deg, #A254C5 -9.79%, #5948C8 103.6%);
-    border-radius: 18rem;
-    content: "";
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2; }
-  .oval-form-button:before {
-    background: #5242BE;
-    box-shadow: 0.4rem 0.4rem 0.5rem rgba(125, 85, 238, 0.49);
-    border-radius: 18rem;
-    content: "";
-    position: absolute;
-    bottom: -0.3rem;
-    right: -0.1rem;
-    width: 100%;
-    height: 100%;
-    z-index: 1; }
+    content: '';
+    top: -0.2rem;
+    right: -0.2rem;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-image: url("../images/btn/s2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
   .oval-form-button img {
     position: absolute;
     top: 50%;
@@ -3374,6 +3366,7 @@ footer {
       line-height: 3rem;
       color: #2D2C42; }
     .item-list-1 .item-list-1-item .addiction {
+      margin-right: 0.5rem;
       font-style: normal;
       font-weight: bold;
       font-size: 1.6rem;
@@ -4091,16 +4084,18 @@ html .f-mobile {
       top: 10px;
       width: 18px;
       height: 13px; }
-  .pagination ul li {
-    width: 32px; }
-    .pagination ul li:first-child, .pagination ul li:last-child {
-      width: 50px; }
-    .pagination ul li a {
-      font-size: 18px; }
-      .pagination ul li a.active {
-        font-size: 32px; }
-      .pagination ul li a img {
-        width: 14px; }
+  .pagination {
+    margin-bottom: 90px; }
+    .pagination ul li {
+      width: 32px; }
+      .pagination ul li:first-child, .pagination ul li:last-child {
+        width: 50px; }
+      .pagination ul li a {
+        font-size: 18px; }
+        .pagination ul li a.active {
+          font-size: 32px; }
+        .pagination ul li a img {
+          width: 14px; }
   header {
     background: #2d2c42; }
   .see-more-toggle {
@@ -4115,9 +4110,20 @@ html .f-mobile {
     justify-content: space-between;
     flex-wrap: wrap; }
     .search-types > li {
-      line-height: 50px;
       width: 50%;
-      margin-bottom: 10px; }
+      height: 57px;
+      line-height: 1;
+      margin-bottom: 10px;
+      display: inline-flex; }
+      .search-types > li a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 16px;
+        line-height: 18px; }
   .oval-container.mob-h {
     height: unset;
     border-radius: 35px; }
@@ -4332,14 +4338,78 @@ html .f-mobile {
           margin-bottom: 1.1rem; }
   .item-list-1 {
     justify-content: space-around;
-    margin: 75px 0 35px 0; }
+    margin: 0; }
+    .item-list-1 .item-list-1-item {
+      width: 100%;
+      min-height: 0;
+      margin-right: 0;
+      margin-bottom: 2.8rem;
+      padding-top: 2.5rem;
+      padding-bottom: 30px; }
+      .item-list-1 .item-list-1-item .title {
+        margin-bottom: 7px;
+        font-size: 22px;
+        line-height: 30px; }
+      .item-list-1 .item-list-1-item .description {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 25px; }
   .steps-list-2 {
     justify-content: space-around;
-    margin: 75px 0 35px 0; }
+    margin: 0; }
+    .steps-list-2.mb-30 {
+      margin-bottom: 0; }
+    .steps-list-2 .steps-list-2-item {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 2.8rem; }
+  .knowledge_base_search {
+    padding-top: 8.4rem; }
+    .knowledge_base_search .h3 {
+      margin-bottom: 1.8rem; }
+    .knowledge_base_search .oval-container {
+      margin-bottom: 3.9rem;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .knowledge_base_search .oval-container.mob-h {
+        padding-bottom: 0; }
+    .knowledge_base_search .oval-form-button {
+      position: absolute;
+      left: 50%;
+      bottom: -65px;
+      transform: translateX(-50%);
+      margin-left: 0;
+      border: 0; }
+      .knowledge_base_search .oval-form-button::after {
+        top: 0;
+        left: 0; }
+    .knowledge_base_search .oval-container-search {
+      margin-bottom: 13rem; }
   .oval-container {
-    height: 66px; }
+    position: relative;
+    height: auto; }
   .form-control-oval {
     height: 50px; }
+    .form-control-oval::-moz-placeholder {
+      line-height: 50px; }
+    .form-control-oval:-ms-input-placeholder {
+      line-height: 50px; }
+    .form-control-oval::-ms-input-placeholder {
+      line-height: 50px; }
+    .form-control-oval::placeholder {
+      line-height: 50px; }
+  .input-search .form-control-oval {
+    width: 100%;
+    height: 58px;
+    margin-right: 0; }
+    .input-search .form-control-oval::-moz-placeholder {
+      line-height: 58px; }
+    .input-search .form-control-oval:-ms-input-placeholder {
+      line-height: 58px; }
+    .input-search .form-control-oval::-ms-input-placeholder {
+      line-height: 58px; }
+    .input-search .form-control-oval::placeholder {
+      line-height: 58px; }
   .form-control-comments .input-username {
     width: 200px; }
   .form-control-comments .input-comment {
@@ -4515,8 +4585,6 @@ html .f-mobile {
     vertical-align: top;
     display: inline-block;
     margin: 0 0 20px 0; }
-  .search-types > li {
-    line-height: 50px; }
   .ways_to_expose_addiction .about-ways {
     margin: 80px 0 60px 0;
     flex-wrap: wrap; }
@@ -5523,6 +5591,22 @@ html .f-mobile {
       position: relative;
       z-index: 5;
       width: 100%; }
+  .main-block .block-1 .w-70,
+  .main-block .block-1 .st-50,
+  .main-block .block-1 .st-500,
+  .main-block .block-1 .w-628,
+  .main-block .block-1 .w-555,
+  .main-type-2 .block-1 .w-70,
+  .main-type-2 .block-1 .st-50,
+  .main-type-2 .block-1 .st-500,
+  .main-type-2 .block-1 .w-628,
+  .main-type-2 .block-1 .w-555,
+  .main-type-3 .block-1 .w-70,
+  .main-type-3 .block-1 .st-50,
+  .main-type-3 .block-1 .st-500,
+  .main-type-3 .block-1 .w-628,
+  .main-type-3 .block-1 .w-555 {
+    width: auto; }
   .main-block.main-block-co-depend .block-1::before {
     transform: rotate(-101deg);
     height: 105vw;
@@ -5621,10 +5705,6 @@ html .f-mobile {
   p {
     line-height: 1.3;
     padding-right: 0; }
-  .search-types > li > a {
-    line-height: 1.2;
-    padding: 10px 0;
-    font-size: 14px; }
   .h3,
   .h3-title {
     font-size: 30px;

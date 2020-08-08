@@ -4998,39 +4998,61 @@ footer {
 }
 
 .oval-form-button {
+  cursor: pointer;
   width: 4.8rem;
   height: 4.7rem;
-  border-radius: 100%;
-  border-top: 0.1rem solid #fff;
+  // border-radius: 100%;
+  border-radius: 50%;
+  border: 0;
+  // border-top: 0.1rem solid #fff;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: -0.6rem 0 0 0;
+  // margin: -0.6rem 0 0 0;
+  margin-left: 10px;
+  background-color: transparent;
+  // background-image: url('../images/icons/purple-round.svg');
+  // background-size: contain;
+  // box-shadow: 4px 4px 5px rgba(125, 85, 238, 0.49);
 
   &:after {
-    background: linear-gradient(180deg, #A254C5 -9.79%, #5948C8 103.6%);
-    border-radius: 18rem;
-    content: "";
+  //   background: linear-gradient(180deg, #A254C5 -9.79%, #5948C8 103.6%);
+  //   border-radius: 18rem;
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: 2;
+
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+    content: '';
+
+    top: -0.2rem;
+    right: -0.2rem;
+
+    width: 5.6rem;
+    height: 5.6rem;
+
+    background-image: url('../images/btn/s2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
-  &:before {
-    background: #5242BE;
-    box-shadow: 0.4rem 0.4rem 0.5rem rgba(125, 85, 238, 0.49);
-    border-radius: 18rem;
-    content: "";
-    position: absolute;
-    bottom: -0.3rem;
-    right: -0.1rem;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+  // &:before {
+  //   background: #5242BE;
+  //   box-shadow: 0.4rem 0.4rem 0.5rem rgba(125, 85, 238, 0.49);
+  //   border-radius: 18rem;
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -0.3rem;
+  //   right: -0.1rem;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: 1;
+  // }
 
   img {
     position: absolute;
@@ -5110,6 +5132,7 @@ footer {
     }
 
     .addiction {
+      margin-right: 0.5rem;
       font-style: normal;
       font-weight: bold;
       font-size: 1.6rem;

@@ -1280,6 +1280,7 @@
   }
 
   .pagination {
+    margin-bottom: 90px;
     ul {
       li {
         width: 32px;
@@ -1326,9 +1327,22 @@
     flex-wrap: wrap;
 
     &>li {
-      line-height: 50px;
       width: 50%;
+      height: 57px;
+      line-height: 1;
       margin-bottom: 10px;
+      display: inline-flex;
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 16px;
+        line-height: 18px;
+      }
     }
   }
 
@@ -1736,20 +1750,100 @@
 
   .item-list-1 {
     justify-content: space-around;
-    margin: 75px 0 35px 0;
+    // margin: 75px 0 35px 0;
+    margin: 0;
+
+    .item-list-1-item {
+      width: 100%;
+      min-height: 0;
+      margin-right: 0;
+      margin-bottom: 2.8rem;
+      padding-top: 2.5rem;
+      padding-bottom: 30px;
+      .title {
+        margin-bottom: 7px;
+        font-size: 22px;
+        line-height: 30px;
+      }
+      .description {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
   }
 
   .steps-list-2 {
     justify-content: space-around;
-    margin: 75px 0 35px 0;
+    // margin: 0 0 35px 0;
+    margin: 0;
+    &.mb-30 {
+      margin-bottom: 0;
+    }
+
+    .steps-list-2-item {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  .knowledge_base_search {
+    padding-top: 8.4rem;
+    .h3 {
+      margin-bottom: 1.8rem;
+    }
+    .oval-container {
+      margin-bottom: 3.9rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &.mob-h {
+        padding-bottom: 0;
+      }
+    }
+    .oval-form-button {
+      position: absolute;
+      left: 50%;
+      bottom: -65px;
+      transform: translateX(-50%);
+      // margin-top: 0;
+      margin-left: 0;
+      border: 0;
+      &::after {
+        top: 0;
+        left: 0;
+      }
+    }
+    .oval-container-search {
+      margin-bottom: 13rem;
+    }
   }
 
   .oval-container {
-    height: 66px;
+    position: relative;
+    height: auto;
+  }
+
+  .oval-container-search {
+    // margin-bottom: 13rem;
   }
 
   .form-control-oval {
     height: 50px;
+    &::placeholder {
+      line-height: 50px;
+    }
+  }
+
+  .input-search {
+    .form-control-oval {
+      width: 100%;
+      height: 58px;
+      margin-right: 0;
+      &::placeholder {
+        line-height: 58px;
+      }
+    }
   }
 
   .form-control-comments {
@@ -2062,9 +2156,9 @@
     margin: 0 0 20px 0;
   }
 
-  .search-types>li {
-    line-height: 50px;
-  }
+  // .search-types>li {
+  //   line-height: 50px;
+  // }
 
   .ways_to_expose_addiction {
     .about-ways {
@@ -3879,6 +3973,20 @@
     }
   }
 
+  .main-block,
+  .main-type-2,
+  .main-type-3 {
+    .block-1 {
+      .w-70,
+      .st-50,
+      .st-500,
+      .w-628,
+      .w-555 {
+        width: auto;
+      }
+    }
+  }
+
   .main-block.main-block-co-depend {
     .block-1::before {
       transform: rotate(-101deg);
@@ -4054,12 +4162,12 @@
     padding-right: 0;
   }
 
-  .search-types>li>a {
+  // .search-types>li>a {
 
-    line-height: 1.2;
-    padding: 10px 0;
-    font-size: 14px;
-  }
+  //   line-height: 1.2;
+  //   padding: 10px 0;
+  //   font-size: 14px;
+  // }
 
   .h3,
   .h3-title {
