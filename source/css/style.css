@@ -2947,7 +2947,7 @@ footer {
       font-size: 2rem;
       line-height: 2.9rem;
       color: #000000; }
-    .ways_to_expose_addiction .about-ways .p-bold {
+    .ways_to_expose_addiction .about-ways p.p-bold {
       font-style: normal;
       font-weight: bold;
       font-size: 2.2rem;
@@ -4136,8 +4136,6 @@ html .f-mobile {
     z-index: 20; }
   .see-more-toggle {
     margin: 15px 0 0 0; }
-  .ways_to_expose_addiction {
-    padding: 85px 0 0 0; }
   .search-types {
     display: flex;
     width: 100%;
@@ -4586,16 +4584,48 @@ html .f-mobile {
     .map_container_section .flex-parent .left_side {
       width: 100%;
       margin: 0 0 40px 0; }
-  .ways_to_expose_addiction .about-ways {
-    margin: 80px 0 60px 0;
-    flex-wrap: wrap; }
-    .ways_to_expose_addiction .about-ways > div {
+  .ways_to_expose_addiction {
+    padding: 85px 0 0 0; }
+    .ways_to_expose_addiction .about-ways {
+      margin: 105px 0 60px 0;
+      flex-wrap: wrap; }
+      .ways_to_expose_addiction .about-ways .h3-title {
+        padding: 0;
+        padding-top: 2.4rem;
+        padding-bottom: 4rem; }
+      .ways_to_expose_addiction .about-ways > div {
+        width: 100%;
+        margin: 0 0 20px 0; }
+      .ways_to_expose_addiction .about-ways p:not(.text-purple) {
+        font-size: 18px;
+        line-height: 27px; }
+    .ways_to_expose_addiction .text-purple {
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 25px; }
+    .ways_to_expose_addiction .btn-form {
+      padding-top: 1.8rem;
+      padding-bottom: 2.7rem; }
+    .ways_to_expose_addiction .btn-form-2 {
+      margin-bottom: 25px; }
+    .ways_to_expose_addiction .banner-card .content-bar .p-light {
       width: 100%;
-      margin: 0 0 20px 0; }
-  .ways_to_expose_addiction .banner-card .content-bar .p-light {
-    width: 100%;
-    font-size: 16px;
-    line-height: 1.3; }
+      font-size: 16px;
+      line-height: 1.3; }
+    .ways_to_expose_addiction .steps-list-2 {
+      justify-content: space-between !important; }
+      .ways_to_expose_addiction .steps-list-2 .steps-list-2-item {
+        width: 48%;
+        height: 375px;
+        padding-top: 3.7rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem; }
+        .ways_to_expose_addiction .steps-list-2 .steps-list-2-item .title {
+          font-size: 20px;
+          line-height: 25px; }
+        .ways_to_expose_addiction .steps-list-2 .steps-list-2-item .description {
+          font-size: 14px;
+          line-height: 19px; }
   .on_the_map {
     margin: 0; }
     .on_the_map .map-contacts-bar {
@@ -5656,6 +5686,10 @@ html .f-mobile {
   .main-type-3 .block-1 .w-628,
   .main-type-3 .block-1 .w-555 {
     width: auto; }
+  .main-block.main-block-how-find .block-1::before {
+    transform: rotate(-101deg);
+    height: 105vw;
+    bottom: -70vw; }
   .main-block.main-block-co-depend .block-1::before {
     transform: rotate(-101deg);
     height: 105vw;
@@ -6065,6 +6099,14 @@ html .f-mobile {
   .main-block-about .main-img {
     height: 420px;
     margin-top: -100px; }
+  .main-block-any-age .main-img {
+    height: 623px;
+    margin-top: -300px; }
+  .main-block-type-service {
+    margin-bottom: 56px; }
+    .main-block-type-service .main-img {
+      height: 305px;
+      margin-top: -30px; }
   .form-button {
     margin-top: 20px; }
   .our_mission {
@@ -6186,6 +6228,28 @@ html .f-mobile {
       margin-bottom: 40px; }
     .map-contacts .addresses {
       padding-bottom: 1rem; }
+  .price .banner-card {
+    margin-top: 17.5rem; }
+  .price-title {
+    margin-bottom: 1.6rem;
+    font-size: 30px; }
+  .price-columnw-wrap {
+    flex-direction: column; }
+  .price-columnw-left {
+    width: auto; }
+  .price-block {
+    flex-direction: column;
+    padding-top: 1.6rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1.45rem; }
+    .price-block p {
+      width: 100%;
+      font-size: 16px; }
+    .price-block:first-of-type {
+      border-top: 0; }
+    .price-block:last-of-type {
+      border-bottom: 0.1rem solid #D9E0ED; }
   .icon-round {
     width: 90px;
     height: 90px; }
