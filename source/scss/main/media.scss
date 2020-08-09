@@ -2,1249 +2,7 @@
   display: none !important;
 }
 
-// @media only screen and (max-width: 1500px) {
-//   .wrapper {
-//     max-width: 1200px;
-//   }
-
-//   .menu {
-//     height: 90px;
-//     max-width: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-
-//     .m-contacts-1 {
-//       width: 190px;
-//       height: 83px;
-
-//       .flex-contact {
-//         margin: 5px 0 0 0px;
-//         padding: 0 0 0 10px;
-
-//         &>div {
-//           width: 38px;
-//           height: 38px;
-//           margin: -8px 0 0 0;
-
-//           .c-icon {
-//             width: 35px;
-//             height: 35px;
-//             margin: 0;
-//           }
-//         }
-
-//         &:before {
-//           height: calc(100% - 12px);
-//         }
-//       }
-//     }
-
-//     .m-logo {
-//       width: 190px;
-
-//       a {
-//         margin: -25px 0 0 0;
-//       }
-
-//       .logo-shadow {
-//         margin-top: -23px;
-
-//         img {
-//           width: 90px;
-//           margin: 18px 0 0 4px;
-//         }
-//       }
-
-//       span {
-//         font-size: 22px;
-//         line-height: 26px;
-//         padding: 12px 0 0 8px;
-//       }
-//     }
-
-//     .m-menu {
-//       width: auto;
-//       height: auto;
-//       margin: 0 20px 0 20px;
-
-//       .menu-ul {
-//         &>li {
-//           line-height: 60px;
-//           padding: 0 8px;
-
-//           .menu-a {
-//             line-height: 2;
-//             font-size: 15px;
-//           }
-//         }
-//       }
-//     }
-
-//     .m-contacts {
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
-
-//       .contacts {
-//         margin-top: 0;
-//       }
-
-//       .telegram-icon {
-//         margin-top: 0;
-
-//         .tel-icn-img {
-//           margin: 0 0 0 -1px;
-//         }
-
-//         a {
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-
-//   .h1 {
-//     font-size: 36px;
-//     line-height: 1.12;
-//   }
-
-//   .h3,
-//   .h3-title {
-//     font-size: 36px;
-//   }
-
-//   .h6-title {
-//     font-size: 22px;
-//     line-height: 1.3;
-//   }
-
-//   .text-light p {
-//     font-size: 16px;
-//     line-height: 1.4;
-//   }
-
-//   .h6-title-sm {
-//     font-size: 22px;
-//     line-height: 1.3;
-//   }
-
-//   .text-purple {
-//     font-size: 18px;
-//     line-height: 1.4;
-//   }
-
-//   .list-ul li {
-//     font-size: 16px;
-//     line-height: 1.4;
-//     padding: 0 0 0 26px;
-
-//     &:before {
-//       width: 23px;
-//       height: 23px;
-//     }
-//   }
-
-//   .btn {
-//     &.btn-lg {
-//       font-size: 15px !important;
-//       padding: 14px 22px !important;
-//       min-width: 170px;
-//     }
-
-//     &.btn-md {
-//       font-size: 14px !important;
-//       padding: 12px 16px !important;
-//       min-width: 143px;
-
-//       &:after {
-//         top: -1px;
-//         left: calc(-8% - 1px);
-//         width: calc(100% + 3px);
-//         height: calc(100% + 3px);
-//       }
-
-//       &:before {
-//         top: 0;
-//         left: -8%;
-//         width: calc(100% + 1px);
-//         height: 100%;
-//       }
-//     }
-//   }
-
-//   .map_container_section {
-//     margin: 45px 0 0;
-
-//     .flex-parent {
-//       .left_side {
-//         width: calc(100% - 345px);
-//       }
-//     }
-//   }
-
-//   .banner-3 {
-//     width: 380px;
-
-//     .banner-label {
-//       font-size: 16px;
-//       line-height: 64px;
-//     }
-//   }
-
-//   .form-control-comments {
-//     .input-comment {
-//       width: 820px;
-//     }
-//   }
-
-//   .comments {
-//     .comment-form {
-//       margin: 60px 0 70px 0;
-//     }
-//   }
-
-//   .input-mask-group {
-//     &:before {
-//       top: -5px;
-//       left: -30px;
-//       width: calc(100% + 0px);
-//       height: calc(100% + 4px);
-//       border: 2px solid #CFD4E2;
-//     }
-
-//     input {
-//       width: calc(100% - 80px);
-//       padding: 6px 0 5px 2px;
-//       font-size: 15px;
-//       line-height: 22px;
-//     }
-
-//     .btn-icon {
-//       width: 44px;
-//       height: 43px;
-//       margin: -2px 0 0 12px;
-
-//       img {
-//         width: 25px;
-//         height: 25px;
-//       }
-//     }
-//   }
-
-//   .main-block,
-//   .main-type-2,
-//   .main-type-3 {
-//     margin: -90px 0 0 0;
-
-//     &,
-//     &.h-618 {
-//       height: 570px;
-//     }
-
-//     .article-img-bg {
-//       width: calc(50% + 100px);
-//     }
-
-//     .left_side {
-//       .flex-card {
-//         padding: 140px 0 20px 0;
-//       }
-
-//       &:before {
-//         right: calc(-50% + 1px);
-//       }
-//     }
-
-//     .block-1 {
-
-//       &.w-480px {
-//         width: 480px;
-//       }
-
-//       &.pb-90 {
-//         padding-bottom: 90px;
-//       }
-
-//       .w-70,
-//       .st-50,
-//       .st-500,
-//       .w-628,
-//       .w-555 {
-//         width: auto;
-//       }
-
-
-//       .title {
-//         margin: 40px 0 0 0;
-//       }
-//     }
-//   }
-
-//   .main-type-2 {
-//     .form-button.p-258 {
-//       padding: 208px 0 0 0;
-//     }
-//   }
-
-//   .treatment_methods {
-//     padding: 120px 0 0 0;
-
-//     &.p-185 {
-//       padding: 85px 0 0 0;
-//     }
-
-//     .banner-card {
-//       margin: 75px 0 0 0;
-//     }
-//   }
-
-//   .photo-list {
-//     &>div {
-//       height: 280px;
-//     }
-//   }
-
-//   .online_webinars .banner-card {
-//     margin-top: 80px;
-//   }
-
-//   .banner-card {
-//     .content-bar {
-//       padding: 50px 10px 0 10px;
-
-//       &,
-//       &.p-100-115-0-10,
-//       &.p-100-100-0-10 {
-//         padding: 40px 10px 40px 10px !important;
-//       }
-
-//     }
-
-//     &.m-86 {
-//       margin: 0 0 0 0 !important;
-//     }
-
-//     .inline-title {
-//       .h1 {
-//         padding: 30px 0 0 0;
-//       }
-//     }
-
-//     .image-bar {
-//       :before {
-//         right: -200px;
-//       }
-
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//       }
-//     }
-//   }
-
-//   .verified_articles {
-//     padding: 80px 0 0 0;
-//   }
-
-//   .steps_12_codependent {
-//     padding: 90px 0 120px 0;
-//   }
-
-//   .list-bottom-bg {
-
-//     &>div .bottom {
-//       padding: 0 15px 0 15px !important;
-//       min-height: 208px;
-//     }
-
-//     &.w-3 {
-//       &>div {
-//         width: 380px;
-
-//         .top {
-//           height: 235px;
-//         }
-//       }
-//     }
-
-//     &.w-2 {
-//       &>div {
-//         width: calc(50% - 25px);
-
-//         .top {
-//           height: calc(22vw + 0px);
-//         }
-
-//         .bottom .h6 {
-//           display: inline-block;
-//           vertical-align: top;
-//           padding: 70px 0 20px 14px;
-//           width: calc(100% - 101px);
-//         }
-//       }
-//     }
-
-//     &>div {
-//       .bottom {
-//         .h6 {
-//           font-size: 24px;
-//           line-height: 1.34;
-//           padding: 62px 0 15px 0;
-//         }
-
-//         .bottom-icon {
-//           width: 76px;
-//           height: 76px;
-//           box-shadow: 5px 10px 30px rgba(0, 38, 111, 0.56);
-//           border-radius: 15px;
-//           margin: 0 0 0 0;
-
-//           label,
-//           img {
-//             width: 45px;
-
-//             span {
-//               font-size: 16px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .services {
-//     margin: 100px 0 0 0;
-
-//     .banner-card {
-//       .inline-title {
-//         .h1 {
-//           padding: 25px 0 0 0;
-//           width: 100%;
-//         }
-//       }
-//     }
-
-//     .services-list {
-//       margin: 25px 0 0 0;
-//       text-align: center;
-//       display: flex;
-//       flex-wrap: wrap;
-//       justify-content: space-between;
-
-//       &>div {
-//         text-align: left;
-//         padding: 25px 20px 20px 20px;
-//         margin-bottom: 15px;
-//         max-width: 360px;
-//         min-height: 230px;
-//         width: 100%;
-
-//         .reviews-bar {
-//           padding: 10px 0 0 0;
-//         }
-
-//         .top {
-//           display: flex;
-//           padding: 10px 0 0 0;
-
-//           .description {
-//             margin: -5px 0 0 0;
-//             padding: 0 15px 0 20px;
-
-//             .h6-title {
-//               padding: 4px 0 10px 0;
-//             }
-//           }
-
-//           .icon {
-//             width: 85px;
-
-//             img {
-//               width: 100%;
-//             }
-//           }
-//         }
-
-//         &:not(:nth-child(4n)) {
-//           margin-right: 0px;
-//         }
-
-//         &:nth-child(4n) {
-//           margin-right: 0px;
-//         }
-//       }
-//     }
-//   }
-
-//   .see-more-toggle,
-//   .see-more-services {
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 18px;
-//     line-height: 25px;
-//     margin: 30px 0 0 0;
-//     text-decoration: underline;
-//     color: #636276;
-//   }
-
-//   .services .banner-card {
-
-//     .content-bar {
-//       padding: 58px 15px 0 20px !important;
-//     }
-
-//     .image-bar {
-//       width: 100%;
-//       height: 395px;
-//       overflow: hidden;
-//       margin: -115px 0 0 0;
-//     }
-
-//     .inline-title .h1:not(.w-100) {
-//       width: 100%;
-//       padding: 40px 0 0 0;
-//     }
-
-//     margin: 120px 0 0 0;
-
-//     .ul-path ul li a {
-//       font-size: 16px;
-//       line-height: 24px;
-//     }
-
-//     .list-ul-parent {
-//       margin: 7px 0 0 0;
-
-//       .list-ul li {
-//         font-size: 15px;
-//         line-height: 1.5;
-//         padding: 0 0 0 26px;
-//       }
-//     }
-//   }
-
-//   .rehabilitation_list_items {
-
-//     &>div {}
-//   }
-
-//   .rehabilitation_centers {
-//     padding: 120px 0 0 0;
-
-//     &.p-155 {
-//       padding: 125px 0 0 0;
-//     }
-
-//     &.p-130 {
-//       padding: 80px 0 0 0;
-//     }
-
-//     .banner-card {
-//       margin: 40px 0 0 0;
-
-//       .content-bar {
-//         padding: 50px 10px 0 10px;
-//       }
-//     }
-//   }
-
-//   .solutions_possible_problems {
-//     padding: 128px 0 0 0;
-
-//     .solutions-list {
-//       padding: 80px 0 0 0;
-//       flex-wrap: wrap;
-
-//       &>div {
-//         width: 323px;
-//         height: 460px;
-//         margin: 0 0 140px 0;
-//       }
-//     }
-
-//     .banner-card .content-bar {
-//       padding: 50px 0 0 10px;
-//       position: relative;
-//       z-index: 7;
-//     }
-//   }
-
-//   .what_i_do_now {
-//     margin: 110px 0 0 0;
-//   }
-
-//   .steps-list {
-//     margin: 70px 0 0 0;
-//     flex-wrap: wrap;
-
-//     &>div {
-//       box-shadow: 10px 20px 60px #B6BCD6;
-//       margin-bottom: 100px;
-//     }
-//   }
-
-//   .teenage_addiction {
-//     padding: 130px 0 130px 0;
-//   }
-
-//   .main-type-3 {
-//     height: 570px;
-
-//     .p-70 {
-//       padding: 10px 0 0 0;
-//     }
-
-//     .article-img-bg {
-//       width: calc(50% + 220px);
-//       object-fit: cover;
-//       top: 0;
-//       right: 0;
-//       height: 100%;
-//     }
-
-//     .img-bg {
-//       &.rc-bg-img {
-//         width: calc(50% + 220px);
-//       }
-//     }
-
-//     .title.w-628 {
-//       width: 600px;
-//       padding: 30px 0 0 0;
-//     }
-//   }
-
-//   .banner-center {
-//     width: 570px;
-//     height: 400px;
-//   }
-
-//   .signs_parental_codependence {
-//     margin: 90px 0 0 0;
-//   }
-
-//   .webinars .webinars-list>div {
-//     width: 362px;
-//     min-height: 341px;
-//   }
-
-//   .reviews.p-240 {
-//     padding: 80px 0 0 0;
-//   }
-
-//   .steps-list-2>div {
-//     margin-bottom: 40px;
-//   }
-
-//   .on_the_map {
-//     margin: 100px 0 0 0;
-//   }
-
-//   .signs_addiction {
-//     padding: 60px 0 0 0;
-
-//     .banner-card {
-//       margin: 80px 0 0 0;
-
-//       .content-bar {
-//         .p-light {
-//           width: 100%;
-//         }
-
-//         .inline-title .h1 {
-//           padding: 50px 0 0 0;
-//           width: 100%;
-//         }
-//       }
-//     }
-
-//     &.p-160 {
-//       padding: 30px 0 0 0;
-//     }
-
-//     &.p-135 {
-//       padding: 30px 0 0 0;
-//     }
-//   }
-
-//   .help_right_now {
-//     padding: 120px 0 0 0;
-//   }
-
-//   .measures {
-//     padding: 120px 0 80px 0;
-//   }
-
-//   .banner-type-2 {
-//     .left_side {
-//       width: 39%;
-//       height: 380px;
-//       padding: 40px;
-//       border-radius: 20px;
-//       box-shadow: 20px 40px 100px rgba(156, 192, 255, 0.3);
-//     }
-
-//     .right_side {
-//       height: 380px;
-//     }
-
-//     p {
-//       font-size: 18px;
-//       line-height: 1.3;
-//     }
-//   }
-
-//   .the_best_deal_in_your_area {
-//     .title {
-//       font-size: 36px;
-//       line-height: 1.2;
-//     }
-
-//     .sub-title {
-//       font-size: 24px;
-//       line-height: 1;
-//       margin: 15px 0 6px 0;
-//     }
-//   }
-// }
-
-// @media only screen and (max-width: 1220px) {
-//   .content-main {
-//     .text-side {
-
-//       &.w-440,
-//       & {
-//         width: 100%;
-//         padding: 0 20px 0 0;
-//       }
-//     }
-//   }
-
-//   .banner-type-2 {
-
-//     .left_side {
-//       width: 440px;
-//       height: 360px;
-
-//       background-image: url("../images/item-bg/Rectangle987564.png");
-//       background-size: 100% 100%;
-//       background-position: top 0 left 0;
-
-//       .title {
-//         font-size: 30px !important;
-//       }
-
-//       p {
-//         font-size: 16px;
-//         line-height: 1.5;
-//       }
-//     }
-
-//     .right_side {
-//       height: 360px;
-//       width: calc(100% - 365px);
-
-//       img {
-//         width: auto;
-//         height: 100%;
-//         object-fit: contain;
-//       }
-//     }
-
-//     p {
-//       font-size: 18px;
-//       line-height: 1.3;
-//     }
-
-//   }
-
-//   .goals-list>div {
-//     width: 310px;
-//     min-height: 177px;
-//   }
-
-//   .help_right_now {
-//     padding: 80px 0 0 0;
-//   }
-
-//   .measures {
-//     padding: 80px 0 80px 0;
-//   }
-
-//   .ways_to_expose_addiction {
-//     .about-ways {
-//       margin: 80px 0 60px 0;
-//     }
-
-//     .banner-card .content-bar .p-light {
-//       width: 100%;
-//       font-size: 16px;
-//       line-height: 1.3;
-//     }
-//   }
-
-//   .photo-list>div {
-//     height: 260px;
-//   }
-
-//   .main-block {
-//     .main-img {
-
-//       &.pos-left {
-//         img {
-//           object-position: left;
-//           left: -80px;
-//         }
-//       }
-
-//       img {
-//         object-position: right;
-//       }
-//     }
-
-//     .block-1 {
-//       &:before {
-//         left: -190px;
-//       }
-
-//       &.w-480px {
-//         &:before {
-//           left: -288px;
-//         }
-//       }
-
-//       .w-70 {
-//         width: 100%;
-//       }
-//     }
-//   }
-
-//   .specialists-data {
-//     .specialist-banner .right_side {
-//       width: calc(100% - 220px);
-//     }
-//   }
-
-//   .rehabilitation_goals .banner-card .content-bar .text-light {
-//     width: 100%;
-//   }
-
-//   .text-purple {
-//     font-size: 16px;
-//     line-height: 1.4;
-//   }
-
-//   .pr-115 {
-//     padding-right: 0;
-//   }
-
-//   .main-type-3 {
-//     .article-img-bg {
-//       width: calc(50% + 100px);
-//     }
-
-//     .left_side {
-//       &:before {
-//         right: -210px;
-//       }
-//     }
-//   }
-
-//   .see-more-toggle {
-//     font-size: 20px;
-//     line-height: 1.2;
-//     margin: 20px 0 0 0;
-//   }
-
-//   .wrapper {
-//     max-width: 998px;
-//   }
-
-//   .menu {
-//     .m-contacts-1 {
-//       width: 140px;
-//       height: 75px;
-
-//       .flex-contact {
-//         &>div {
-//           width: 34px;
-//           height: 34px;
-
-//           .c-icon {
-//             width: 30px;
-//             height: 30px;
-//             margin: 0;
-//           }
-//         }
-//       }
-//     }
-
-//     .m-logo {
-//       width: 160px;
-
-//       a {
-//         margin: -9px 0 0 0;
-//       }
-
-//       .logo-shadow img {
-//         width: 80px;
-//         margin: 18px 0 0 4px;
-//       }
-
-//       span {
-//         font-size: 20px;
-//         line-height: 24px;
-//         padding: 8px 0 0 0;
-//       }
-//     }
-
-//     .m-menu {
-//       margin: 0;
-
-//       .menu-ul {
-//         padding: 0 15px;
-
-//         &>li {
-//           line-height: 60px;
-//           padding: 0 5px;
-
-//           .menu-a {
-//             line-height: 2;
-//             font-size: 14px;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .main-block,
-//   .main-type-2,
-//   .main-type-3 {
-//     margin: -90px 0 0 0;
-
-//     &,
-//     &.h-618 {
-//       height: 500px;
-//     }
-
-//     .dec {
-//       margin: 15px 0 30px 0;
-//     }
-
-//     .left_side {
-//       width: 50%;
-
-//       .flex-card {
-//         padding: 90px 0 20px 0 !important;
-//       }
-
-//       &:before {
-//         right: calc(-50% + 1px);
-//       }
-//     }
-
-//     .block-1 {
-//       .title {
-//         margin: 30px 0 0 0;
-//       }
-//     }
-//   }
-
-//   .h1 {
-//     font-size: 30px;
-//     line-height: 1.33;
-//   }
-
-//   .h3,
-//   .h3-title {
-//     font-size: 30px;
-//   }
-
-//   .main-type-2 .form-button.p-258 {
-//     padding: 170px 0 0 0;
-//   }
-
-//   .dec {
-//     height: 16px;
-//     margin: 6px 0 0 0;
-//   }
-
-//   .p-bold,
-//   .p-main,
-//   p {
-//     line-height: 1.3;
-//     padding-right: 20px;
-//   }
-
-//   .ul-path {
-//     ul {
-//       li {
-//         padding: 0 0 0 0;
-
-//         &:not(:last-child) {
-//           padding: 0 20px 0 0;
-
-//           &:after {
-//             right: 9px;
-//           }
-//         }
-
-//         a {
-//           font-size: 14px;
-//           line-height: 24px;
-//         }
-//       }
-//     }
-//   }
-
-//   .rehabilitation_goals {
-//     padding: 50px 0 0 0;
-//   }
-
-//   .text-light p {
-//     font-size: 14px;
-//     line-height: 1.4;
-//   }
-
-//   .btn {
-//     &.btn-md {
-//       font-size: 13px !important;
-//       padding: 8px 12px !important;
-//       min-width: 143px;
-//     }
-
-//     &.btn-sm {
-//       font-size: 12px !important;
-//       padding: 5px 18px !important;
-//     }
-
-//     &.btn-lg {
-//       font-size: 14px !important;
-//       padding: 8px 18px !important;
-//       min-width: 130px;
-//     }
-//   }
-
-//   .treatment_methods {
-//     padding: 80px 0 0 0;
-//   }
-
-//   .list-bottom-bg {
-//     flex-wrap: wrap;
-//     justify-content: center;
-
-
-//     &.w-3>div {
-//       margin: 0 20px 27px 20px;
-//     }
-
-//     &.w-2>div {
-//       width: calc(50% - 25px);
-//       min-height: unset;
-//       min-width: 360px;
-
-//       //margin: 20px;
-//       .bottom {
-//         height: 210px;
-//         padding: 0 20px 0 20px;
-
-//         .btn-more {
-//           font-size: 13px;
-//           padding: 14px 20px;
-//         }
-//       }
-
-//       .top {
-//         height: calc(28vw + 0px);
-//       }
-//     }
-//   }
-
-//   .banner-card {
-//     .content-bar {
-//       padding: 40px 10px 40px 10px;
-//     }
-
-//     .inline-title {
-//       padding: 0 0 16px 0;
-
-//       .h1 {
-//         padding: 20px 0 0 0;
-//         font-size: 27px;
-//       }
-//     }
-
-//     .image-bar {
-//       &:before {
-//         right: -50px;
-//       }
-//     }
-//   }
-
-//   .reviews-bar {
-//     padding: 15px 0 0 0;
-//   }
-
-//   .services .banner-card .inline-title {
-//     padding: 0 0 10px 0;
-
-//     .h1 {
-//       padding: 5px 0 0 0;
-//       font-size: 30px;
-//     }
-//   }
-
-//   .rehabilitation_centers {
-//     padding: 80px 0 0 0;
-
-//     &.p-180,
-//     &.p-155,
-//     &.p-195,
-//     &.p-240,
-//     &.p-130,
-//     &.p-220 {
-//       padding: 80px 0 0 0;
-//     }
-
-//     .banner-card .content-bar {
-//       padding: 40px 10px;
-//     }
-//   }
-
-//   .teenage_addiction {
-//     padding: 60px 0 60px 0;
-//   }
-
-//   .our_mission {
-//     margin: 80px 0 0 0;
-//   }
-
-//   .our-specialists {
-//     margin: 80px 0 0 0;
-//   }
-
-//   .map-contacts-bar {
-//     .map-container {
-//       width: 600px;
-//       height: 360px;
-//     }
-
-//     .contacts {
-//       width: 100% !important;
-//       padding: 30px 0 0 30px;
-
-//       .h3 {
-//         font-size: 30px;
-//         line-height: 1.5;
-//       }
-//     }
-//   }
-
-//   .map-contacts {
-//     padding: 70px 0 60px 0;
-
-//     .addresses {
-//       padding: 0 0 60px 0;
-//     }
-//   }
-
-//   .banner-center {
-//     width: 440px;
-//     height: 320px;
-//     border-radius: 40px;
-//     padding: 35px 50px;
-//   }
-
-//   .reviews {
-//     padding: 80px 0 0 0;
-
-//     .reviews-list>div {
-//       width: 323px;
-//       height: 266px;
-//       border-radius: 20px;
-//       padding: 28px 25px 0 20px;
-//       margin-bottom: 30px;
-//     }
-//   }
-
-//   .details_and_documents {
-//     margin: 100px 0 0 0;
-
-//     .banner-type-3 {
-
-//       .left_side {
-
-//         .p-title {
-//           font-size: 36px;
-//           line-height: 1.1;
-//         }
-//       }
-//     }
-//   }
-
-//   .address-table {
-//     &.md {
-//       .value {
-//         font-size: 16px;
-//       }
-//     }
-
-//     .key {
-//       font-size: 16px;
-//       width: 91px;
-//     }
-
-//     .value {
-//       font-size: 16px;
-//     }
-
-
-//   }
-
-//   .addresses-list {
-//     &>div {
-//       .city {
-//         font-size: 26px;
-//         line-height: 1.35;
-//       }
-//     }
-//   }
-
-//   .banner-type-3 {
-//     .left_side {
-//       .p-light {
-//         font-size: 16px;
-//         line-height: 1.3;
-//       }
-
-//       .p-title {
-//         font-size: 30px;
-//         line-height: 1.2;
-//         margin: 0 0 20px 0;
-//       }
-//     }
-//   }
-
-//   .form-control-comments .input-comment {
-//     width: 620px;
-//   }
-
-//   .webinars .webinars-list {
-//     justify-content: space-around;
-//   }
-
-//   footer {
-//     margin-top: 60px;
-
-//     .f-content .f-menu:not(:first-child) {
-//       padding-left: 20px;
-//     }
-//   }
-// }
-
-// 1010px
+// 767px
 @media only screen and (max-width: 48em) {
 
   .h1 {
@@ -1846,16 +604,6 @@
     }
   }
 
-  .form-control-comments {
-    .input-username {
-      width: 200px;
-    }
-
-    .input-comment {
-      width: 420px;
-    }
-  }
-
   .title-group .button-left-m {
     float: initial;
   }
@@ -2061,57 +809,6 @@
     line-height: 1.2;
   }
 
-  .comments {
-    .comment-form {
-      margin: 60px 0 70px 0;
-    }
-
-    .comment-label {
-      font-size: 26px;
-      line-height: 1.3;
-    }
-
-    .comments-list {
-      &>div {
-        margin: 0 0 35px 0;
-      }
-
-      .top {
-        .date {
-          font-size: 22px;
-          line-height: 1.3;
-        }
-
-        .username {
-          font-size: 22px;
-          line-height: 1.3;
-        }
-      }
-    }
-  }
-
-  .content-main {
-    flex-wrap: wrap;
-
-    .text-side.w-440 {
-      width: 100%;
-      padding: 0;
-    }
-
-    .banner-side {
-      width: 100%;
-      display: none;
-      // display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-
-      .reviews-bar.mb-220 {
-        margin: 50px 0 20px 0;
-        width: 100%;
-      }
-    }
-  }
-
   .main-type-3 {
     table {
       width: auto;
@@ -2264,9 +961,6 @@
       }
     }
   }
-}
-// 767px
-@media only screen and (max-width: 48em) {
   .wrapper {
     max-width: 100%;
     padding: 0 25px;
@@ -2815,7 +1509,8 @@
         position: relative;
         z-index: 8;
         padding: 32px 0 0 0;
-        max-width: 380px;
+        // max-width: 380px;
+        max-width: none;
       }
     }
   }
@@ -3123,10 +1818,6 @@
     .banner-card {
       margin-top: 90px;
     }
-  }
-
-  .content-main .text-side {
-    width: auto;
   }
 
   .menu {
@@ -3786,8 +2477,8 @@
     }
     .btn.btn-default.btn-default {
       padding: 10px 20px !important;
-      // padding-top: 10px!important;
       padding-left: 26px!important;
+      // padding-top: 10px!important;
       // padding-right: 28px!important;
     }
     .btn.btn-default::after {
@@ -3800,6 +2491,19 @@
       width: 202px;
       height: 60px;
       background-image: url('../images/btn/gray-long.svg');
+    }
+  }
+
+  .btn-gray-small {
+    &.btn.btn-default::after {
+      content: none;
+    }
+    &.btn.btn-default::before {
+      top: -4px;
+      left: 2px;
+      width: 144px;
+      height: 64px;
+      background-image: url('../images/btn/gray-small.svg');
     }
   }
 
@@ -3855,18 +2559,54 @@
   }
 
   .statistic-ul {
-    li {
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    &>div {
       font-size: 16px;
       line-height: 32px;
-      padding-right: 22px;
+      // padding-right: 22px;
+      padding-right: 0;
+      span {
+        margin-left: 5px;
+      }
     }
-  }
-
-  .authors>div {
-    width: calc(33.33% - 5px);
-    display: inline-block;
-    vertical-align: top;
-    margin: 40px 0 40px 0;
+    .reviews-stars {
+      padding-right: 0;
+    }
+    .stars {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      margin-left: 8px;
+      padding: 0;
+      list-style: none;
+      li {
+        line-height: initial;
+        height: 19px;
+        margin-left: 4px;
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+      img {
+        width: 19px;
+        height: 19px;
+        object-fit: contain;
+      }
+      .empty {
+        height: 18px;
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+    .inline-label {
+      display: flex;
+      align-items: center;
+      padding-right: 0;
+    }
   }
 
   .banner-3 {
@@ -4039,6 +2779,30 @@
     }
   }
 
+  .main-type-3.article {
+    .p-70 {
+      padding-top: 0;
+    }
+    .left_side .title {
+      margin-top: 0;
+    }
+    .left_side::before {
+      content: none;
+    }
+    .right_side {
+      min-height: 336px;
+      margin-top: -50px;
+    }
+    .article-img-bg {
+      // position: relative;
+      top: auto;
+      // right: auto;
+      width: 100%;
+      height: 336px;
+      transform: none;
+    }
+  }
+
   // .main-type-detox {
   //   .form-button {
   //     div:first-child {
@@ -4049,6 +2813,228 @@
   //     }
   //   }
   // }
+
+  .teenage_addiction_how_to_fight {
+    padding-top: 6.2rem;
+    .title.m-63 {
+      margin-top: 4.4rem;
+    }
+    .title .text-gray {
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  .article-content {
+    font-size: 16px;
+    line-height: 24px;
+    p {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  .content-main {
+    flex-wrap: wrap;
+
+    .text-side {
+      width: auto;
+    }
+
+    .text-side.w-440 {
+      width: 100%;
+      padding: 0;
+    }
+
+    .banner-side {
+      width: 100%;
+      display: none;
+      // display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .reviews-bar.mb-220 {
+        margin: 50px 0 20px 0;
+        width: 100%;
+      }
+    }
+
+    .article-content.mt-58 {
+      margin-top: 47px;
+    }
+
+    .btn-bar {
+      margin-top: 4.7rem;
+    }
+  }
+
+  .content-main .text-side .article-content .p-big,
+  .content-main .text-side .article-content .p-big-bold {
+    font-size: 20px;
+    line-height: 29px;
+  //   text-align: right;
+  //   padding: 1.6rem 0 0 3.2rem;
+    color: #8F8DAA;
+  }
+
+  .article-content {
+    blockquote {
+      margin: 0;
+      margin-bottom: 2.6rem;
+      padding-top: 1.6rem;
+      // padding-left: 8.7rem;
+      color: #89879C;
+      text-align: right;
+
+      p {
+        padding-left: 3.2rem;
+      }
+
+      cite {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .contents-list {
+    ol,
+    ul {
+      padding-left: 1.4rem;
+      margin-bottom: 2.3rem;
+    }
+    ol li a,
+    ul li a {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &>ol {
+      padding-left: 0;
+      &>li {
+        font-size: 16px;
+        line-height: 24px;
+        &>a {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+
+  .pr-115 {
+    padding-right: 0;
+  }
+
+  .tags {
+    li {
+      display: inline;
+      padding-right: 0.4rem;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .reviews-bar .stars.stars-lg li {
+    &.empty img {
+      width: 34px;
+      height: 31px;
+    }
+  }
+
+  .share-review {
+    flex-direction: column;
+    .share-link {
+      margin-top: 26px;
+    }
+  }
+
+  .authors {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+
+    &>div {
+      width: auto;
+      display: flex;
+      margin: 0;
+      margin-bottom: 36px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .profession {
+      width: 100px;
+    }
+  }
+
+  .comments {
+    margin-top: 116px;
+    margin-bottom: 80px;
+    .comment-form {
+      margin: 0;
+      margin-bottom: 110px;
+    }
+
+    .comment-count {
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+
+    .comment-label {
+      margin-bottom: 4px;
+      font-size: 30px;
+      line-height: 44px;
+    }
+
+    .comments-list {
+      &>div {
+        margin: 0;
+        margin-bottom: 22px;
+      }
+
+      .top {
+        .date {
+          font-size: 22px;
+          line-height: 1.3;
+        }
+
+        .username {
+          font-size: 22px;
+          line-height: 1.3;
+        }
+      }
+
+      .comment {
+        margin-top: 0.7rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+
+    .oval-container {
+      margin-bottom: 0;
+      border-radius: 4rem;
+    }
+  }
+
+  .form-control-comments {
+    flex-direction: column;
+
+    .input-username {
+      margin-bottom: 19px;
+    }
+
+    .input-username,
+    .input-comment {
+      width: 100%;
+    }
+
+    .oval-form-button {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -72px;
+      margin-left: 0;
+    }
+  }
 
   footer .f-content .f-menu {
 
@@ -4150,10 +3136,7 @@
   .signs_addiction .banner-card .content-bar .inline-title .h1 {
     width: auto;
   }
-}
 
-// 692 px
-@media only screen and (max-width: 48em) {
 
   .p-bold,
   .p-main,
@@ -4192,12 +3175,13 @@
 
   .banner {
     overflow: hidden;
+    max-width: 360px;
     width: 100%;
     min-height: 39.3rem;
     margin-top: 46px;
     margin-bottom: 4.6rem;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 4.2rem;
     .title {
       margin-bottom: 0.9rem;
@@ -4577,6 +3561,16 @@
   .breadcrumbs-path .path {
     width: auto;
   }
+
+  .path {
+    padding-top: 14px;
+    ul li a {
+      line-height: initial;
+    }
+    ul li:not(:last-child)::before {
+      top: 0.1rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 27em) {
@@ -4593,27 +3587,3 @@
     }
   }
 }
-
-// 410px
-// @media only screen and (max-width: 410px) {
-//   .banner-card .form-button>div:not(:last-child) {
-//     margin-bottom: 30px;
-//   }
-
-//   .list-bottom-bg.w-3>div,
-//   .list-bottom-bg.w-2>div {
-//     max-width: 100%;
-//     width: 100%;
-
-//     .top {
-//       height: 215px;
-//     }
-
-
-//     .h6 {
-//       padding: 50px 0 10px 2px;
-//       font-size: 18px;
-//       width: calc(100% - 80px);
-//     }
-//   }
-// }

@@ -1951,11 +1951,25 @@ p {
       margin-bottom: 2rem; }
     .content-main .text-side .article-content .sub-p {
       padding: 2.7rem 0 0 8.7rem;
-      margin: 0; }
+      margin: 0;
+      color: #89879C; }
     .content-main .text-side .mt-58 {
       margin-top: 5.8rem; }
   .content-main .banner-side {
     width: 32.5rem; }
+
+.article-content blockquote {
+  margin: 0;
+  margin-bottom: 2.6rem;
+  padding-top: 2.7rem;
+  color: #89879C; }
+  .article-content blockquote p {
+    margin-bottom: 0;
+    padding-left: 8.7rem; }
+  .article-content blockquote cite {
+    font-style: normal;
+    font-weight: bold;
+    color: #3E3C56; }
 
 .banner {
   display: block;
@@ -3297,7 +3311,7 @@ footer {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10px;
+  margin-left: 1rem;
   background-color: transparent; }
   .oval-form-button:after {
     position: absolute;
@@ -3310,6 +3324,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; }
+  .oval-form-button--mail::after {
+    background-image: url("../images/btn/s1.png"); }
   .oval-form-button img {
     position: absolute;
     top: 50%;
@@ -3678,16 +3694,16 @@ footer {
     margin: 0 0 0.6rem 0; }
 
 .statistic-ul {
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0; }
-  .statistic-ul li {
-    display: table-cell;
+  .statistic-ul > div {
     font-size: 1.6rem;
     line-height: 4.5rem;
     color: #A09EAC;
     padding-right: 4.2rem; }
-    .statistic-ul li .black {
+    .statistic-ul > div .black {
       color: #2D2C42; }
 
 .tags {
@@ -3920,6 +3936,25 @@ footer {
   .ul-components ul li a {
     font-size: 1.8rem;
     font-weight: normal; }
+
+.contents-list > ol {
+  padding-left: 0; }
+  .contents-list > ol > li {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    display: block;
+    text-decoration: underline;
+    color: #3e3c56; }
+    .contents-list > ol > li > a {
+      font-size: 20px;
+      font-weight: 700; }
+
+.contents-list ol a,
+.contents-list ul a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none; }
 
 .comments .oval-container {
   margin: 2.3rem 0 2rem 0; }
@@ -4410,10 +4445,6 @@ html .f-mobile {
       line-height: 58px; }
     .input-search .form-control-oval::placeholder {
       line-height: 58px; }
-  .form-control-comments .input-username {
-    width: 200px; }
-  .form-control-comments .input-comment {
-    width: 420px; }
   .title-group .button-left-m {
     float: initial; }
   .rehabilitation_centers {
@@ -4536,32 +4567,6 @@ html .f-mobile {
   .solutions-light li {
     font-size: 14px;
     line-height: 1.2; }
-  .comments .comment-form {
-    margin: 60px 0 70px 0; }
-  .comments .comment-label {
-    font-size: 26px;
-    line-height: 1.3; }
-  .comments .comments-list > div {
-    margin: 0 0 35px 0; }
-  .comments .comments-list .top .date {
-    font-size: 22px;
-    line-height: 1.3; }
-  .comments .comments-list .top .username {
-    font-size: 22px;
-    line-height: 1.3; }
-  .content-main {
-    flex-wrap: wrap; }
-    .content-main .text-side.w-440 {
-      width: 100%;
-      padding: 0; }
-    .content-main .banner-side {
-      width: 100%;
-      display: none;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-      .content-main .banner-side .reviews-bar.mb-220 {
-        margin: 50px 0 20px 0;
-        width: 100%; }
   .main-type-3 table {
     width: auto; }
   .main-type-3 .title.w-628 {
@@ -4640,9 +4645,7 @@ html .f-mobile {
         margin: 45px 0 0 0;
         text-align: center; }
     footer .f-content .f-menu-last {
-      text-align: center; } }
-
-@media only screen and (max-width: 48em) {
+      text-align: center; }
   .wrapper {
     max-width: 100%;
     padding: 0 25px; }
@@ -4926,7 +4929,7 @@ html .f-mobile {
       position: relative;
       z-index: 8;
       padding: 32px 0 0 0;
-      max-width: 380px; }
+      max-width: none; }
   .list-bottom-bg.w-3 > div,
   .list-bottom-bg.w-2 > div {
     max-width: none;
@@ -5085,8 +5088,6 @@ html .f-mobile {
     display: block; }
   .signs_addiction .banner-card {
     margin-top: 90px; }
-  .content-main .text-side {
-    width: auto; }
   .menu .m-contacts-1 {
     width: 140px;
     height: 65px; }
@@ -5455,6 +5456,14 @@ html .f-mobile {
     width: 202px;
     height: 60px;
     background-image: url("../images/btn/gray-long.svg"); }
+  .btn-gray-small.btn.btn-default::after {
+    content: none; }
+  .btn-gray-small.btn.btn-default::before {
+    top: -4px;
+    left: 2px;
+    width: 144px;
+    height: 64px;
+    background-image: url("../images/btn/gray-small.svg"); }
   .modal .btn.btn-lg::after {
     top: 0;
     left: 0;
@@ -5487,15 +5496,43 @@ html .f-mobile {
       right: -7px;
       width: 48px;
       height: 48px; }
-  .statistic-ul li {
-    font-size: 16px;
-    line-height: 32px;
-    padding-right: 22px; }
-  .authors > div {
-    width: calc(33.33% - 5px);
-    display: inline-block;
-    vertical-align: top;
-    margin: 40px 0 40px 0; }
+  .statistic-ul {
+    justify-content: space-between; }
+    .statistic-ul > div {
+      font-size: 16px;
+      line-height: 32px;
+      padding-right: 0; }
+      .statistic-ul > div span {
+        margin-left: 5px; }
+    .statistic-ul .reviews-stars {
+      padding-right: 0; }
+    .statistic-ul .stars {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      margin-left: 8px;
+      padding: 0;
+      list-style: none; }
+      .statistic-ul .stars li {
+        line-height: initial;
+        height: 19px;
+        margin-left: 4px; }
+        .statistic-ul .stars li:first-child {
+          margin-right: 0; }
+      .statistic-ul .stars img {
+        width: 19px;
+        height: 19px;
+        -o-object-fit: contain;
+           object-fit: contain; }
+      .statistic-ul .stars .empty {
+        height: 18px; }
+        .statistic-ul .stars .empty img {
+          width: 18px;
+          height: 18px; }
+    .statistic-ul .inline-label {
+      display: flex;
+      align-items: center;
+      padding-right: 0; }
   .banner-3 {
     display: flex;
     align-items: flex-start;
@@ -5635,6 +5672,150 @@ html .f-mobile {
     .main-type-catalog .form-button.p-258 {
       margin-top: 10px;
       padding-top: 0; }
+  .main-type-3.article .p-70 {
+    padding-top: 0; }
+  .main-type-3.article .left_side .title {
+    margin-top: 0; }
+  .main-type-3.article .left_side::before {
+    content: none; }
+  .main-type-3.article .right_side {
+    min-height: 336px;
+    margin-top: -50px; }
+  .main-type-3.article .article-img-bg {
+    top: auto;
+    width: 100%;
+    height: 336px;
+    transform: none; }
+  .teenage_addiction_how_to_fight {
+    padding-top: 6.2rem; }
+    .teenage_addiction_how_to_fight .title.m-63 {
+      margin-top: 4.4rem; }
+    .teenage_addiction_how_to_fight .title .text-gray {
+      margin-bottom: 1.4rem; }
+  .article-content {
+    font-size: 16px;
+    line-height: 24px; }
+    .article-content p {
+      font-size: inherit;
+      line-height: inherit; }
+  .content-main {
+    flex-wrap: wrap; }
+    .content-main .text-side {
+      width: auto; }
+    .content-main .text-side.w-440 {
+      width: 100%;
+      padding: 0; }
+    .content-main .banner-side {
+      width: 100%;
+      display: none;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .content-main .banner-side .reviews-bar.mb-220 {
+        margin: 50px 0 20px 0;
+        width: 100%; }
+    .content-main .article-content.mt-58 {
+      margin-top: 47px; }
+    .content-main .btn-bar {
+      margin-top: 4.7rem; }
+  .content-main .text-side .article-content .p-big,
+  .content-main .text-side .article-content .p-big-bold {
+    font-size: 20px;
+    line-height: 29px;
+    color: #8F8DAA; }
+  .article-content blockquote {
+    margin: 0;
+    margin-bottom: 2.6rem;
+    padding-top: 1.6rem;
+    color: #89879C;
+    text-align: right; }
+    .article-content blockquote p {
+      padding-left: 3.2rem; }
+    .article-content blockquote cite {
+      font-weight: normal; }
+  .contents-list ol,
+  .contents-list ul {
+    padding-left: 1.4rem;
+    margin-bottom: 2.3rem; }
+  .contents-list ol li a,
+  .contents-list ul li a {
+    font-size: 16px;
+    line-height: 24px; }
+  .contents-list > ol {
+    padding-left: 0; }
+    .contents-list > ol > li {
+      font-size: 16px;
+      line-height: 24px; }
+      .contents-list > ol > li > a {
+        font-size: 18px;
+        line-height: 27px; }
+  .pr-115 {
+    padding-right: 0; }
+  .tags li {
+    display: inline;
+    padding-right: 0.4rem;
+    font-size: 16px;
+    line-height: 24px; }
+  .reviews-bar .stars.stars-lg li.empty img {
+    width: 34px;
+    height: 31px; }
+  .share-review {
+    flex-direction: column; }
+    .share-review .share-link {
+      margin-top: 26px; }
+  .authors {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px; }
+    .authors > div {
+      width: auto;
+      display: flex;
+      margin: 0;
+      margin-bottom: 36px; }
+      .authors > div:last-child {
+        margin-bottom: 0; }
+    .authors .profession {
+      width: 100px; }
+  .comments {
+    margin-top: 116px;
+    margin-bottom: 80px; }
+    .comments .comment-form {
+      margin: 0;
+      margin-bottom: 110px; }
+    .comments .comment-count {
+      margin-top: 0;
+      margin-bottom: 4px; }
+    .comments .comment-label {
+      margin-bottom: 4px;
+      font-size: 30px;
+      line-height: 44px; }
+    .comments .comments-list > div {
+      margin: 0;
+      margin-bottom: 22px; }
+    .comments .comments-list .top .date {
+      font-size: 22px;
+      line-height: 1.3; }
+    .comments .comments-list .top .username {
+      font-size: 22px;
+      line-height: 1.3; }
+    .comments .comments-list .comment {
+      margin-top: 0.7rem;
+      margin-bottom: 0.3rem; }
+    .comments .oval-container {
+      margin-bottom: 0;
+      border-radius: 4rem; }
+  .form-control-comments {
+    flex-direction: column; }
+    .form-control-comments .input-username {
+      margin-bottom: 19px; }
+    .form-control-comments .input-username,
+    .form-control-comments .input-comment {
+      width: 100%; }
+    .form-control-comments .oval-form-button {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -72px;
+      margin-left: 0; }
   footer .f-content .f-menu {
     width: 50%; }
     footer .f-content .f-menu:last-child {
@@ -5697,9 +5878,7 @@ html .f-mobile {
     padding: 180px 0 0 0; }
   .second_choice .banner-card .content-bar .inline-title .h1,
   .signs_addiction .banner-card .content-bar .inline-title .h1 {
-    width: auto; } }
-
-@media only screen and (max-width: 48em) {
+    width: auto; }
   .p-bold,
   .p-main,
   p {
@@ -5719,12 +5898,13 @@ html .f-mobile {
       margin-bottom: 3.4rem; }
   .banner {
     overflow: hidden;
+    max-width: 360px;
     width: 100%;
     min-height: 39.3rem;
     margin-top: 46px;
     margin-bottom: 4.6rem;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 4.2rem; }
     .banner .title {
       margin-bottom: 0.9rem;
@@ -5972,7 +6152,13 @@ html .f-mobile {
     transform: translate(-50%, -50%);
     border-radius: 107px; }
   .breadcrumbs-path .path {
-    width: auto; } }
+    width: auto; }
+  .path {
+    padding-top: 14px; }
+    .path ul li a {
+      line-height: initial; }
+    .path ul li:not(:last-child)::before {
+      top: 0.1rem; } }
 
 @media only screen and (max-width: 27em) {
   .photo_gallery .photo-list {

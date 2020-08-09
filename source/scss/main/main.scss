@@ -2881,6 +2881,7 @@ main {}
       .sub-p {
         padding: 2.7rem 0 0 8.7rem;
         margin: 0;
+        color: #89879C;
       }
     }
 
@@ -2891,6 +2892,27 @@ main {}
 
   .banner-side {
     width: 32.5rem;
+  }
+}
+
+.article-content {
+  blockquote {
+    margin: 0;
+    margin-bottom: 2.6rem;
+    padding-top: 2.7rem;
+    // padding-left: 8.7rem;
+    color: #89879C;
+
+    p {
+      margin-bottom: 0;
+      padding-left: 8.7rem;
+    }
+
+    cite {
+      font-style: normal;
+      font-weight: bold;
+      color: #3E3C56;
+    }
   }
 }
 
@@ -5009,22 +5031,22 @@ footer {
   display: inline-block;
   vertical-align: middle;
   // margin: -0.6rem 0 0 0;
-  margin-left: 10px;
+  margin-left: 1rem;
   background-color: transparent;
   // background-image: url('../images/icons/purple-round.svg');
   // background-size: contain;
-  // box-shadow: 4px 4px 5px rgba(125, 85, 238, 0.49);
+  // box-shadow: 0.4rem 0.4rem 0.5rem rgba(125, 85, 238, 0.49);
 
   &:after {
-  //   background: linear-gradient(180deg, #A254C5 -9.79%, #5948C8 103.6%);
-  //   border-radius: 18rem;
-  //   content: "";
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: 2;
+    // background: linear-gradient(180deg, #A254C5 -9.79%, #5948C8 103.6%);
+    // border-radius: 18rem;
+    // content: "";
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    // width: 100%;
+    // height: 100%;
+    // z-index: 2;
 
     position: absolute;
     content: '';
@@ -5039,6 +5061,10 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+
+  &--mail::after {
+    background-image: url('../images/btn/s1.png');
   }
 
   // &:before {
@@ -5616,12 +5642,14 @@ footer {
 }
 
 .statistic-ul {
-  display: table;
+  // display: table;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
-  li {
-    display: table-cell;
+  &>div {
+    // display: table-cell;
     font-size: 1.6rem;
     line-height: 4.5rem;
     color: #A09EAC;
@@ -5962,6 +5990,31 @@ footer {
         font-weight: normal;
       }
     }
+  }
+}
+
+.contents-list {
+  &>ol {
+    padding-left: 0;
+    &>li {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0 0 0 0;
+      display: block;
+      text-decoration: underline;
+      color: #3e3c56;
+      // list-style: initial;
+      &>a {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+  ol a,
+  ul a {
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
   }
 }
 
