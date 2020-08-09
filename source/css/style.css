@@ -4132,7 +4132,8 @@ html .f-mobile {
         .pagination ul li a img {
           width: 14px; }
   header {
-    background: #2d2c42; }
+    background: #2d2c42;
+    z-index: 20; }
   .see-more-toggle {
     margin: 15px 0 0 0; }
   .ways_to_expose_addiction {
@@ -4585,11 +4586,6 @@ html .f-mobile {
     .map_container_section .flex-parent .left_side {
       width: 100%;
       margin: 0 0 40px 0; }
-  .addresses-list > div {
-    width: 50%;
-    vertical-align: top;
-    display: inline-block;
-    margin: 0 0 20px 0; }
   .ways_to_expose_addiction .about-ways {
     margin: 80px 0 60px 0;
     flex-wrap: wrap; }
@@ -4684,8 +4680,6 @@ html .f-mobile {
         line-height: 20px; }
   .reviews.p-170 {
     padding: 45px 0 0 0; }
-  .our-specialists.m-220 {
-    margin: 45px 0 0 0; }
   .specialized_rehabilitation_centers {
     padding: 40px 0 0 0; }
     .specialized_rehabilitation_centers .banner-card {
@@ -5174,6 +5168,10 @@ html .f-mobile {
   .our-specialists .see-more-toggle {
     margin-top: 50px;
     margin-bottom: 11px; }
+  .our-specialists.m-220 {
+    margin: 45px 0 0 0; }
+  .our-specialists.m-195 {
+    margin: 95px 0 0 0; }
   .specialists-list {
     margin-top: 17px; }
     .specialists-list .specialists-list-item {
@@ -5249,11 +5247,27 @@ html .f-mobile {
   .list-bottom-bg,
   .services .services-list {
     flex-wrap: wrap; }
-  .addresses-list > div {
-    width: 100%;
-    vertical-align: top;
-    display: inline-block;
-    margin: 0 0 20px 0; }
+  .addresses-list {
+    margin-top: 6.4rem; }
+    .addresses-list > div {
+      width: 100%;
+      vertical-align: top;
+      display: inline-block;
+      margin-bottom: 0; }
+      .addresses-list > div .city {
+        font-size: 30px;
+        line-height: 44px; }
+  .addresses .address-table {
+    margin-top: 0.8rem;
+    font-size: 1.6rem; }
+    .addresses .address-table .key,
+    .addresses .address-table .value {
+      font-size: inherit; }
+  .address-table .key,
+  .address-table .value {
+    width: auto; }
+  .address-table .key {
+    width: 95px; }
   footer {
     margin-top: 20px; }
   .input-mask-group {
@@ -5567,8 +5581,6 @@ html .f-mobile {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
-  .map-contacts {
-    padding: 150px 0 60px 0; }
   .main-block,
   .main-block.h-618,
   .main-type-2,
@@ -5992,16 +6004,27 @@ html .f-mobile {
     margin-top: 10.6rem; }
     .diagnoses .left_side {
       margin-bottom: 86px; }
-  .specialists-data .specialist-banner .left_side {
-    width: 100%;
-    display: flex;
-    align-items: flex-end; }
-  .specialists-data .specialist-banner .right_side {
-    padding: 10px 0 0;
-    width: 100%; }
-  .specialists-data .licence {
-    text-align: center;
-    margin: 22px 0 0 15px; }
+  .specialists-data {
+    padding-bottom: 5.4rem; }
+    .specialists-data .specialist-banner {
+      padding-top: 3.7rem; }
+      .specialists-data .specialist-banner .left_side {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-right: 0; }
+      .specialists-data .specialist-banner .right_side {
+        margin-top: 28px;
+        padding: 0;
+        width: 100%; }
+        .specialists-data .specialist-banner .right_side .name {
+          font-size: 25px;
+          line-height: 30px; }
+    .specialists-data .licence {
+      text-align: center;
+      margin: 22px 0 0 15px; }
+  .verified_articles {
+    padding-top: 9.2rem; }
   .main-block,
   .main-type-2,
   .main-type-3 {
@@ -6035,8 +6058,19 @@ html .f-mobile {
     .main-type-3.h-618 .main-img,
     .main-type-3 .main-img {
       height: 262px; }
+  .main-block-about .block-1.pb-90 {
+    padding-bottom: 0; }
+  .main-block-about .block-1::before {
+    content: none; }
+  .main-block-about .main-img {
+    height: 420px;
+    margin-top: -100px; }
   .form-button {
     margin-top: 20px; }
+  .our_mission {
+    margin-top: 12.5rem; }
+    .our_mission .title .title-label {
+      margin-bottom: 2rem; }
   .dec {
     height: 18px;
     margin: 14px 0 0 0; }
@@ -6138,6 +6172,20 @@ html .f-mobile {
     .rehabilitation_goals .banner-card .content-bar .text-light,
     .rehabilitation_goals .banner-card .content-bar .inline-title .h1 {
       width: auto; }
+  .map-contacts {
+    padding: 45px 0 60px 0; }
+    .map-contacts .map-contacts-bar {
+      flex-direction: column-reverse; }
+      .map-contacts .map-contacts-bar .address-table {
+        margin-bottom: 0; }
+      .map-contacts .map-contacts-bar .form-button .btn {
+        margin-left: 15px; }
+        .map-contacts .map-contacts-bar .form-button .btn.btn-cyan::before {
+          left: -10px; }
+    .map-contacts .contacts {
+      margin-bottom: 40px; }
+    .map-contacts .addresses {
+      padding-bottom: 1rem; }
   .icon-round {
     width: 90px;
     height: 90px; }
