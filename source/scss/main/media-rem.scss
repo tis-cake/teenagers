@@ -55,22 +55,22 @@ html {
 
 // 25em = 400px
 // 23em = 370px
-@media (max-width: 23em) {
+@media (max-width: 25em) {
   html {
     font-size: 60%;
   }
 }
 
 // 22em = 350px
-@media (max-width: 22em) {
+@media (max-width: 24em) {
   html {
     font-size: 58%;
   }
 }
 
 // 21em
-@media (max-width: 21em) {
+@media (max-width: 22em) {
   html {
-    font-size: 53%;
+    font-size: 50%;
   }
 }
