@@ -465,6 +465,13 @@
         object-fit: cover;
       }
     }
+
+    &.w-600 {
+      .h1,
+      .text-light {
+        width: auto;
+      }
+    }
   }
 
   .solutions_possible_problems {
@@ -3456,6 +3463,9 @@
   }
 
   .main-block-any-age {
+    .flex-card {
+      width: auto;
+    }
     .main-img {
       height: 62.3rem;
       margin-top: -30rem;

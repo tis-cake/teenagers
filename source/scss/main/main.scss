@@ -721,6 +721,13 @@ main {}
     margin: 23rem 0 0 0 !important;
   }
 
+  &.w-600 {
+    .h1,
+    .text-light {
+      width: 60rem;
+    }
+  }
+
   .content-bar,
   .image-bar {
     width: calc(50% - 0.5rem);
@@ -2064,11 +2071,23 @@ main {}
   }
 }
 
+.main-block-about {
+  .h1 span {
+    display: block;
+  }
+}
+
 .main-block-type-service,
 .main-block-database,
 .main-block-any-age {
   .block-1::before {
     content: none;
+  }
+}
+
+.main-block-any-age {
+  .flex-card {
+    width: 46rem;
   }
 }
 
@@ -5616,6 +5635,33 @@ footer {
       padding: 1.5rem 0 0 0;
     }
   }
+
+  .table-info {
+    display: flex;
+    width: 41rem;
+    padding-left: 0;
+    list-style: none;
+    color: #2D2C42;
+    li {
+      width: 18rem;
+      &:nth-child(2) {
+        width: 12rem;
+      }
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: #2D2C42;
+    }
+  }
+  .table-info-caption {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 
 .teenage_addiction_how_to_fight {
@@ -5822,7 +5868,7 @@ footer {
     margin-bottom: 0;
     .description {
       margin: 0 auto;
-      width: 25.1rem;
+      width: 23rem;
     }
   }
 }

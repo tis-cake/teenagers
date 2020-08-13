@@ -596,6 +596,9 @@ p {
     margin: 22.6rem 0 0 0 !important; }
   .banner-card.m-230 {
     margin: 23rem 0 0 0 !important; }
+  .banner-card.w-600 .h1,
+  .banner-card.w-600 .text-light {
+    width: 60rem; }
   .banner-card .content-bar,
   .banner-card .image-bar {
     width: calc(50% - 0.5rem);
@@ -1438,10 +1441,16 @@ p {
       .main-block .block-1 .label p {
         line-height: 1.5; }
 
+.main-block-about .h1 span {
+  display: block; }
+
 .main-block-type-service .block-1::before,
 .main-block-database .block-1::before,
 .main-block-any-age .block-1::before {
   content: none; }
+
+.main-block-any-age .flex-card {
+  width: 46rem; }
 
 .main-block-type-service {
   margin-bottom: 21.2rem; }
@@ -3680,6 +3689,26 @@ footer {
       line-height: 2rem;
       color: #2D2C42;
       padding: 1.5rem 0 0 0; }
+  .main-type-3 .table-info {
+    display: flex;
+    width: 41rem;
+    padding-left: 0;
+    list-style: none;
+    color: #2D2C42; }
+    .main-type-3 .table-info li {
+      width: 18rem; }
+      .main-type-3 .table-info li:nth-child(2) {
+        width: 12rem; }
+    .main-type-3 .table-info p {
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: #2D2C42; }
+  .main-type-3 .table-info-caption {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2rem; }
 
 .teenage_addiction_how_to_fight {
   padding: 7.5rem 0 0 0; }
@@ -3824,7 +3853,7 @@ footer {
     margin-bottom: 0; }
     .preparations .goals-list .description {
       margin: 0 auto;
-      width: 25.1rem; }
+      width: 23rem; }
 
 .diagnoses {
   margin: 16rem 0 0 0; }
@@ -4351,6 +4380,9 @@ html .f-mobile {
         height: 100%;
         -o-object-fit: cover;
            object-fit: cover; }
+    .banner-card.w-600 .h1,
+    .banner-card.w-600 .text-light {
+      width: auto; }
   .solutions_possible_problems .banner-card {
     margin: 1rem 0 0 0; }
     .solutions_possible_problems .banner-card .content-bar {
@@ -6099,6 +6131,8 @@ html .f-mobile {
   .main-block-about .main-img {
     height: 42rem;
     margin-top: -10rem; }
+  .main-block-any-age .flex-card {
+    width: auto; }
   .main-block-any-age .main-img {
     height: 62.3rem;
     margin-top: -30rem; }
@@ -6288,10 +6322,10 @@ html .f-mobile {
     .banner-card .form-button > div:not(:last-child) {
       margin-bottom: 0; }
   .banner-card .form-button .input-mask-group {
-    position: relative !important;
-    top: 0 !important; }
+    position: relative;
+    top: 0; }
   .banner-card .form-button .btn.btn-cyan::after {
-    content: none !important; } }
+    content: none; } }
 
 #review-block.modal .modal-content {
   margin: 5rem auto 0 auto;
