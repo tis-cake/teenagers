@@ -1925,10 +1925,12 @@ p {
     font-size: 1.8rem;
     line-height: 2.7rem;
     color: #3E3C56; }
+  .content-main h3,
   .content-main .p-title {
     font-weight: bold;
     font-size: 2.6rem;
     margin: 3.5rem 0 2.8rem 0; }
+    .content-main h3.m-45,
     .content-main .p-title.m-45 {
       margin: 4.5rem 0 0 0; }
   .content-main .btn-bar {
@@ -1937,20 +1939,27 @@ p {
     width: calc(100% - 42rem); }
     .content-main .text-side.w-440 {
       width: calc(100% - 44rem); }
+    .content-main .text-side .article-content p,
     .content-main .text-side .article-content .p-simple {
       margin-bottom: 2.6rem; }
     .content-main .text-side .article-content .p-title-2 {
       margin-bottom: 5.3rem;
       font-weight: bold; }
+    .content-main .text-side .article-content h3,
     .content-main .text-side .article-content .p-title {
       margin-bottom: 3rem; }
+    .content-main .text-side .article-content em,
     .content-main .text-side .article-content .p-big {
+      display: block;
       margin-bottom: 2.3rem;
       font-size: 2.6rem;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-style: normal; }
     .content-main .text-side .article-content .p-title-sm {
       margin-bottom: 3rem; }
+    .content-main .text-side .article-content strong,
     .content-main .text-side .article-content .p-big-bold {
+      display: block;
       margin: 3rem 0 2.7rem 0;
       font-size: 2.5rem;
       font-weight: bold;
@@ -2551,10 +2560,12 @@ footer {
     font-size: 1.8rem;
     line-height: 1.5;
     color: #3E3C56; }
+  .measures .content-main h3,
   .measures .content-main .p-title {
     font-weight: bold;
     font-size: 2.6rem;
     margin: 3rem 0 3rem 0; }
+    .measures .content-main h3.mt-0,
     .measures .content-main .p-title.mt-0 {
       margin: 0 0 3rem 0; }
   .measures .banner-side {
@@ -5795,6 +5806,8 @@ html .f-mobile {
       margin-top: 4.7rem; }
     .content-main .btn-bar {
       margin-top: 4.7rem; }
+  .content-main .text-side .article-content em,
+  .content-main .text-side .article-content strong,
   .content-main .text-side .article-content .p-big,
   .content-main .text-side .article-content .p-big-bold {
     font-size: 2rem;

@@ -2840,6 +2840,7 @@ main {}
     color: #3E3C56;
   }
 
+  h3,
   .p-title {
     font-weight: bold;
     font-size: 2.6rem;
@@ -2862,6 +2863,8 @@ main {}
     }
 
     .article-content {
+
+      p,
       .p-simple {
         margin-bottom: 2.6rem;
       }
@@ -2871,21 +2874,27 @@ main {}
         font-weight: bold;
       }
 
+      h3,
       .p-title {
         margin-bottom: 3rem;
       }
 
+      em,
       .p-big {
+        display: block;
         margin-bottom: 2.3rem;
         font-size: 2.6rem;
         line-height: 1.5;
+        font-style: normal;
       }
 
       .p-title-sm {
         margin-bottom: 3rem;
       }
 
+      strong,
       .p-big-bold {
+        display: block;
         margin: 3rem 0 2.7rem 0;
         font-size: 2.5rem;
         font-weight: bold;
@@ -3903,6 +3912,7 @@ footer {
       color: #3E3C56;
     }
 
+    h3,
     .p-title {
       font-weight: bold;
       font-size: 2.6rem;
