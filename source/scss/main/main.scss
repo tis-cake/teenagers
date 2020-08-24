@@ -5167,7 +5167,7 @@ footer {
     transition: all 0.4s ease;
     border-bottom: 0 solid #D9D9F1;
     margin-right: 3.6rem;
-    &:nth-child(4n) {
+    &:nth-of-type(4n) {
       margin-right: 0;
     }
 

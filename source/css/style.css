@@ -3389,7 +3389,7 @@ footer {
     transition: all 0.4s ease;
     border-bottom: 0 solid #D9D9F1;
     margin-right: 3.6rem; }
-    .item-list-1 .item-list-1-item:nth-child(4n) {
+    .item-list-1 .item-list-1-item:nth-of-type(4n) {
       margin-right: 0; }
     .item-list-1 .item-list-1-item:hover {
       transform: translateY(-2rem);
