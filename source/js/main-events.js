@@ -156,6 +156,7 @@ $(document).ready(function() {
     let reviewName = currentReview.querySelector('.username').textContent.trim();
     let reviewDate = currentReview.querySelector('.date').textContent.trim();
     let reviewText = currentReview.querySelector('.text-full').textContent.trim();
+    let reviewStars = currentReview.querySelector('.stars').cloneNode(true);
 
     let reviewTemplate = reviewModal.querySelector('#review-block-template').content;
     let reviewTemplateContent = reviewTemplate.querySelector('.review-content');
@@ -164,11 +165,22 @@ $(document).ready(function() {
     let reviewTemplateDate = reviewTemplateContent.querySelector('.modal-review-date');
     let reviewTemplateText = reviewTemplateContent.querySelector('.modal-review-text');
 
+    let reviewTemplateStarsContainer = reviewTemplateContent.querySelector('.reviews-bar');
+    reviewTemplateStarsContainer.innerHTML = '';
+
     reviewTemplateName.textContent = reviewName;
     reviewTemplateDate.textContent = reviewDate;
     reviewTemplateText.textContent = reviewText;
+    reviewTemplateStarsContainer.appendChild(reviewStars);
 
     let review = reviewTemplateContent.cloneNode(true);
     reviewContainer.appendChild(review);
   }
+
+  $('[data-more-toggle="photoGallery"]').click(function(event) {
+    $(this).addClass('active');
+    $(this).closest('.photo_gallery').find('.photo-list').addClass('active');
+  });
+
 });
+
